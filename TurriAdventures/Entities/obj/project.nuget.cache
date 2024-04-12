@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sH8qsPpvhFXpn190zHxBMg5Sjo9IIjmYQv2cluuOcQv4eOP3tzoN2lTMM+uh/LOEyd8Ntxv9xcW2ivS81XgZew==",
+  "dgSpecHash": "+AB6RxCz3XjSxZgTTYCPmgfnP02k2veDxrXpFs5KMKmxC+uYIXmfkRtil+VRtOVVo1FIGfkni++rGh+f/O9qlA==",
   "success": true,
-  "projectFilePath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities.csproj",
+  "projectFilePath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Entities\\Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\50671\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\50671\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

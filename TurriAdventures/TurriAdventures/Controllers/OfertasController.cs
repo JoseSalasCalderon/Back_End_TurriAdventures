@@ -24,98 +24,32 @@ namespace TurriAdventures.Controllers
         }
 
         // GET: Detalles de una oferta específica
-        [HttpGet("DetallesOferta/{id}")]
-        public async Task<IActionResult> DetallesOferta(int? id)
+        [HttpGet("BuscarOferta/{id}")]
+        public async Task<Oferta> BuscarOferta(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var oferta = await _context.Oferta.FirstOrDefaultAsync(m => m.IdOferta == id);
-            if (oferta == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(oferta);
+            return _businessSql.BuscarOferta(id);
         }
 
         // POST: Crea una nueva oferta
         [HttpPost("CrearOferta")]
-        public async Task<IActionResult> CrearOferta(int idOferta, string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
+        public bool CrearOferta(string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
         {
-            if (ModelState.IsValid)
-            {
-                Oferta oferta = new Oferta
-                {
-                    IdOferta = idOferta,
-                    DescripcionOferta = descripcionOferta,
-                    FechaInicioOferta = fechaInicioOferta,
-                    FechaFinalOferta = fechaFinalOferta,
-                    PrecioOferta = precioOferta
-                };
-
-                _context.Add(oferta);
-                await _context.SaveChangesAsync();
-                return CreatedAtAction(nameof(DetallesOferta), new { id = oferta.IdOferta }, oferta);
-            }
-            return BadRequest(ModelState);
+            return _businessSql.CrearOferta(descripcionOferta, fechaInicioOferta, fechaFinalOferta, precioOferta);
         }
 
         // PUT: Actualiza una oferta existente
-        [HttpPut("EditarOferta/{id}")]
-        public async Task<IActionResult> EditarOferta(int id, string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
+        [HttpPut("EditarOferta")]
+        public bool EditarOferta(int idOferta, string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
         {
-            var oferta = await _context.Oferta.FindAsync(id);
-            if (oferta == null)
-            {
-                return NotFound();
-            }
-
-            oferta.DescripcionOferta = descripcionOferta;
-            oferta.FechaInicioOferta = fechaInicioOferta;
-            oferta.FechaFinalOferta = fechaFinalOferta;
-            oferta.PrecioOferta = precioOferta;
-
-            try
-            {
-                _context.Update(oferta);
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!OfertaExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return NoContent();
+            return _businessSql.EditarOferta(idOferta, descripcionOferta, fechaInicioOferta, fechaFinalOferta, precioOferta);
         }
 
         // DELETE: Elimina una oferta existente
-        [HttpDelete("EliminarOferta/{id}")]
-        public async Task<IActionResult> EliminarOferta(int id)
+        [HttpDelete("EliminarOferta")]
+        public bool EliminarOferta(int id)
         {
-            var oferta = await _context.Oferta.FindAsync(id);
-            if (oferta == null)
-            {
-                return NotFound();
-            }
-
-            _context.Oferta.Remove(oferta);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
+            return _businessSql.EliminarOferta(id);
         }
 
-        private bool OfertaExists(int id)
-        {
-            return _context.Oferta.Any(e => e.IdOferta == id);
-        }
     }
 }
