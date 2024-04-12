@@ -1,0 +1,65 @@
+﻿@model IEnumerable<TurriAdventures.Entities.TipoHabitacion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreTipoHabitacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescripcionTipoHabitacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImagenTipoHabitacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdOfertaNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTemporadaNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreTipoHabitacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescripcionTipoHabitacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImagenTipoHabitacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdOfertaNavigation.IdOferta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTemporadaNavigation.IdTemporada)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdTipoHabitacion">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdTipoHabitacion">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdTipoHabitacion">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
