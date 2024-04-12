@@ -13,3 +13,17 @@ E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.pdb
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\ref\Entities.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\bin\Debug\net8.0\Entities.deps.json
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\bin\Debug\net8.0\Entities.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\bin\Debug\net8.0\Entities.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\Entities.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\refint\Entities.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\Entities.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Entities\obj\Debug\net8.0\ref\Entities.dll
