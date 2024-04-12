@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace TurriAdventures.Entities;
+
+public partial class Habitacion
+{
+    public int IdHabitacion { get; set; }
+
+    public bool? EstadoHabitacion { get; set; }
+
+    public int? NumeroHabitacion { get; set; }
+
+    public int? CapacidadMaxima { get; set; }
+
+    public int? IdTipoHabitacion { get; set; }
+
+    public virtual TipoHabitacion? IdTipoHabitacionNavigation { get; set; }
+
+    public virtual ICollection<Reservacion> Reservacion { get; set; } = new List<Reservacion>();
+}

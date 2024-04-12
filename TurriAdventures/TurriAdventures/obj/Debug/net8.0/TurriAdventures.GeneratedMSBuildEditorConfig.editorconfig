@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TurriAdventures
+build_property.RootNamespace = TurriAdventures
+build_property.ProjectDir = E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\TurriAdventures
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Habitacions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Habitacions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Habitacions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Habitacions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Habitacions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Ofertas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Ofertas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Ofertas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Ofertas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Ofertas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT2ZlcnRhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Temporadas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Temporadas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Temporadas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Temporadas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/Temporadas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVtcG9yYWRhc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/TipoHabitacions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0hhYml0YWNpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/TipoHabitacions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0hhYml0YWNpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/TipoHabitacions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0hhYml0YWNpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/TipoHabitacions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0hhYml0YWNpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Documentos/ICiclo2024/Ingenieria/Proyecto/Desarrollo/Back_End_TurriAdventures/TurriAdventures/TurriAdventures/Views/TipoHabitacions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlwb0hhYml0YWNpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
