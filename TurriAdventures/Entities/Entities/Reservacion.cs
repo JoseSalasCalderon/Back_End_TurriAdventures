@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TurriAdventures.Entities;
+namespace Entities.Entities;
 
 public partial class Reservacion
 {
@@ -15,7 +15,7 @@ public partial class Reservacion
 
     public int? IdHabitacion { get; set; }
 
-    public int? IdCliente { get; set; }
+    public string? IdCliente { get; set; }
 
     public virtual Cliente? IdClienteNavigation { get; set; }
 

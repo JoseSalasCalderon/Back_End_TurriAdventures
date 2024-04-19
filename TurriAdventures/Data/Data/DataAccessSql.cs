@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Entities.Entities;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -274,12 +275,13 @@ namespace Data.Data
             return tipoHabitacionCreada;
         }//BuscarHabitacion
 
-        public bool EditarTipoHabitacion(String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
+        public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
         {
             try
             {
                 var parameters = new[]
                 {
+                new SqlParameter("@idHabitacion", idHabitacion),
                 new SqlParameter("@nombreTipoHabitacion", nombreTipoHabitacion),
                 new SqlParameter("@precio", precio),
                 new SqlParameter("@descripcionTipoHabitacion", descripcionTipoHabitacion),
@@ -289,7 +291,7 @@ namespace Data.Data
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarTipoHabitacion @nombreTipoHabitacion, @precio, @descripcionTipoHabitacion, @imagenTipoHabitacion,@idOferta,@idOferta ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarTipoHabitacion @idHabitacion, @nombreTipoHabitacion, @precio, @descripcionTipoHabitacion, @imagenTipoHabitacion,@idOferta,@idOferta ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -362,12 +364,13 @@ namespace Data.Data
             return TemporadaCreada;
         }//Temporada
 
-        public bool EditarTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public bool EditarTemporada(int idTemporada,String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             try
             {
                 var parameters = new[]
                 {
+                new SqlParameter("@idTemporada", idTemporada),
                 new SqlParameter("@descripcionTemporada", descripcionTemporada),
                 new SqlParameter("@fechaInicioTemporada", fechaInicioTemporada),
                 new SqlParameter("@fechaFinalTemporada", fechaFinalTemporada),
@@ -375,7 +378,7 @@ namespace Data.Data
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -420,7 +423,7 @@ namespace Data.Data
             }
         }//CrearCliente
 
-        public Cliente BuscarCliente(int idCliente)
+        public Cliente BuscarCliente(String idCliente)
         {
             var parameters = new[]
             {
@@ -448,19 +451,20 @@ namespace Data.Data
             return clienteCreado;
         }//Temporada
 
-        public bool EditarCliente(String nombre, String apellidos, String email)
+        public bool EditarCliente(String id,String nombre, String apellidos, String email)
         {
             try
             {
                 var parameters = new[]
                 {
+                new SqlParameter("@id", id),
                 new SqlParameter("@nombre", nombre),
                 new SqlParameter("@apellidos", apellidos),
                 new SqlParameter("@email", email)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarCliente @nombre, @apellidos, @email ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarCliente @id, @nombre, @apellidos, @email ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -747,7 +751,7 @@ namespace Data.Data
             }
         }//CrearReserva
 
-        public Reservacion BuscarReservaPorIdCliente(int idCliente)
+        public Reservacion BuscarReservaPorIdCliente(String idCliente)
         {
             var parameters = new[]
             {

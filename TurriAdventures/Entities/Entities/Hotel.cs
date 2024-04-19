@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace TurriAdventures.Entities;

@@ -1,4 +1,5 @@
 ﻿using Data.Data;
+using Entities.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -85,9 +86,9 @@ namespace Business.Business
             return _dataAccessSql.BuscarTipoHabitacion(idHabitacion);
         }
 
-        public bool EditarTipoHabitacion(String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
+        public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
         {
-            return _dataAccessSql.CrearTipoHabitacion(nombreTipoHabitacion, precio, descripcionTipoHabitacion, imagenTipoHabitacion, idOferta, idTemporada);
+            return _dataAccessSql.EditarTipoHabitacion(idHabitacion, nombreTipoHabitacion, precio, descripcionTipoHabitacion, imagenTipoHabitacion, idOferta, idTemporada);
         }
 
         #endregion
@@ -108,9 +109,9 @@ namespace Business.Business
             return _dataAccessSql.BuscarTemporada(idHabitacion);
         }
 
-        public bool EditarTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public bool EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
-            return _dataAccessSql.CrearTemporada(descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
+            return _dataAccessSql.EditarTemporada(idTemporada, descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }
 
         #endregion
@@ -121,19 +122,19 @@ namespace Business.Business
             return _dataAccessSql.ListarClientes();
         }
 
-        public bool CrearClientes(String cedula, String nombre, String apellidos, String email)
+        public bool CrearClientes( String cedula, String nombre, String apellidos, String email)
         {
             return _dataAccessSql.CrearClientes(cedula, nombre, apellidos, email);
         }
 
-        public Cliente BuscarCliente(int idCliente)
+        public Cliente BuscarCliente(String idCliente)
         {
             return _dataAccessSql.BuscarCliente(idCliente);
         }
 
-        public bool EditarCliente(String nombre, String apellidos, String email)
+        public bool EditarCliente(String id,String nombre, String apellidos, String email)
         {
-            return _dataAccessSql.EditarCliente( nombre, apellidos, email);
+            return _dataAccessSql.EditarCliente( id,nombre, apellidos, email);
         }
 
         #endregion
@@ -149,7 +150,7 @@ namespace Business.Business
             return _dataAccessSql.CrearReserva(fechaLlegada, fechaSalida, estadoReservacion, idHabitacion, idCliente);
         }
 
-        public Reservacion BuscarReservaPorIdCliente(int idCliente)
+        public Reservacion BuscarReservaPorIdCliente(String idCliente)
         {
             return _dataAccessSql.BuscarReservaPorIdCliente(idCliente);
         }

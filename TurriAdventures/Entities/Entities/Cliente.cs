@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TurriAdventures.Entities;
+namespace Entities.Entities;
 
 public partial class Cliente
 {
-    public int IdCliente { get; set; }
+    public string IdCliente { get; set; } = null!;
 
     public string? Nombre { get; set; }
 

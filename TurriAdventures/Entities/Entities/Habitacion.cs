@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TurriAdventures.Entities;
+namespace Entities.Entities;
 
 public partial class Habitacion
 {
