@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace TurriAdventures.Entities;
+namespace Entities.Entities;
 
 public partial class HotelTurriAdventuresContext : DbContext
 {
@@ -19,15 +19,11 @@ public partial class HotelTurriAdventuresContext : DbContext
 
     public virtual DbSet<Cliente> Cliente { get; set; }
 
-    public virtual DbSet<Contacto> Contacto { get; set; }
-
     public virtual DbSet<Direccion> Direccion { get; set; }
 
     public virtual DbSet<Facilidad> Facilidad { get; set; }
 
     public virtual DbSet<Habitacion> Habitacion { get; set; }
-
-    public virtual DbSet<Hotel> Hotel { get; set; }
 
     public virtual DbSet<Nosotros> Nosotros { get; set; }
 
@@ -43,17 +39,15 @@ public partial class HotelTurriAdventuresContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=DESKTOP-HAJJ5O1;User Id=sa;Password=12345;Initial Catalog=Hotel_Turri_Adventures;TrustServerCertificate=true;");
+        => optionsBuilder.UseSqlServer("Data Source=LAPTOP-I7JHR1PM;User Id=sa;Password=dylan2604;Initial Catalog=Hotel_Turri_Adventures;TrustServerCertificate=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Administrador>(entity =>
         {
-            entity.HasKey(e => e.IdAdministrador).HasName("PK__Administ__EBE80EA175E21F90");
+            entity.HasKey(e => e.IdAdministrador).HasName("PK__Administ__EBE80EA14D02757E");
 
-            entity.Property(e => e.IdAdministrador)
-                .ValueGeneratedNever()
-                .HasColumnName("idAdministrador");
+            entity.Property(e => e.IdAdministrador).HasColumnName("idAdministrador");
             entity.Property(e => e.Contrasena)
                 .HasMaxLength(50)
                 .IsUnicode(false)
@@ -66,10 +60,11 @@ public partial class HotelTurriAdventuresContext : DbContext
 
         modelBuilder.Entity<Cliente>(entity =>
         {
-            entity.HasKey(e => e.IdCliente).HasName("PK__Cliente__885457EEF9E691EE");
+            entity.HasKey(e => e.IdCliente).HasName("PK__Cliente__885457EE0C27D35F");
 
             entity.Property(e => e.IdCliente)
-                .ValueGeneratedNever()
+                .HasMaxLength(8)
+                .IsUnicode(false)
                 .HasColumnName("idCliente");
             entity.Property(e => e.Apellidos)
                 .HasMaxLength(50)
@@ -85,34 +80,9 @@ public partial class HotelTurriAdventuresContext : DbContext
                 .HasColumnName("nombre");
         });
 
-        modelBuilder.Entity<Contacto>(entity =>
-        {
-            entity.HasKey(e => e.IdContacto).HasName("PK__Contacto__4B1329C7BF264E66");
-
-            entity.Property(e => e.IdContacto)
-                .ValueGeneratedNever()
-                .HasColumnName("idContacto");
-            entity.Property(e => e.ApartadoPostal)
-                .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("apartadoPostal");
-            entity.Property(e => e.Email)
-                .HasMaxLength(100)
-                .IsUnicode(false)
-                .HasColumnName("email");
-            entity.Property(e => e.Telefono1)
-                .HasMaxLength(20)
-                .IsUnicode(false)
-                .HasColumnName("telefono1");
-            entity.Property(e => e.Telefono2)
-                .HasMaxLength(20)
-                .IsUnicode(false)
-                .HasColumnName("telefono2");
-        });
-
         modelBuilder.Entity<Direccion>(entity =>
         {
-            entity.HasKey(e => e.IdDireccion).HasName("PK__Direccio__B49878C96EF703A2");
+            entity.HasKey(e => e.IdDireccion).HasName("PK__Direccio__B49878C9E01F0487");
 
             entity.Property(e => e.IdDireccion).HasColumnName("idDireccion");
             entity.Property(e => e.InformacionDireccion)
@@ -123,7 +93,7 @@ public partial class HotelTurriAdventuresContext : DbContext
 
         modelBuilder.Entity<Facilidad>(entity =>
         {
-            entity.HasKey(e => e.IdFacilidad).HasName("PK__Facilida__B29C0B0127601DB3");
+            entity.HasKey(e => e.IdFacilidad).HasName("PK__Facilida__B29C0B01AD37A89E");
 
             entity.Property(e => e.IdFacilidad).HasColumnName("idFacilidad");
             entity.Property(e => e.DescripcionFacilidad)
@@ -138,7 +108,7 @@ public partial class HotelTurriAdventuresContext : DbContext
 
         modelBuilder.Entity<Habitacion>(entity =>
         {
-            entity.HasKey(e => e.IdHabitacion).HasName("PK__Habitaci__D9D53BE2B01F6CA6");
+            entity.HasKey(e => e.IdHabitacion).HasName("PK__Habitaci__D9D53BE2966A794A");
 
             entity.Property(e => e.IdHabitacion).HasColumnName("idHabitacion");
             entity.Property(e => e.CapacidadMaxima).HasColumnName("capacidadMaxima");
@@ -148,61 +118,12 @@ public partial class HotelTurriAdventuresContext : DbContext
 
             entity.HasOne(d => d.IdTipoHabitacionNavigation).WithMany(p => p.Habitacion)
                 .HasForeignKey(d => d.IdTipoHabitacion)
-                .HasConstraintName("FK__Habitacio__idTip__35BCFE0A");
-        });
-
-        modelBuilder.Entity<Hotel>(entity =>
-        {
-            entity.HasKey(e => e.IdHotel).HasName("PK__Hotel__AE924C1CACBF7651");
-
-            entity.Property(e => e.IdHotel).HasColumnName("idHotel");
-            entity.Property(e => e.DescripcionHotel)
-                .HasMaxLength(255)
-                .IsUnicode(false)
-                .HasColumnName("descripcionHotel");
-            entity.Property(e => e.IdContacto).HasColumnName("idContacto");
-            entity.Property(e => e.IdDireccion).HasColumnName("idDireccion");
-            entity.Property(e => e.IdFacilidad).HasColumnName("idFacilidad");
-            entity.Property(e => e.IdNosotros).HasColumnName("idNosotros");
-            entity.Property(e => e.IdPublicidad).HasColumnName("idPublicidad");
-            entity.Property(e => e.IdTipoHabitacion).HasColumnName("idTipoHabitacion");
-            entity.Property(e => e.ImagenBienvenido)
-                .HasMaxLength(255)
-                .IsUnicode(false)
-                .HasColumnName("imagenBienvenido");
-            entity.Property(e => e.NombreHotel)
-                .HasMaxLength(150)
-                .IsUnicode(false)
-                .HasColumnName("nombreHotel");
-
-            entity.HasOne(d => d.IdContactoNavigation).WithMany(p => p.Hotel)
-                .HasForeignKey(d => d.IdContacto)
-                .HasConstraintName("FK__Hotel__idContact__3E52440B");
-
-            entity.HasOne(d => d.IdDireccionNavigation).WithMany(p => p.Hotel)
-                .HasForeignKey(d => d.IdDireccion)
-                .HasConstraintName("FK__Hotel__idDirecci__412EB0B6");
-
-            entity.HasOne(d => d.IdFacilidadNavigation).WithMany(p => p.Hotel)
-                .HasForeignKey(d => d.IdFacilidad)
-                .HasConstraintName("FK__Hotel__idFacilid__4222D4EF");
-
-            entity.HasOne(d => d.IdNosotrosNavigation).WithMany(p => p.Hotel)
-                .HasForeignKey(d => d.IdNosotros)
-                .HasConstraintName("FK__Hotel__idNosotro__403A8C7D");
-
-            entity.HasOne(d => d.IdPublicidadNavigation).WithMany(p => p.Hotel)
-                .HasForeignKey(d => d.IdPublicidad)
-                .HasConstraintName("FK__Hotel__idPublici__4316F928");
-
-            entity.HasOne(d => d.IdTipoHabitacionNavigation).WithMany(p => p.Hotel)
-                .HasForeignKey(d => d.IdTipoHabitacion)
-                .HasConstraintName("FK__Hotel__idTipoHab__3F466844");
+                .HasConstraintName("FK__Habitacio__idTip__4AB81AF0");
         });
 
         modelBuilder.Entity<Nosotros>(entity =>
         {
-            entity.HasKey(e => e.IdNosotros).HasName("PK__Nosotros__703F9C8D1AFB3E61");
+            entity.HasKey(e => e.IdNosotros).HasName("PK__Nosotros__703F9C8D7D772195");
 
             entity.Property(e => e.IdNosotros).HasColumnName("idNosotros");
             entity.Property(e => e.DescripcionNosotros)
@@ -217,7 +138,7 @@ public partial class HotelTurriAdventuresContext : DbContext
 
         modelBuilder.Entity<Oferta>(entity =>
         {
-            entity.HasKey(e => e.IdOferta).HasName("PK__Oferta__05A1245E5B78D378");
+            entity.HasKey(e => e.IdOferta).HasName("PK__Oferta__05A1245E115884CC");
 
             entity.Property(e => e.IdOferta).HasColumnName("idOferta");
             entity.Property(e => e.DescripcionOferta)
@@ -237,7 +158,7 @@ public partial class HotelTurriAdventuresContext : DbContext
 
         modelBuilder.Entity<Publicidad>(entity =>
         {
-            entity.HasKey(e => e.IdPublicidad).HasName("PK__Publicid__3F75C482E6DF3E3C");
+            entity.HasKey(e => e.IdPublicidad).HasName("PK__Publicid__3F75C482A0EC4658");
 
             entity.Property(e => e.IdPublicidad).HasColumnName("idPublicidad");
             entity.Property(e => e.ImagenFacilidad)
@@ -252,7 +173,7 @@ public partial class HotelTurriAdventuresContext : DbContext
 
         modelBuilder.Entity<Reservacion>(entity =>
         {
-            entity.HasKey(e => e.IdReservacion).HasName("PK__Reservac__C813D8AD0689E394");
+            entity.HasKey(e => e.IdReservacion).HasName("PK__Reservac__C813D8ADE48763BE");
 
             entity.Property(e => e.IdReservacion).HasColumnName("idReservacion");
             entity.Property(e => e.EstadoReservacion)
@@ -265,21 +186,24 @@ public partial class HotelTurriAdventuresContext : DbContext
             entity.Property(e => e.FechaSalida)
                 .HasColumnType("datetime")
                 .HasColumnName("fechaSalida");
-            entity.Property(e => e.IdCliente).HasColumnName("idCliente");
+            entity.Property(e => e.IdCliente)
+                .HasMaxLength(8)
+                .IsUnicode(false)
+                .HasColumnName("idCliente");
             entity.Property(e => e.IdHabitacion).HasColumnName("idHabitacion");
 
             entity.HasOne(d => d.IdClienteNavigation).WithMany(p => p.Reservacion)
                 .HasForeignKey(d => d.IdCliente)
-                .HasConstraintName("FK__Reservaci__idCli__398D8EEE");
+                .HasConstraintName("FK__Reservaci__idCli__5224328E");
 
             entity.HasOne(d => d.IdHabitacionNavigation).WithMany(p => p.Reservacion)
                 .HasForeignKey(d => d.IdHabitacion)
-                .HasConstraintName("FK__Reservaci__idHab__38996AB5");
+                .HasConstraintName("FK__Reservaci__idHab__51300E55");
         });
 
         modelBuilder.Entity<Temporada>(entity =>
         {
-            entity.HasKey(e => e.IdTemporada).HasName("PK__Temporad__1209DE74574E3DAA");
+            entity.HasKey(e => e.IdTemporada).HasName("PK__Temporad__1209DE740C5789E3");
 
             entity.Property(e => e.IdTemporada).HasColumnName("idTemporada");
             entity.Property(e => e.DescripcionTemporada)
@@ -299,7 +223,7 @@ public partial class HotelTurriAdventuresContext : DbContext
 
         modelBuilder.Entity<TipoHabitacion>(entity =>
         {
-            entity.HasKey(e => e.IdTipoHabitacion).HasName("PK__TipoHabi__64CD3F697F740766");
+            entity.HasKey(e => e.IdTipoHabitacion).HasName("PK__TipoHabi__64CD3F69FE89358D");
 
             entity.Property(e => e.IdTipoHabitacion).HasColumnName("idTipoHabitacion");
             entity.Property(e => e.DescripcionTipoHabitacion)
@@ -322,11 +246,11 @@ public partial class HotelTurriAdventuresContext : DbContext
 
             entity.HasOne(d => d.IdOfertaNavigation).WithMany(p => p.TipoHabitacion)
                 .HasForeignKey(d => d.IdOferta)
-                .HasConstraintName("FK__TipoHabit__idOfe__300424B4");
+                .HasConstraintName("FK__TipoHabit__idOfe__44FF419A");
 
             entity.HasOne(d => d.IdTemporadaNavigation).WithMany(p => p.TipoHabitacion)
                 .HasForeignKey(d => d.IdTemporada)
-                .HasConstraintName("FK__TipoHabit__idTem__30F848ED");
+                .HasConstraintName("FK__TipoHabit__idTem__45F365D3");
         });
 
         OnModelCreatingPartial(modelBuilder);

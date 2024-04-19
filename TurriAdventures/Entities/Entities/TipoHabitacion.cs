@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TurriAdventures.Entities;
+namespace Entities.Entities;
 
 public partial class TipoHabitacion
 {
@@ -20,8 +20,6 @@ public partial class TipoHabitacion
     public int? IdTemporada { get; set; }
 
     public virtual ICollection<Habitacion> Habitacion { get; set; } = new List<Habitacion>();
-
-    public virtual ICollection<Hotel> Hotel { get; set; } = new List<Hotel>();
 
     public virtual Oferta? IdOfertaNavigation { get; set; }
 

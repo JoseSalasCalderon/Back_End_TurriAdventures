@@ -763,8 +763,6 @@ C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriA
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.csproj.CoreCompileInputs.cache
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.RazorAssemblyInfo.cache
-C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.RazorAssemblyInfo.cs
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.sourcelink.json
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\staticwebassets.development.json

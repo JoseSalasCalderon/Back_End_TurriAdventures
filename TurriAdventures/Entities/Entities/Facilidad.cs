@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace TurriAdventures.Entities;
+namespace Entities.Entities;
 
 public partial class Facilidad
 {
@@ -10,6 +10,4 @@ public partial class Facilidad
     public string? DescripcionFacilidad { get; set; }
 
     public string? ImagenFacilidad { get; set; }
-
-    public virtual ICollection<Hotel> Hotel { get; set; } = new List<Hotel>();
 }
