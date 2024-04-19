@@ -142,7 +142,7 @@ namespace Data.Data
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearOferta @estadoHabitacion, @numeroHabitacion, @capacidadMaxima, @idTipoHabitacion", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec crearHabitacion @estadoHabitacion, @numeroHabitacion, @capacidadMaxima, @idTipoHabitacion", parameters);
 
                 return true; // Operación exitosa
             }
@@ -182,20 +182,21 @@ namespace Data.Data
             return habitacionCreada;
         }//BuscarHabitacion
 
-        public bool EditarHabitacion( int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
+        public bool EditarHabitacion(int idHabitacion, int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@estadoHabitacion", estadoHabitacion),
-                new SqlParameter("@numeroHabitacion", numeroHabitacion),
-                new SqlParameter("@capacidadMaxima", capacidadMaxima),
-                new SqlParameter("@idTipoHabitacion", idTipoHabitacion)
+                    new SqlParameter("@idHabitacion", idHabitacion),
+                    new SqlParameter("@estadoHabitacion", estadoHabitacion),
+                    new SqlParameter("@numeroHabitacion", numeroHabitacion),
+                    new SqlParameter("@capacidadMaxima", capacidadMaxima),
+                    new SqlParameter("@idTipoHabitacion", idTipoHabitacion)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarHabitacion @estadoHabitacion, @numeroHabitacion, @capacidadMaxima, @idTipoHabitacion", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarHabitacion @idHabitacion, @estadoHabitacion, @numeroHabitacion, @capacidadMaxima, @idTipoHabitacion", parameters);
 
                 return true; // Operación exitosa
             }
