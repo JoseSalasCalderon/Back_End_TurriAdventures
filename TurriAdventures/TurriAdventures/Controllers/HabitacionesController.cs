@@ -39,9 +39,9 @@ namespace TurriAdventures.Controllers
 
         // PUT: Actualiza una oferta existente
         [HttpPut("EditarHabitacion")]
-        public bool EditarHabitacion(int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
+        public bool EditarHabitacion(int idHabitacion, int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
-            return _businessSql.EditarHabitacion(estadoHabitacion,  numeroHabitacion,  capacidadMaxima, idTipoHabitacion);
+            return _businessSql.EditarHabitacion(idHabitacion, estadoHabitacion,  numeroHabitacion,  capacidadMaxima, idTipoHabitacion);
         }
 
         //// DELETE: Elimina una oferta existente
