@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Entities\\Entities.csproj": {}
+    "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Entities\\Entities.csproj": {
+    "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\50671\\.nuget\\packages\\",
-        "outputPath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\50671\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

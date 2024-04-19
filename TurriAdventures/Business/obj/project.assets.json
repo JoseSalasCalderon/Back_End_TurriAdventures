@@ -4802,19 +4802,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\50671\\.nuget\\packages\\": {}
+    "C:\\Users\\steve\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Business\\Business.csproj",
-      "packagesPath": "C:\\Users\\50671\\.nuget\\packages\\",
-      "outputPath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Business\\obj\\",
+      "projectPath": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\50671\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4828,8 +4828,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Data\\Data.csproj": {
-              "projectPath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\respaldos-backend\\r1\\TurriAdventures\\Data\\Data.csproj"
+            "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data.csproj"
             }
           }
         }
