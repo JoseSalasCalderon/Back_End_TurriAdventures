@@ -257,8 +257,6 @@ E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.RazorAssemblyInfo.cache
-E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.RazorAssemblyInfo.cs
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\TurriAdventures\bin\Debug\net8.0\appsettings.Development.json
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\TurriAdventures\bin\Debug\net8.0\appsettings.json
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\TurriAdventures\bin\Debug\net8.0\TurriAdventures.exe

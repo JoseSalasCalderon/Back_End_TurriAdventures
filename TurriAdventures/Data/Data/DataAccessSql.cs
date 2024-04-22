@@ -562,8 +562,8 @@ namespace Data.Data
         #region CRUDFacilidad
         public async Task<List<Facilidad>> ListarFacilidades()
         {
-            var habitaciones = await dbContext.Facilidad.FromSqlInterpolated($"exec listarFacilidades").ToListAsync();
-            return habitaciones;
+            var facilidades = await dbContext.Facilidad.FromSqlInterpolated($"exec listarFacilidades").ToListAsync();
+            return facilidades;
         }//ListarTipoHabitaciones
 
         public bool CrearFacilidad(String descripcionFacilidad, String imagenFacilidad)
@@ -614,18 +614,19 @@ namespace Data.Data
             return Administrador;
         }//Temporada
 
-        public bool modificarFacilidad(String descripcionFacilidad, String imagenFacilidad)
+        public bool modificarFacilidad(int idFacilidad, String descripcionFacilidad, String imagenFacilidad)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@usuario", descripcionFacilidad),
-                new SqlParameter("@contrasena", imagenFacilidad)
+                    new SqlParameter("@id", idFacilidad),
+                    new SqlParameter("@usuario", descripcionFacilidad),
+                    new SqlParameter("@contrasena", imagenFacilidad)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarFacilidad @usuario, @contrasena ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarFacilidad @id, @usuario, @contrasena ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -722,8 +723,8 @@ namespace Data.Data
         #region CRUDReservacion
         public async Task<List<Reservacion>> ListarReservas()
         {
-            var habitaciones = await dbContext.Reservacion.FromSqlInterpolated($"exec listarReservaciones").ToListAsync();
-            return habitaciones;
+            var reservas = await dbContext.Reservacion.FromSqlInterpolated($"exec listarReservaciones").ToListAsync();
+            return reservas;
         }//ListarReservaciones
 
         public bool CrearReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
