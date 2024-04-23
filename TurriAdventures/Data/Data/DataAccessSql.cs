@@ -643,9 +643,9 @@ namespace Data.Data
         #region CRUDNosotros
         public async Task<List<Nosotros>> ListarNosotros()
         {
-            var habitaciones = await dbContext.Nosotros.FromSqlInterpolated($"exec listarNosotros").ToListAsync();
-            return habitaciones;
-        }//ListarTipoHabitaciones
+            var nosotros = await dbContext.Nosotros.FromSqlInterpolated($"exec listarNosotros").ToListAsync();
+            return nosotros;
+        }//ListarNosotros
 
         public bool CrearNosotros(String descripcionNosotros, String imagenNosotros)
         {
@@ -653,12 +653,12 @@ namespace Data.Data
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@descripcionFacilidad", descripcionNosotros),
-                new SqlParameter("@imagenFacilidad", imagenNosotros)
+                new SqlParameter("@descripcionNosotros", descripcionNosotros),
+                new SqlParameter("@imagenNosotros", imagenNosotros)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearNosotros @descripcionFacilidad, @imagenFacilidad", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec crearNosotros @descripcionNosotros, @imagenNosotros", parameters);
 
                 return true; // Operación exitosa
             }
@@ -667,17 +667,17 @@ namespace Data.Data
                 // Manejar cualquier excepción que pueda ocurrir
                 return false; // Operación fallida
             }
-        }//CrearFacilidad
+        }//CrearNosotros
 
         public Nosotros BuscarNosotros(int idNosotros)
         {
             var parameters = new[]
             {
-                new SqlParameter("@idAdministrador", idNosotros)
+                new SqlParameter("@idNosotros", idNosotros)
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var nosotros = dbContext.Nosotros.FromSqlRaw("exec buscarNosotros @idAdministrador", parameters).AsEnumerable().FirstOrDefault();
+            var nosotros = dbContext.Nosotros.FromSqlRaw("exec buscarNosotros @idNosotros", parameters).AsEnumerable().FirstOrDefault();
 
             if (nosotros == null)
             {
@@ -695,18 +695,19 @@ namespace Data.Data
             return Administrador;
         }//Temporada
 
-        public bool modificarNostros(String descripcionNosotros, String imagenNosotros)
+        public bool modificarNosotros(int idNosotros, String descripcionNosotros, String imagenNosotros)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@usuario", descripcionNosotros),
-                new SqlParameter("@contrasena", imagenNosotros)
+                new SqlParameter("@idNosotros", idNosotros),
+                new SqlParameter("@descripcionNosotros", descripcionNosotros),
+                new SqlParameter("@imagenNosotros", imagenNosotros)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarNosotros @usuario, @contrasena ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarNosotros @idNosotros, @descripcionNosotros, @imagenNosotros ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -717,6 +718,26 @@ namespace Data.Data
             }
         }//EditarHabitacion
 
+       /* public bool EliminarNosotros(int idNosotros)
+        {
+            try
+            {
+                var parameters = new[]
+                {
+                    new SqlParameter("@idNosotros", idNosotros)
+                };
+
+                dbContext.Database.ExecuteSqlRawAsync("exec eliminarNosotros @idNosotros", parameters);
+
+                return true; // Operación exitosa
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción que pueda ocurrir
+                return false; // Operación fallida
+            }
+
+        }//EliminarNosotros*/
 
         #endregion
 

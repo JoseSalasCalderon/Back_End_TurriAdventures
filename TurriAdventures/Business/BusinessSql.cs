@@ -186,7 +186,27 @@ namespace Business.Business
 
         #endregion
 
+        #region CRUDNosotros
+        public Task<List<Nosotros>> ListarNosotros()
+        {
+            return _dataAccessSql.ListarNosotros();
+        }//ListarListarNosotros
 
+        public bool CrearNosotros(String descripcionNosotros, String imagenNosotros)
+        {
+            return _dataAccessSql.CrearNosotros(descripcionNosotros, imagenNosotros);
+        }//CrearNosotros
+
+        public Nosotros BuscarNosotros(int idNosotros)
+        {
+            return _dataAccessSql.BuscarNosotros(idNosotros);
+        }//BuscarNosotros
+
+        public bool modificarNosotros(int idNosotros, String descripcionNosotros, String imagenNosotros)
+        {
+            return _dataAccessSql.modificarNosotros(idNosotros, descripcionNosotros, imagenNosotros);
+        }//EditarNosotros
+        #endregion
 
 
     }
