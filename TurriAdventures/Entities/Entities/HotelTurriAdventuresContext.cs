@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Entities.Entities;
+using TurriAdventures.Entities;
 
 namespace Entities.Entities;
 
@@ -36,6 +38,9 @@ public partial class HotelTurriAdventuresContext : DbContext
     public virtual DbSet<Temporada> Temporada { get; set; }
 
     public virtual DbSet<TipoHabitacion> TipoHabitacion { get; set; }
+
+    public virtual DbSet<Contacto> Contacto { get; set; }
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -252,6 +257,33 @@ public partial class HotelTurriAdventuresContext : DbContext
             entity.HasOne(d => d.IdTemporadaNavigation).WithMany(p => p.TipoHabitacion)
                 .HasForeignKey(d => d.IdTemporada)
                 .HasConstraintName("FK__TipoHabit__idTem__45F365D3");
+        });
+
+        
+        modelBuilder.Entity<Contacto>(entity =>
+        {
+            entity.HasKey(e => e.IdContacto).HasName("PK__Contacto__4B1329C70D6DFD37");
+
+            entity.Property(e => e.IdContacto)
+                .HasMaxLength(8)
+                .IsUnicode(false)
+                .HasColumnName("idContacto");
+            entity.Property(e => e.Telefono1)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("telefono1");
+            entity.Property(e => e.Telefono2)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("telefono2");
+            entity.Property(e => e.ApartadoPostal)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("apartadoPostal");
+            entity.Property(e => e.Email)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("email");
         });
 
         OnModelCreatingPartial(modelBuilder);
