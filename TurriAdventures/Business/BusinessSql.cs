@@ -229,5 +229,35 @@ namespace Business.Business
             return _dataAccessSql.EliminarContacto(idContacto);
         }
         #endregion
+
+        #region CRUDAdministrador
+        public Task<List<Administrador>> ListarAdministradores()
+        {
+            return _dataAccessSql.ListarAdministradores();
+        }//ListarListarAdministradores
+
+        public Administrador BuscarAdministrador(int idAdministrador)
+        {
+            return _dataAccessSql.BuscarAdministrador(idAdministrador);
+        }//BuscarAdministrador
+
+        public bool CrearAdministrador(String usuario, String contrasena)
+        {
+            return _dataAccessSql.CrearAdministrador(usuario, contrasena);
+        }//CrearAdministrador
+
+        public bool modificarAdministrador(int idAdministrador, String usuario, String contrasena)
+        {
+            return _dataAccessSql.ModificarAdministrador(idAdministrador, usuario, contrasena);
+        }//EditarContacto
+
+        public bool EliminarAdministrador(int idAdministrador)
+        {
+            return _dataAccessSql.EliminarAdministrador(idAdministrador);
+        }//EliminarAdministrador
+
+
+        #endregion
+
     }
 }

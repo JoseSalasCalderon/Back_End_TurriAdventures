@@ -479,11 +479,11 @@ namespace Data.Data
         #endregion
 
         #region CRUDAdministrador
-        public async Task<List<Administrador>> ListarAdministrador()
+        public async Task<List<Administrador>> ListarAdministradores()
         {
             var habitaciones = await dbContext.Administrador.FromSqlInterpolated($"exec listarAdministradores").ToListAsync();
             return habitaciones;
-        }//ListarTipoHabitaciones
+        }//ListarAdministradores
 
         public bool CrearAdministrador(String usuario, String contrasena)
         {
@@ -515,7 +515,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var administrador = dbContext.Administrador.FromSqlRaw("exec buscarAdministradorPorID @@idAdministrador", parameters).AsEnumerable().FirstOrDefault();
+            var administrador = dbContext.Administrador.FromSqlRaw("exec buscarAdministradorPorID @idAdministrador", parameters).AsEnumerable().FirstOrDefault();
 
             if (administrador == null)
             {
@@ -532,20 +532,21 @@ namespace Data.Data
             };
 
             return Administrador;
-        }//Temporada
+        }//BuscarAdministrador
 
-        public bool EditarAdministrador(String usuario, String contrasena)
+        public bool ModificarAdministrador(int idAdministrador,String usuario, String contrasena)
         {
             try
             {
                 var parameters = new[]
                 {
+                new SqlParameter("@idAdministrador", idAdministrador),
                 new SqlParameter("@usuario", usuario),
                 new SqlParameter("@contrasena", contrasena)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarAdministrador @usuario, @contrasena ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarAdministrador @idAdministrador, @usuario, @contrasena ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -554,9 +555,28 @@ namespace Data.Data
                 // Manejar cualquier excepción que pueda ocurrir
                 return false; // Operación fallida
             }
-        }//EditarHabitacion
+        }//ModificarAdministrador
 
+        public bool EliminarAdministrador(int idAdministrador)
+        {
+            try
+            {
+                var parameters = new[]
+                {
+                     new SqlParameter("@idAdministrador", idAdministrador)
+                 };
 
+                dbContext.Database.ExecuteSqlRawAsync("exec eliminarAdministrador @idAdministrador", parameters);
+
+                return true; // Operación exitosa
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción que pueda ocurrir
+                return false; // Operación fallida
+            }
+
+        }//EliminarAdministrador
         #endregion
 
         #region CRUDFacilidad
