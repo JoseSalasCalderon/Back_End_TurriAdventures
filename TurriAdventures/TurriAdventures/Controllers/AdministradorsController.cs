@@ -25,25 +25,25 @@ namespace TurriAdventures.Controllers
             return _businessSql.ListarAdministradores();
         }
 
-        [HttpGet("BuscarAdministrador/{id}")]
-        public async Task<Administrador> BuscarAdministrador(int id)
+        [HttpGet("BuscarAdministrador/{usuario}")]
+        public async Task<Administrador> BuscarAdministrador(String usuario)
         {
-            return _businessSql.BuscarAdministrador(id);
+            return _businessSql.BuscarAdministrador(usuario);
         }
 
         [HttpPost("CrearAdministrador")]
-        public bool CrearAdministrador(String usuario, String contrasena)
+        public bool CrearAdministrador(Administrador administrador)
         {
-            return _businessSql.CrearAdministrador(usuario, contrasena);
+            return _businessSql.CrearAdministrador(administrador);
         }
 
         [HttpPut("EditarAdministrador")]
-        public bool EditarAdministrador(int idAdministrador, String usuario, String contrasena)
+        public bool EditarAdministrador(Administrador administrador)
         {
-            return _businessSql.modificarAdministrador(idAdministrador, usuario, contrasena);
+            return _businessSql.modificarAdministrador(administrador);
         }
 
-        [HttpDelete("EliminarAdministrador")]
+        [HttpDelete("EliminarAdministrador/{id}")]
         public bool EliminarAdministrador(int id)
         {
             return _businessSql.EliminarAdministrador(id);

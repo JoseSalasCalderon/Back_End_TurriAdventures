@@ -192,9 +192,9 @@ namespace Business.Business
             return _dataAccessSql.ListarNosotros();
         }//ListarListarNosotros
 
-        public bool CrearNosotros(String descripcionNosotros, String imagenNosotros)
+        public bool CrearNosotros(Nosotros nosotros)
         {
-            return _dataAccessSql.CrearNosotros(descripcionNosotros, imagenNosotros);
+            return _dataAccessSql.CrearNosotros(nosotros);
         }//CrearNosotros
 
         public Nosotros BuscarNosotros(int idNosotros)
@@ -202,9 +202,9 @@ namespace Business.Business
             return _dataAccessSql.BuscarNosotros(idNosotros);
         }//BuscarNosotros
 
-        public bool modificarNosotros(int idNosotros, String descripcionNosotros, String imagenNosotros)
+        public bool modificarNosotros(Nosotros nosotros)
         {
-            return _dataAccessSql.modificarNosotros(idNosotros, descripcionNosotros, imagenNosotros);
+            return _dataAccessSql.modificarNosotros(nosotros);
         }//EditarNosotros
         #endregion
 
@@ -236,19 +236,19 @@ namespace Business.Business
             return _dataAccessSql.ListarAdministradores();
         }//ListarListarAdministradores
 
-        public Administrador BuscarAdministrador(int idAdministrador)
+        public Administrador BuscarAdministrador(String usuario)
         {
-            return _dataAccessSql.BuscarAdministrador(idAdministrador);
+            return _dataAccessSql.BuscarAdministrador(usuario);
         }//BuscarAdministrador
 
-        public bool CrearAdministrador(String usuario, String contrasena)
+        public bool CrearAdministrador(Administrador administrador)
         {
-            return _dataAccessSql.CrearAdministrador(usuario, contrasena);
+            return _dataAccessSql.CrearAdministrador(administrador);
         }//CrearAdministrador
 
-        public bool modificarAdministrador(int idAdministrador, String usuario, String contrasena)
+        public bool modificarAdministrador(Administrador administrador)
         {
-            return _dataAccessSql.ModificarAdministrador(idAdministrador, usuario, contrasena);
+            return _dataAccessSql.ModificarAdministrador(administrador);
         }//EditarContacto
 
         public bool EliminarAdministrador(int idAdministrador)

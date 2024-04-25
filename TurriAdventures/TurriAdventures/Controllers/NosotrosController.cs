@@ -27,15 +27,15 @@ namespace TurriAdventures.Controllers
         }
 
         [HttpPost("CrearNosotros")]
-        public bool CrearNosotros(String descripcionNosotros, String imagenNosotros)
+        public bool CrearNosotros(Nosotros nosotros)
         {
-            return _businessSql.CrearNosotros(descripcionNosotros, imagenNosotros);
+            return _businessSql.CrearNosotros(nosotros);
         }
 
         [HttpPut("EditarNosotros")]
-        public bool EditarNosotros(int idNosotros, String descripcionNosotros, String imagenNosotros)
+        public bool EditarNosotros(Nosotros nosotros)
         {
-            return _businessSql.modificarNosotros(idNosotros, descripcionNosotros, imagenNosotros);
+            return _businessSql.modificarNosotros(nosotros);
         }
 
         //[HttpDelete("EliminarNosotros")]

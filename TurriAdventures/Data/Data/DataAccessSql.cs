@@ -485,14 +485,14 @@ namespace Data.Data
             return habitaciones;
         }//ListarAdministradores
 
-        public bool CrearAdministrador(String usuario, String contrasena)
+        public bool CrearAdministrador(Administrador administrador)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@usuario", usuario),
-                new SqlParameter("@contrasena", contrasena)
+                new SqlParameter("@usuario", administrador.Usuario),
+                new SqlParameter("@contrasena", administrador.Contrasena)
                 };
 
                 // Ejecutar un comando SQL personalizado
@@ -507,15 +507,15 @@ namespace Data.Data
             }
         }//CrearAdministrador
 
-        public Administrador BuscarAdministrador(int idAdministrador)
+        public Administrador BuscarAdministrador(String usuario)
         {
             var parameters = new[]
             {
-                new SqlParameter("@idAdministrador", idAdministrador)
+                new SqlParameter("@usuario", usuario)
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var administrador = dbContext.Administrador.FromSqlRaw("exec buscarAdministradorPorID @idAdministrador", parameters).AsEnumerable().FirstOrDefault();
+            var administrador = dbContext.Administrador.FromSqlRaw("exec buscarAdministradorPorUsuario @usuario", parameters).AsEnumerable().FirstOrDefault();
 
             if (administrador == null)
             {
@@ -534,15 +534,15 @@ namespace Data.Data
             return Administrador;
         }//BuscarAdministrador
 
-        public bool ModificarAdministrador(int idAdministrador,String usuario, String contrasena)
+        public bool ModificarAdministrador(Administrador administrador)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@idAdministrador", idAdministrador),
-                new SqlParameter("@usuario", usuario),
-                new SqlParameter("@contrasena", contrasena)
+                new SqlParameter("@idAdministrador", administrador.IdAdministrador),
+                new SqlParameter("@usuario", administrador.Usuario),
+                new SqlParameter("@contrasena", administrador.Contrasena)
                 };
 
                 // Ejecutar un comando SQL personalizado
@@ -667,14 +667,14 @@ namespace Data.Data
             return nosotros;
         }//ListarNosotros
 
-        public bool CrearNosotros(String descripcionNosotros, String imagenNosotros)
+        public bool CrearNosotros(Nosotros nosotros)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@descripcionNosotros", descripcionNosotros),
-                new SqlParameter("@imagenNosotros", imagenNosotros)
+                new SqlParameter("@descripcionNosotros", nosotros.DescripcionNosotros),
+                new SqlParameter("@imagenNosotros", nosotros.ImagenNosotros)
                 };
 
                 // Ejecutar un comando SQL personalizado
@@ -715,15 +715,15 @@ namespace Data.Data
             return Administrador;
         }//Temporada
 
-        public bool modificarNosotros(int idNosotros, String descripcionNosotros, String imagenNosotros)
+        public bool modificarNosotros(Nosotros nosotros)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@idNosotros", idNosotros),
-                new SqlParameter("@descripcionNosotros", descripcionNosotros),
-                new SqlParameter("@imagenNosotros", imagenNosotros)
+                new SqlParameter("@idNosotros", nosotros.IdNosotros),
+                new SqlParameter("@descripcionNosotros", nosotros.DescripcionNosotros),
+                new SqlParameter("@imagenNosotros", nosotros.ImagenNosotros)
                 };
 
                 // Ejecutar un comando SQL personalizado
