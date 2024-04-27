@@ -65,6 +65,11 @@ namespace Business.Business
             return _dataAccessSql.BuscarHabitacion(idHabitacion);
         }
 
+        public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
+        {
+            return _dataAccessSql.ConsultarDisponibilidadHabitaciones(fechaLlegada, fechaSalida, tipo_habitacion_id);
+        }
+
         public bool EditarHabitacion(int idHabitacion, int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
             return _dataAccessSql.EditarHabitacion(idHabitacion, estadoHabitacion, numeroHabitacion, capacidadMaxima, idTipoHabitacion);
@@ -169,9 +174,9 @@ namespace Business.Business
             return _dataAccessSql.ListarReservas();
         }
 
-        public bool CrearReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
+        public bool CrearReserva(Reservacion reservacion)
         {
-            return _dataAccessSql.CrearReserva(fechaLlegada, fechaSalida, estadoReservacion, idHabitacion, idCliente);
+            return _dataAccessSql.CrearReserva(reservacion);
         }
 
         public Reservacion BuscarReservaPorIdCliente(String idCliente)
@@ -179,15 +184,85 @@ namespace Business.Business
             return _dataAccessSql.BuscarReservaPorIdCliente(idCliente);
         }
 
-        public bool modificarReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
+        public bool modificarReserva(Reservacion reservacion)
         {
-            return _dataAccessSql.modificarReserva(fechaLlegada, fechaSalida, estadoReservacion,idHabitacion,idCliente);
+            return _dataAccessSql.modificarReserva(reservacion);
         }
 
         #endregion
 
+        #region CRUDNosotros
+        public Task<List<Nosotros>> ListarNosotros()
+        {
+            return _dataAccessSql.ListarNosotros();
+        }//ListarListarNosotros
+
+        public bool CrearNosotros(Nosotros nosotros)
+        {
+            return _dataAccessSql.CrearNosotros(nosotros);
+        }//CrearNosotros
+
+        public Nosotros BuscarNosotros(int idNosotros)
+        {
+            return _dataAccessSql.BuscarNosotros(idNosotros);
+        }//BuscarNosotros
+
+        public bool modificarNosotros(Nosotros nosotros)
+        {
+            return _dataAccessSql.modificarNosotros(nosotros);
+        }//EditarNosotros
+        #endregion
+
+        #region CRUDContacto
+        public Task<List<Contacto>> ListarContactos()
+        {
+            return _dataAccessSql.ListarContactos();
+        }//ListarListarContactos
+
+        public bool CrearContacto(String telefono1, String telefono2, String apartadoPostal, String email)
+        {
+            return _dataAccessSql.CrearContacto(telefono1, telefono2, apartadoPostal, email);
+        }//CrearContacto
+
+        public bool modificarContacto(int idContacto, String telefono1, String telefono2, String apartadoPostal, String email)
+        {
+            return _dataAccessSql.modificarContacto(idContacto, telefono1, telefono2, apartadoPostal, email);
+        }//EditarContacto
+
+        public bool EliminarContacto(int idContacto)
+        {
+            return _dataAccessSql.EliminarContacto(idContacto);
+        }
+        #endregion
+
+        #region CRUDAdministrador
+        public Task<List<Administrador>> ListarAdministradores()
+        {
+            return _dataAccessSql.ListarAdministradores();
+        }//ListarListarAdministradores
+
+        public Administrador BuscarAdministrador(String usuario)
+        {
+            return _dataAccessSql.BuscarAdministrador(usuario);
+        }//BuscarAdministrador
+
+        public bool CrearAdministrador(Administrador administrador)
+        {
+            return _dataAccessSql.CrearAdministrador(administrador);
+        }//CrearAdministrador
+
+        public bool modificarAdministrador(Administrador administrador)
+        {
+            return _dataAccessSql.ModificarAdministrador(administrador);
+        }//EditarContacto
+
+        public bool EliminarAdministrador(int idAdministrador)
+        {
+            return _dataAccessSql.EliminarAdministrador(idAdministrador);
+        }//EliminarAdministrador
 
 
+        #endregion
 
     }
 }
