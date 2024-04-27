@@ -128,7 +128,7 @@ namespace Data.Data
         {
             var habitaciones = await dbContext.Habitacion.FromSqlInterpolated($"exec listarHabitacion").ToListAsync();
             return habitaciones;
-        }//ListarOfertas
+        }//ListarHabitaciones
 
         public bool CrearHabitacion(int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
@@ -182,6 +182,38 @@ namespace Data.Data
 
             return habitacionCreada;
         }//BuscarHabitacion
+
+        public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@tipo_habitacion_id", tipo_habitacion_id),
+                 new SqlParameter("@fechaLlegada", fechaLlegada),
+                new SqlParameter("@fechaSalida", fechaSalida)
+            };
+
+            // Ejecutar el procedimiento almacenado y obtener la habitacion
+            var habitacionObtenida = dbContext.Habitacion.FromSqlRaw("exec consultarDisponibilidadHabitaciones @fechaLlegada, @fechaSalida, @tipo_habitacion_id", parameters).AsEnumerable().FirstOrDefault();
+
+            if (habitacionObtenida == null)
+            {
+                // Manejar el caso donde no se encontró ninguna habitacion
+                return null;
+            }
+
+            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
+            var habitacionCreada = new Habitacion
+            {
+                IdHabitacion = habitacionObtenida.IdHabitacion,
+                EstadoHabitacion = habitacionObtenida.EstadoHabitacion,
+                NumeroHabitacion = habitacionObtenida.NumeroHabitacion,
+                CapacidadMaxima = habitacionObtenida.CapacidadMaxima,
+                IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion,
+            };
+
+            return habitacionCreada;
+        }//ConsultarDisponibilidadHabitaciones
+
 
         public bool EditarHabitacion(int idHabitacion, int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
@@ -768,21 +800,21 @@ namespace Data.Data
             return reservas;
         }//ListarReservaciones
 
-        public bool CrearReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
+        public bool CrearReserva(Reservacion reservacion)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@fechaLlegada", fechaLlegada),
-                new SqlParameter("@fechaSalida", fechaSalida),
-                new SqlParameter("@estadoReservacion", estadoReservacion),
-                new SqlParameter("id", idHabitacion),
-                new SqlParameter ("idCliente", idCliente)
+                new SqlParameter("@fechaLlegada", reservacion.FechaLlegada),
+                new SqlParameter("@fechaSalida", reservacion.FechaSalida),
+                new SqlParameter("@estadoReservacion", reservacion.EstadoReservacion),
+                new SqlParameter("@idHabitacion", reservacion.IdHabitacion),
+                new SqlParameter ("@idCliente", reservacion.IdCliente)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearReservacion @fechaLlegada, @fechaSalida, @estadoReservacion, @id, @idCliente", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec crearReservacion @fechaLlegada, @fechaSalida, @estadoReservacion, @idHabitacion, @idCliente", parameters);
 
                 return true; // Operación exitosa
             }
@@ -824,16 +856,16 @@ namespace Data.Data
             return Administrador;
         }//Temporada
 
-        public bool modificarReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
+        public bool modificarReserva(Reservacion reservacion)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@fechaLlegada", fechaLlegada),
-                new SqlParameter("@fechaSalida", fechaSalida),
-                new SqlParameter("@estadoReservacion", estadoReservacion),
-                new SqlParameter("id", idHabitacion),
+                new SqlParameter("@fechaLlegada", reservacion.FechaLlegada),
+                new SqlParameter("@fechaSalida", reservacion.FechaSalida),
+                new SqlParameter("@estadoReservacion", reservacion.EstadoReservacion),
+                new SqlParameter("id", reservacion.IdHabitacion),
                 };
 
                 // Ejecutar un comando SQL personalizado

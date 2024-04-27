@@ -65,6 +65,11 @@ namespace Business.Business
             return _dataAccessSql.BuscarHabitacion(idHabitacion);
         }
 
+        public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
+        {
+            return _dataAccessSql.ConsultarDisponibilidadHabitaciones(fechaLlegada, fechaSalida, tipo_habitacion_id);
+        }
+
         public bool EditarHabitacion(int idHabitacion, int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
             return _dataAccessSql.EditarHabitacion(idHabitacion, estadoHabitacion, numeroHabitacion, capacidadMaxima, idTipoHabitacion);
@@ -169,9 +174,9 @@ namespace Business.Business
             return _dataAccessSql.ListarReservas();
         }
 
-        public bool CrearReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
+        public bool CrearReserva(Reservacion reservacion)
         {
-            return _dataAccessSql.CrearReserva(fechaLlegada, fechaSalida, estadoReservacion, idHabitacion, idCliente);
+            return _dataAccessSql.CrearReserva(reservacion);
         }
 
         public Reservacion BuscarReservaPorIdCliente(String idCliente)
@@ -179,9 +184,9 @@ namespace Business.Business
             return _dataAccessSql.BuscarReservaPorIdCliente(idCliente);
         }
 
-        public bool modificarReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
+        public bool modificarReserva(Reservacion reservacion)
         {
-            return _dataAccessSql.modificarReserva(fechaLlegada, fechaSalida, estadoReservacion,idHabitacion,idCliente);
+            return _dataAccessSql.modificarReserva(reservacion);
         }
 
         #endregion

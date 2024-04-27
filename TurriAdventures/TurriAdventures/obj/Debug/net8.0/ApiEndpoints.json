@@ -623,6 +623,42 @@
   },
   {
     "ContainingType": "TurriAdventures.Controllers.HabitacionesController",
+    "Method": "ConsultarDisponibilidadHabitaciones",
+    "RelativePath": "Habitaciones/ConsultarDisponibilidadHabitaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fechaLlegada",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaSalida",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tipo_habitacion_id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.Entities.Habitacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.HabitacionesController",
     "Method": "CrearHabitacion",
     "RelativePath": "Habitaciones/CrearHabitacion",
     "HttpMethod": "POST",
@@ -922,29 +958,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "fechaLlegada",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "fechaSalida",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "estadoReservacion",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "idHabitacion",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "idCliente",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "reservacion",
+        "Type": "Entities.Entities.Reservacion",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -988,29 +1004,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "fechaLlegada",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "fechaSalida",
-        "Type": "System.DateTime",
-        "IsRequired": false
-      },
-      {
-        "Name": "estadoReservacion",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "idHabitacion",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "idCliente",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "reservacion",
+        "Type": "Entities.Entities.Reservacion",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
