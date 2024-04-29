@@ -32,10 +32,10 @@ namespace TurriAdventures.Controllers
         }
 
         // POST: Crea una nueva oferta
-        [HttpPost("CrearClientes")]
-        public bool CrearClientes(String cedula, String nombre, String apellidos, String email)
+        [HttpPost("CrearCliente")]
+        public bool CrearClientes(Cliente cliente)
         {
-            return _businessSql.CrearClientes(cedula, nombre, apellidos, email);
+            return _businessSql.CrearCliente(cliente);
         }
 
         // PUT: Actualiza una oferta existente

@@ -129,9 +129,9 @@ namespace Business.Business
             return _dataAccessSql.ListarClientes();
         }
 
-        public bool CrearClientes( String cedula, String nombre, String apellidos, String email)
+        public bool CrearCliente(Cliente cliente)
         {
-            return _dataAccessSql.CrearClientes(cedula, nombre, apellidos, email);
+            return _dataAccessSql.CrearCliente(cliente);
         }
 
         public Cliente BuscarCliente(String idCliente)

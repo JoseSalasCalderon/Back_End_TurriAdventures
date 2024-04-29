@@ -496,30 +496,15 @@
   {
     "ContainingType": "TurriAdventures.Controllers.ClientesController",
     "Method": "CrearClientes",
-    "RelativePath": "Clientes/CrearClientes",
+    "RelativePath": "Clientes/CrearCliente",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "cedula",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "nombre",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "apellidos",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "cliente",
+        "Type": "Entities.Entities.Cliente",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [

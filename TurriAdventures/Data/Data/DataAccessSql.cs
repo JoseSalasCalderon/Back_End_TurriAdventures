@@ -429,22 +429,22 @@ namespace Data.Data
         {
             var habitaciones = await dbContext.Cliente.FromSqlInterpolated($"exec listarClientes").ToListAsync();
             return habitaciones;
-        }//ListarTipoHabitaciones
+        }//ListarClientes
 
-        public bool CrearClientes(String cedula,String nombre, String apellidos, String email)
+        public bool CrearCliente(Cliente cliente )
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@cedula", cedula),
-                new SqlParameter("@nombre", nombre),
-                new SqlParameter("@apellidos", apellidos),
-                new SqlParameter("@email", email)
+                new SqlParameter("@idCliente", cliente.IdCliente),
+                new SqlParameter("@nombre", cliente.Nombre),
+                new SqlParameter("@apellidos", cliente.Apellidos),
+                new SqlParameter("@email", cliente.Email)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearCliente @cedula, @nombre, @apellidos, @email", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec crearCliente @idCliente, @nombre, @apellidos, @email", parameters);
 
                 return true; // Operación exitosa
             }
