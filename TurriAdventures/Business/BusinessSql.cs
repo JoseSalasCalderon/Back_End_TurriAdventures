@@ -65,6 +65,11 @@ namespace Business.Business
             return _dataAccessSql.BuscarHabitacion(idHabitacion);
         }
 
+        public Habitacion BuscarHabitacionPorIdReserva(int idReserva)
+        { 
+            return _dataAccessSql.BuscarHabitacionPorIdReserva(idReserva);
+        }
+
         public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
         {
             return _dataAccessSql.ConsultarDisponibilidadHabitaciones(fechaLlegada, fechaSalida, tipo_habitacion_id);
@@ -137,6 +142,11 @@ namespace Business.Business
         public Cliente BuscarCliente(String idCliente)
         {
             return _dataAccessSql.BuscarCliente(idCliente);
+        }
+
+        public Cliente BuscarClientePorIdReserva(int idReserva)
+        {
+            return _dataAccessSql.BuscarClientePorIdReserva(idReserva);
         }
 
         public bool EditarCliente(String id,String nombre, String apellidos, String email)

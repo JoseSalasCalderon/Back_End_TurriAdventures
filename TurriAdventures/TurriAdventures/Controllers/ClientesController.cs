@@ -31,6 +31,12 @@ namespace TurriAdventures.Controllers
             return _businessSql.BuscarCliente(id);
         }
 
+        [HttpGet("BuscarClientePorIdReservacion/{id}")]
+        public async Task<Cliente> BuscarClientePorIdReservacion(int id)
+        {
+            return _businessSql.BuscarClientePorIdReserva(id);
+        }
+
         // POST: Crea una nueva oferta
         [HttpPost("CrearClientes")]
         public bool CrearClientes(String cedula, String nombre, String apellidos, String email)
