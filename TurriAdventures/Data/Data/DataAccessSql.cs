@@ -212,6 +212,7 @@ namespace Data.Data
             return habitacionCreada;
         }//BuscarHabitacion
 
+
         public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
         {
             var parameters = new[]
@@ -331,6 +332,37 @@ namespace Data.Data
                 ImagenTipoHabitacion= habitacionObtenida.ImagenTipoHabitacion,
                 IdOferta= habitacionObtenida.IdOferta,
                 IdTemporada= habitacionObtenida.IdTemporada
+            };
+
+            return tipoHabitacionCreada;
+        }//BuscarHabitacion
+
+        public TipoHabitacion BuscarTipoHabitacionPorHabitacion(int idHabitacion)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@IdHabitacion", idHabitacion)
+            };
+
+            // Ejecutar el procedimiento almacenado y obtener la habitacion
+            var habitacionObtenida = dbContext.TipoHabitacion.FromSqlRaw("exec buscarTipoHabitacionPorIdHabitacion @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
+
+            if (habitacionObtenida == null)
+            {
+                // Manejar el caso donde no se encontró ninguna habitacion
+                return null;
+            }
+
+            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
+            var tipoHabitacionCreada = new TipoHabitacion
+            {
+                IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion, // Aquí puedes asignar el id que recibiste como parámetro
+                NombreTipoHabitacion = habitacionObtenida.NombreTipoHabitacion,
+                Precio = habitacionObtenida.Precio,
+                DescripcionTipoHabitacion = habitacionObtenida.DescripcionTipoHabitacion,
+                ImagenTipoHabitacion = habitacionObtenida.ImagenTipoHabitacion,
+                IdOferta = habitacionObtenida.IdOferta,
+                IdTemporada = habitacionObtenida.IdTemporada
             };
 
             return tipoHabitacionCreada;

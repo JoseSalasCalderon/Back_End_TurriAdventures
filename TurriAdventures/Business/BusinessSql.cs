@@ -98,7 +98,12 @@ namespace Business.Business
             return _dataAccessSql.BuscarTipoHabitacion(idHabitacion);
         }
 
-        public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
+        public TipoHabitacion BuscarTipoHabitacionPorHabitacion(int idHabitacion)
+        {
+            return _dataAccessSql.BuscarTipoHabitacionPorHabitacion(idHabitacion);
+        }
+
+            public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
         {
             return _dataAccessSql.EditarTipoHabitacion(idHabitacion, nombreTipoHabitacion, precio, descripcionTipoHabitacion, imagenTipoHabitacion, idOferta, idTemporada);
         }
