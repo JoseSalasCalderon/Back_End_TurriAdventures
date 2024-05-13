@@ -387,8 +387,16 @@ namespace Data.Data
                 // Manejar cualquier excepción que pueda ocurrir
                 return false; // Operación fallida
             }
+
         }//EditarHabitacion
 
+        public async Task<Temporada> eliminarTemporada(int id)
+        {
+            var parameter = new List<SqlParameter>();
+            parameter.Add(new SqlParameter("@Id", id));
+            Temporada Reporte1 = dbContext.Temporada.FromSqlRaw(@"exec eliminarTemporada Id", parameter.ToArray()).ToList().FirstOrDefault();
+            return Reporte1;
+        }
 
         #endregion
 

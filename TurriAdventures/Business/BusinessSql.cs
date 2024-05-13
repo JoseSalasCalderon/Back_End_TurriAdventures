@@ -1,5 +1,7 @@
 ﻿using Data.Data;
 using Entities.Entities;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -112,6 +114,12 @@ namespace Business.Business
         public bool EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             return _dataAccessSql.EditarTemporada(idTemporada, descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
+        }
+
+
+        public  Task<Temporada> eliminarTemporada(int id)
+        {
+            return _dataAccessSql.eliminarTemporada(id);
         }
 
         #endregion
