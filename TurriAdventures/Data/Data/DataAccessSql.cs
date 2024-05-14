@@ -183,6 +183,36 @@ namespace Data.Data
             return habitacionCreada;
         }//BuscarHabitacion
 
+        public Habitacion BuscarHabitacionPorIdReserva(int idReserva)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@IdReserva", idReserva)
+            };
+
+            // Ejecutar el procedimiento almacenado y obtener la habitacion
+            var habitacionObtenida = dbContext.Habitacion.FromSqlRaw("exec buscarHabitacionPorReserva @IdReserva", parameters).AsEnumerable().FirstOrDefault();
+
+            if (habitacionObtenida == null)
+            {
+                // Manejar el caso donde no se encontró ninguna habitacion
+                return null;
+            }
+
+            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
+            var habitacionCreada = new Habitacion
+            {
+                IdHabitacion = habitacionObtenida.IdHabitacion,
+                EstadoHabitacion = habitacionObtenida.EstadoHabitacion,
+                NumeroHabitacion = habitacionObtenida.NumeroHabitacion,
+                CapacidadMaxima = habitacionObtenida.CapacidadMaxima,
+                IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion,
+            };
+
+            return habitacionCreada;
+        }//BuscarHabitacion
+
+
         public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
         {
             var parameters = new[]
@@ -302,6 +332,37 @@ namespace Data.Data
                 ImagenTipoHabitacion= habitacionObtenida.ImagenTipoHabitacion,
                 IdOferta= habitacionObtenida.IdOferta,
                 IdTemporada= habitacionObtenida.IdTemporada
+            };
+
+            return tipoHabitacionCreada;
+        }//BuscarHabitacion
+
+        public TipoHabitacion BuscarTipoHabitacionPorHabitacion(int idHabitacion)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@IdHabitacion", idHabitacion)
+            };
+
+            // Ejecutar el procedimiento almacenado y obtener la habitacion
+            var habitacionObtenida = dbContext.TipoHabitacion.FromSqlRaw("exec buscarTipoHabitacionPorIdHabitacion @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
+
+            if (habitacionObtenida == null)
+            {
+                // Manejar el caso donde no se encontró ninguna habitacion
+                return null;
+            }
+
+            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
+            var tipoHabitacionCreada = new TipoHabitacion
+            {
+                IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion, // Aquí puedes asignar el id que recibiste como parámetro
+                NombreTipoHabitacion = habitacionObtenida.NombreTipoHabitacion,
+                Precio = habitacionObtenida.Precio,
+                DescripcionTipoHabitacion = habitacionObtenida.DescripcionTipoHabitacion,
+                ImagenTipoHabitacion = habitacionObtenida.ImagenTipoHabitacion,
+                IdOferta = habitacionObtenida.IdOferta,
+                IdTemporada = habitacionObtenida.IdTemporada
             };
 
             return tipoHabitacionCreada;
@@ -478,6 +539,34 @@ namespace Data.Data
                 Nombre= cliente.Nombre,
                 Apellidos= cliente.Apellidos,
                 Email= cliente.Email
+            };
+
+            return clienteCreado;
+        }//Temporada
+
+        public Cliente BuscarClientePorIdReserva(int idReserva)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@IdReserva", idReserva)
+            };
+
+            // Ejecutar el procedimiento almacenado y obtener la habitacion
+            var cliente = dbContext.Cliente.FromSqlRaw("exec buscarClientePorIdReservacion @IdReserva", parameters).AsEnumerable().FirstOrDefault();
+
+            if (cliente == null)
+            {
+                // Manejar el caso donde no se encontró ninguna habitacion
+                return null;
+            }
+
+            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
+            var clienteCreado = new Cliente
+            {
+                IdCliente = cliente.IdCliente,
+                Nombre = cliente.Nombre,
+                Apellidos = cliente.Apellidos,
+                Email = cliente.Email
             };
 
             return clienteCreado;

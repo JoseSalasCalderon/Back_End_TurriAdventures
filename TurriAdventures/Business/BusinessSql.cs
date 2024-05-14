@@ -65,6 +65,11 @@ namespace Business.Business
             return _dataAccessSql.BuscarHabitacion(idHabitacion);
         }
 
+        public Habitacion BuscarHabitacionPorIdReserva(int idReserva)
+        { 
+            return _dataAccessSql.BuscarHabitacionPorIdReserva(idReserva);
+        }
+
         public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
         {
             return _dataAccessSql.ConsultarDisponibilidadHabitaciones(fechaLlegada, fechaSalida, tipo_habitacion_id);
@@ -93,7 +98,12 @@ namespace Business.Business
             return _dataAccessSql.BuscarTipoHabitacion(idHabitacion);
         }
 
-        public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
+        public TipoHabitacion BuscarTipoHabitacionPorHabitacion(int idHabitacion)
+        {
+            return _dataAccessSql.BuscarTipoHabitacionPorHabitacion(idHabitacion);
+        }
+
+            public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
         {
             return _dataAccessSql.EditarTipoHabitacion(idHabitacion, nombreTipoHabitacion, precio, descripcionTipoHabitacion, imagenTipoHabitacion, idOferta, idTemporada);
         }
@@ -137,6 +147,11 @@ namespace Business.Business
         public Cliente BuscarCliente(String idCliente)
         {
             return _dataAccessSql.BuscarCliente(idCliente);
+        }
+
+        public Cliente BuscarClientePorIdReserva(int idReserva)
+        {
+            return _dataAccessSql.BuscarClientePorIdReserva(idReserva);
         }
 
         public bool EditarCliente(String id,String nombre, String apellidos, String email)

@@ -30,6 +30,12 @@ namespace TurriAdventures.Controllers
             return _businessSql.BuscarHabitacion(id);
         }
 
+        [HttpGet("BuscarHabitacionPorIdReserva/{id}")]
+        public async Task<Habitacion> BuscarHabitacionPorIdReserva(int id)
+        {
+            return _businessSql.BuscarHabitacionPorIdReserva(id);
+        }
+
         // GET: Detalles de una habitacion
         [HttpGet("ConsultarDisponibilidadHabitaciones")]
         public async Task<Habitacion> ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
