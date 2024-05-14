@@ -183,7 +183,6 @@ namespace Data.Data
             return habitacionCreada;
         }//BuscarHabitacion
 
-<<<<<<< Updated upstream
         public Habitacion BuscarHabitacionPorIdReserva(int idReserva)
         {
             var parameters = new[]
@@ -211,44 +210,9 @@ namespace Data.Data
             };
 
             return habitacionCreada;
-        }//BuscarHabitacion
-
-
-        public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
-=======
-        /*   public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
-           {
-               var parameters = new[]
-               {
-                   new SqlParameter("@tipo_habitacion_id", tipo_habitacion_id),
-                    new SqlParameter("@fechaLlegada", fechaLlegada),
-                   new SqlParameter("@fechaSalida", fechaSalida)
-               };
-
-               // Ejecutar el procedimiento almacenado y obtener la habitacion
-               var habitacionObtenida = dbContext.Habitacion.FromSqlRaw("exec consultarDisponibilidadHabitaciones @fechaLlegada, @fechaSalida, @tipo_habitacion_id", parameters).AsEnumerable().FirstOrDefault();
-
-               if (habitacionObtenida == null)
-               {
-                   // Manejar el caso donde no se encontró ninguna habitacion
-                   return null;
-               }
-
-               // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
-               var habitacionCreada = new Habitacion
-               {
-                   IdHabitacion = habitacionObtenida.IdHabitacion,
-                   EstadoHabitacion = habitacionObtenida.EstadoHabitacion,
-                   NumeroHabitacion = habitacionObtenida.NumeroHabitacion,
-                   CapacidadMaxima = habitacionObtenida.CapacidadMaxima,
-                   IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion,
-               };
-
-               return habitacionCreada;
-           }//ConsultarDisponibilidadHabitaciones */
+        }//BuscarHabitacion        
 
         public List<Habitacion> ConsultarDisponibilidadHabitaciones(string fechaLlegada, string fechaSalida, int tipo_habitacion_id)
->>>>>>> Stashed changes
         {
             var parameters = new[]
             {

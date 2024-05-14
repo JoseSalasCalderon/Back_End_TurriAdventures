@@ -65,21 +65,13 @@ namespace Business.Business
             return _dataAccessSql.BuscarHabitacion(idHabitacion);
         }
 
-<<<<<<< Updated upstream
         public Habitacion BuscarHabitacionPorIdReserva(int idReserva)
         { 
             return _dataAccessSql.BuscarHabitacionPorIdReserva(idReserva);
         }
 
-        public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
-=======
-        /* public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
-         {
-             return _dataAccessSql.ConsultarDisponibilidadHabitaciones(fechaLlegada, fechaSalida, tipo_habitacion_id);
-         }*/
-
+       
         public List<Habitacion> ConsultarDisponibilidadHabitaciones(string fechaLlegada, string fechaSalida, int tipo_habitacion_id)
->>>>>>> Stashed changes
         {
             return _dataAccessSql.ConsultarDisponibilidadHabitaciones(fechaLlegada, fechaSalida, tipo_habitacion_id);
         }
