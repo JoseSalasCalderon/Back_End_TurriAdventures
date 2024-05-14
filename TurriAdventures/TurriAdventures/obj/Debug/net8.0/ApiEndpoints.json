@@ -684,7 +684,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Entities.Entities.Habitacion",
+        "Type": "System.Collections.Generic.List\u00601[[Entities.Entities.Habitacion, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1002,7 +1002,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Boolean",
+        "Type": "System.Int32",
         "MediaTypes": [
           "text/plain",
           "application/json",

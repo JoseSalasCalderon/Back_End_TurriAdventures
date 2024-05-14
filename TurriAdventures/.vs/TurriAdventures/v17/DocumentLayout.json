@@ -7,6 +7,7 @@
       "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\dataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|c:\\users\\najer\\onedrive\\documentos\\angular\\back\\back_end_turriadventures\\turriadventures\\entities\\entities\\hotelturriadventurescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\hotelturriadventurescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,14 +26,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\reservacionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\reservacionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\tipohabitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\tipohabitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\habitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\habitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\administradorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\administradorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\businesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\businesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\habitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\habitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\reservacionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\reservacionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\hotelturriadventurescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\hotelturriadventurescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,11 +99,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 3,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
               "Title": "HotelTurriAdventuresContext.cs",
               "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\HotelTurriAdventuresContext.cs",
               "RelativeDocumentMoniker": "Entities\\Entities\\HotelTurriAdventuresContext.cs",
@@ -116,6 +142,16 @@
               "ViewState": "AQIAABkAAAAAAAAAAAAtwCUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-27T00:30:11.299Z"
+=======
+              "Title": "TipoHabitacion.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\TipoHabitacion.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\TipoHabitacion.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\TipoHabitacion.cs",
+              "RelativeToolTip": "Entities\\Entities\\TipoHabitacion.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T23:56:14.771Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
@@ -125,7 +161,11 @@
               "RelativeDocumentMoniker": "Data\\Data\\DataAccessSql.cs",
               "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\DataAccessSql.cs",
               "RelativeToolTip": "Data\\Data\\DataAccessSql.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwH0AAAAIAAAA",
+=======
+              "ViewState": "AQIAAL8AAAAAAAAAAAAIwNgAAAAAAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T00:45:02.529Z",
               "EditorCaption": ""
@@ -138,48 +178,91 @@
               "RelativeDocumentMoniker": "Business\\BusinessSql.cs",
               "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\BusinessSql.cs",
               "RelativeToolTip": "Business\\BusinessSql.cs",
-              "ViewState": "AQIAAH8AAAAAAAAAAAAgwIUAAAAuAAAA",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAWwEkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T01:34:30.938Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
+=======
+              "DocumentIndex": 4,
+              "Title": "HabitacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\HabitacionesController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\HabitacionesController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\HabitacionesController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\HabitacionesController.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAawCIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T00:30:11.299Z"
+            },
+            {
+              "$type": "Document",
+>>>>>>> Stashed changes
               "DocumentIndex": 5,
               "Title": "ReservacionsController.cs",
               "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ReservacionsController.cs",
               "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\ReservacionsController.cs",
               "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ReservacionsController.cs",
               "RelativeToolTip": "TurriAdventures\\Controllers\\ReservacionsController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAowCUAAAAsAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAMwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T19:51:22.007Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+<<<<<<< Updated upstream
               "Title": "AdministradorsController.cs",
               "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\AdministradorsController.cs",
               "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\AdministradorsController.cs",
               "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\AdministradorsController.cs",
               "RelativeToolTip": "TurriAdventures\\Controllers\\AdministradorsController.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAAABwAAAA6AAAA",
+=======
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\ClientesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAfAAAA",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T05:10:23.849Z"
+              "WhenOpened": "2024-04-28T02:22:48.477Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 6,
+=======
+              "DocumentIndex": 2,
+>>>>>>> Stashed changes
               "Title": "Habitacion.cs",
               "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Habitacion.cs",
               "RelativeDocumentMoniker": "Entities\\Entities\\Habitacion.cs",
               "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Habitacion.cs",
               "RelativeToolTip": "Entities\\Entities\\Habitacion.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T22:01:28.237Z"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
+=======
+              "DocumentIndex": 6,
+              "Title": "HotelTurriAdventuresContext.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\HotelTurriAdventuresContext.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\HotelTurriAdventuresContext.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\HotelTurriAdventuresContext.cs",
+              "RelativeToolTip": "Entities\\Entities\\HotelTurriAdventuresContext.cs",
+              "ViewState": "AQIAAAwBAAAAAAAAAAAcwCUBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T22:18:04.969Z"
+            },
+            {
+              "$type": "Document",
+>>>>>>> Stashed changes
               "DocumentIndex": 10,
               "Title": "ContactoController.cs",
               "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ContactoController.cs",

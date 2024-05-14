@@ -183,6 +183,7 @@ namespace Data.Data
             return habitacionCreada;
         }//BuscarHabitacion
 
+<<<<<<< Updated upstream
         public Habitacion BuscarHabitacionPorIdReserva(int idReserva)
         {
             var parameters = new[]
@@ -214,35 +215,66 @@ namespace Data.Data
 
 
         public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
+=======
+        /*   public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
+           {
+               var parameters = new[]
+               {
+                   new SqlParameter("@tipo_habitacion_id", tipo_habitacion_id),
+                    new SqlParameter("@fechaLlegada", fechaLlegada),
+                   new SqlParameter("@fechaSalida", fechaSalida)
+               };
+
+               // Ejecutar el procedimiento almacenado y obtener la habitacion
+               var habitacionObtenida = dbContext.Habitacion.FromSqlRaw("exec consultarDisponibilidadHabitaciones @fechaLlegada, @fechaSalida, @tipo_habitacion_id", parameters).AsEnumerable().FirstOrDefault();
+
+               if (habitacionObtenida == null)
+               {
+                   // Manejar el caso donde no se encontró ninguna habitacion
+                   return null;
+               }
+
+               // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
+               var habitacionCreada = new Habitacion
+               {
+                   IdHabitacion = habitacionObtenida.IdHabitacion,
+                   EstadoHabitacion = habitacionObtenida.EstadoHabitacion,
+                   NumeroHabitacion = habitacionObtenida.NumeroHabitacion,
+                   CapacidadMaxima = habitacionObtenida.CapacidadMaxima,
+                   IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion,
+               };
+
+               return habitacionCreada;
+           }//ConsultarDisponibilidadHabitaciones */
+
+        public List<Habitacion> ConsultarDisponibilidadHabitaciones(string fechaLlegada, string fechaSalida, int tipo_habitacion_id)
+>>>>>>> Stashed changes
         {
             var parameters = new[]
             {
-                new SqlParameter("@tipo_habitacion_id", tipo_habitacion_id),
-                 new SqlParameter("@fechaLlegada", fechaLlegada),
-                new SqlParameter("@fechaSalida", fechaSalida)
-            };
+        new SqlParameter("@tipo_habitacion_id", tipo_habitacion_id),
+        new SqlParameter("@fechaLlegada", fechaLlegada),
+        new SqlParameter("@fechaSalida", fechaSalida)
+    };
 
-            // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var habitacionObtenida = dbContext.Habitacion.FromSqlRaw("exec consultarDisponibilidadHabitaciones @fechaLlegada, @fechaSalida, @tipo_habitacion_id", parameters).AsEnumerable().FirstOrDefault();
+            // Ejecutar el procedimiento almacenado y obtener la lista de habitaciones
+            var habitacionesObtenidas = dbContext.Habitacion
+                .FromSqlRaw("exec consultarDisponibilidadHabitaciones @fechaLlegada, @fechaSalida, @tipo_habitacion_id", parameters)
+                .AsEnumerable()
+                .Select(habitacionObtenida => new Habitacion
+                {
+                    IdHabitacion = habitacionObtenida.IdHabitacion,
+                    EstadoHabitacion = habitacionObtenida.EstadoHabitacion,
+                    NumeroHabitacion = habitacionObtenida.NumeroHabitacion,
+                    CapacidadMaxima = habitacionObtenida.CapacidadMaxima,
+                    IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion,
+                    
+                })
+                .ToList();
 
-            if (habitacionObtenida == null)
-            {
-                // Manejar el caso donde no se encontró ninguna habitacion
-                return null;
-            }
+            return habitacionesObtenidas;
+        }
 
-            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
-            var habitacionCreada = new Habitacion
-            {
-                IdHabitacion = habitacionObtenida.IdHabitacion,
-                EstadoHabitacion = habitacionObtenida.EstadoHabitacion,
-                NumeroHabitacion = habitacionObtenida.NumeroHabitacion,
-                CapacidadMaxima = habitacionObtenida.CapacidadMaxima,
-                IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion,
-            };
-
-            return habitacionCreada;
-        }//ConsultarDisponibilidadHabitaciones
 
 
         public bool EditarHabitacion(int idHabitacion, int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
@@ -889,12 +921,13 @@ namespace Data.Data
             return reservas;
         }//ListarReservaciones
 
-        public bool CrearReserva(Reservacion reservacion)
+        public int CrearReserva(Reservacion reservacion)
         {
             try
             {
                 var parameters = new[]
                 {
+               // new SqlParameter("@idReservacion", reservacion.IdReservacion),
                 new SqlParameter("@fechaLlegada", reservacion.FechaLlegada),
                 new SqlParameter("@fechaSalida", reservacion.FechaSalida),
                 new SqlParameter("@estadoReservacion", reservacion.EstadoReservacion),
@@ -902,15 +935,21 @@ namespace Data.Data
                 new SqlParameter ("@idCliente", reservacion.IdCliente)
                 };
 
-                // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearReservacion @fechaLlegada, @fechaSalida, @estadoReservacion, @idHabitacion, @idCliente", parameters);
+                var idReservacion = dbContext.Database.ExecuteSqlRawAsync(
+                    "exec crearReservacion @fechaLlegada, @fechaSalida, @estadoReservacion, @idHabitacion, @idCliente", parameters).ToString;
 
-                return true; // Operación exitosa
+                /*// Ejecutar un comando SQL personalizado
+                var idReservacion = dbContext.Reservacion
+            .FromSqlRaw("exec crearReservacion @fechaLlegada, @fechaSalida, @estadoReservacion, @idHabitacion, @idCliente; SELECT SCOPE_IDENTITY();", parameters)
+            .AsEnumerable()
+            .FirstOrDefault();*/
+
+                return Convert.ToInt32(idReservacion); // Operación exitosa
             }
             catch (Exception ex)
             {
                 // Manejar cualquier excepción que pueda ocurrir
-                return false; // Operación fallida
+                return -1; // Operación fallida
             }
         }//CrearReserva
 
@@ -931,7 +970,7 @@ namespace Data.Data
             }
 
             // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
-            var Administrador = new Reservacion
+            var reservacion = new Reservacion
             {
                 IdHabitacion = reserva.IdHabitacion,
                 EstadoReservacion = reserva.EstadoReservacion,
@@ -942,7 +981,7 @@ namespace Data.Data
 
             };
 
-            return Administrador;
+            return reservacion;
         }//Temporada
 
         public bool modificarReserva(Reservacion reservacion)

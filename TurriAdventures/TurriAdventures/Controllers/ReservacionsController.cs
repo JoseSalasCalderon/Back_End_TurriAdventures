@@ -33,7 +33,7 @@ namespace TurriAdventures.Controllers
 
         // POST: Crea una nueva oferta
         [HttpPost("CrearReserva")]
-        public bool CrearReserva(Reservacion reservacion)
+        public int CrearReserva(Reservacion reservacion)
         {
             return _businessSql.CrearReserva(reservacion);
         }
