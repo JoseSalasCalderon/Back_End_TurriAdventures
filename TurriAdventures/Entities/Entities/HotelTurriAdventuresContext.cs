@@ -168,10 +168,10 @@ public partial class HotelTurriAdventuresContext : DbContext
             entity.HasKey(e => e.IdPublicidad).HasName("PK__Publicid__3F75C482A0EC4658");
 
             entity.Property(e => e.IdPublicidad).HasColumnName("idPublicidad");
-            entity.Property(e => e.ImagenFacilidad)
+            entity.Property(e => e.ImagenPublicidad)
                 .HasMaxLength(255)
                 .IsUnicode(false)
-                .HasColumnName("imagenFacilidad");
+                .HasColumnName("imagenPublicidad");
             entity.Property(e => e.LinkPublicidad)
                 .HasMaxLength(255)
                 .IsUnicode(false)

@@ -280,5 +280,33 @@ namespace Business.Business
 
         #endregion
 
+        #region CRUDPublicidad
+        public Task<List<Publicidad>> ListarPublicidades()
+        {
+            return _dataAccessSql.ListarPublicidades();
+        }//ListarListarPublicidades
+
+        public Publicidad BuscarPublicidad(int idPublicidad)
+        {
+            return _dataAccessSql.BuscarPublicidad(idPublicidad);
+        }//BuscarPublicidad
+
+        public bool CrearPublicidad(Publicidad publicidad)
+        {
+            return _dataAccessSql.CrearPublicidad(publicidad);
+        }//CrearPublicidad
+
+        public bool modificarPublicidad(Publicidad publicidad)
+        {
+            return _dataAccessSql.ModificarPublicidad(publicidad);
+        }//EditarContacto
+
+        public bool EliminarPublicidad(int idPublicidad)
+        {
+            return _dataAccessSql.EliminarPublicidad(idPublicidad);
+        }//EliminarPublicidad
+
+        #endregion
+
     }
 }

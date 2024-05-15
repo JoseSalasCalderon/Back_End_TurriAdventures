@@ -468,6 +468,130 @@
     ]
   },
   {
+    "ContainingType": "TurriAdventures.Controllers.PublicidadsController",
+    "Method": "BuscarPublicidad",
+    "RelativePath": "api/Publicidads/BuscarPublicidad/{idPublicidad}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPublicidad",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.Entities.Publicidad",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.PublicidadsController",
+    "Method": "CrearPublicidad",
+    "RelativePath": "api/Publicidads/CrearPublicidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "publicidad",
+        "Type": "Entities.Entities.Publicidad",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.PublicidadsController",
+    "Method": "EditarAdministrador",
+    "RelativePath": "api/Publicidads/EditarPublicidad",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "publicidad",
+        "Type": "Entities.Entities.Publicidad",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.PublicidadsController",
+    "Method": "EliminarPublicidad",
+    "RelativePath": "api/Publicidads/EliminarPublicidad/{idPublicidad}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPublicidad",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.PublicidadsController",
+    "Method": "ListarPublicidades",
+    "RelativePath": "api/Publicidads/ListarPublicidades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Entities.Entities.Publicidad, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "TurriAdventures.Controllers.ClientesController",
     "Method": "BuscarCliente",
     "RelativePath": "Clientes/BuscarCliente/{id}",

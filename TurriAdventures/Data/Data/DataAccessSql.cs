@@ -239,8 +239,6 @@ namespace Data.Data
             return habitacionesObtenidas;
         }
 
-
-
         public bool EditarHabitacion(int idHabitacion, int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
             try
@@ -972,7 +970,6 @@ namespace Data.Data
             }
         }//EditarHabitacion
 
-
         public bool EliminarReserva(int idReserva)
         {
             try
@@ -1076,6 +1073,105 @@ namespace Data.Data
         #endregion
 
 
+        #region CRUDPublicidad
+        public async Task<List<Publicidad>> ListarPublicidades()
+        {
+            var publicidades = await dbContext.Publicidad.FromSqlInterpolated($"exec listarPublicidades").ToListAsync();
+            return publicidades;
+        }//ListarPublicidades
+
+        public bool CrearPublicidad(Publicidad publicidad)
+        {
+            try
+            {
+                var parameters = new[]
+                {
+                new SqlParameter("@imagenPublicidad", publicidad.ImagenPublicidad),
+                new SqlParameter("@linkPublicidad", publicidad.LinkPublicidad)
+                };
+
+                // Ejecutar un comando SQL personalizado
+                dbContext.Database.ExecuteSqlRawAsync("exec crearPublicidad @imagenPublicidad, @linkPublicidad", parameters);
+
+                return true; // Operación exitosa
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción que pueda ocurrir
+                return false; // Operación fallida
+            }
+        }//CrearPublicidad
+
+        public Publicidad BuscarPublicidad(int idPublicidad)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@idPublicidad", idPublicidad)
+            };
+
+            var publicidad = dbContext.Publicidad.FromSqlRaw("exec buscarPublicidad @idPublicidad", parameters).AsEnumerable().FirstOrDefault();
+
+            if (publicidad == null)
+            {
+                // Manejar el caso donde no se encontró ninguna 
+                return null;
+            }
+
+            // Crear una nueva instancia de Publicidad y asignarle las propiedades conocidas
+            var Publicidad = new Publicidad
+            {
+                IdPublicidad = publicidad.IdPublicidad,
+                ImagenPublicidad = publicidad.ImagenPublicidad,
+                LinkPublicidad = publicidad.LinkPublicidad
+            };
+
+            return Publicidad;
+        }//BuscarAdministrador
+
+        public bool ModificarPublicidad(Publicidad publicidad)
+        {
+            try
+            {
+                var parameters = new[]
+                {
+                new SqlParameter("@idPublicidad", publicidad.IdPublicidad),
+                new SqlParameter("@imagenPublicidad", publicidad.ImagenPublicidad),
+                new SqlParameter("@linkPublicidad", publicidad.LinkPublicidad)
+                };
+
+                // Ejecutar un comando SQL personalizado
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarPublicidad @idPublicidad, @imagenPublicidad, @linkPublicidad ", parameters);
+
+                return true; // Operación exitosa
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción que pueda ocurrir
+                return false; // Operación fallida
+            }
+        }//ModificarPublicidad
+
+        public bool EliminarPublicidad(int idPublicidad)
+        {
+            try
+            {
+                var parameters = new[]
+                {
+                     new SqlParameter("@idPublicidad", idPublicidad)
+                 };
+
+                dbContext.Database.ExecuteSqlRawAsync("exec eliminarPublicidad @idPublicidad", parameters);
+
+                return true; // Operación exitosa
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier excepción que pueda ocurrir
+                return false; // Operación fallida
+            }
+
+        }//EliminarPublicidad
+        #endregion
 
     }
 }
