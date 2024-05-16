@@ -1126,7 +1126,7 @@ namespace Data.Data
             };
 
             return Publicidad;
-        }//BuscarAdministrador
+        }//BuscarPublicidad
 
         public bool ModificarPublicidad(Publicidad publicidad)
         {
