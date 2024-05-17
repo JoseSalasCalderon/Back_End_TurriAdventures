@@ -22,6 +22,9 @@ namespace Data.Data
             return ofertas;
         }//ListarOfertas
 
+
+
+
         public bool CrearOferta(string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
         {
             try
@@ -378,7 +381,7 @@ namespace Data.Data
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada @idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -395,6 +398,7 @@ namespace Data.Data
             var parameter = new List<SqlParameter>();
             parameter.Add(new SqlParameter("@Id", id));
             Temporada Reporte1 = dbContext.Temporada.FromSqlRaw(@"exec eliminarTemporada Id", parameter.ToArray()).ToList().FirstOrDefault();
+            dbContext.Remove(Reporte1);
             return Reporte1;
         }
 
