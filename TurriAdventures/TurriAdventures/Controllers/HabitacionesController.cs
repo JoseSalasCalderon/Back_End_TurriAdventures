@@ -6,6 +6,7 @@ using Business.Business;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using TurriAdventures.Entities;
 
 namespace TurriAdventures.Controllers
 {
@@ -28,13 +29,6 @@ namespace TurriAdventures.Controllers
         public async Task<Habitacion> BuscarHabitacion(int id)
         {
             return _businessSql.BuscarHabitacion(id);
-        }
-
-        // GET: Detalles de una habitacion
-        [HttpGet("ConsultarDisponibilidadHabitaciones")]
-        public async Task<Habitacion> ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
-        {
-            return _businessSql.ConsultarDisponibilidadHabitaciones(fechaLlegada, fechaSalida, tipo_habitacion_id);
         }
 
         // POST: Crea una nueva oferta

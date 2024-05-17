@@ -22,6 +22,9 @@ namespace Data.Data
             return ofertas;
         }//ListarOfertas
 
+
+
+
         public bool CrearOferta(string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
         {
             try
@@ -128,7 +131,7 @@ namespace Data.Data
         {
             var habitaciones = await dbContext.Habitacion.FromSqlInterpolated($"exec listarHabitacion").ToListAsync();
             return habitaciones;
-        }//ListarHabitaciones
+        }//ListarOfertas
 
         public bool CrearHabitacion(int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
@@ -182,38 +185,6 @@ namespace Data.Data
 
             return habitacionCreada;
         }//BuscarHabitacion
-
-        public Habitacion ConsultarDisponibilidadHabitaciones(String fechaLlegada, String fechaSalida, int tipo_habitacion_id)
-        {
-            var parameters = new[]
-            {
-                new SqlParameter("@tipo_habitacion_id", tipo_habitacion_id),
-                 new SqlParameter("@fechaLlegada", fechaLlegada),
-                new SqlParameter("@fechaSalida", fechaSalida)
-            };
-
-            // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var habitacionObtenida = dbContext.Habitacion.FromSqlRaw("exec consultarDisponibilidadHabitaciones @fechaLlegada, @fechaSalida, @tipo_habitacion_id", parameters).AsEnumerable().FirstOrDefault();
-
-            if (habitacionObtenida == null)
-            {
-                // Manejar el caso donde no se encontró ninguna habitacion
-                return null;
-            }
-
-            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
-            var habitacionCreada = new Habitacion
-            {
-                IdHabitacion = habitacionObtenida.IdHabitacion,
-                EstadoHabitacion = habitacionObtenida.EstadoHabitacion,
-                NumeroHabitacion = habitacionObtenida.NumeroHabitacion,
-                CapacidadMaxima = habitacionObtenida.CapacidadMaxima,
-                IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion,
-            };
-
-            return habitacionCreada;
-        }//ConsultarDisponibilidadHabitaciones
-
 
         public bool EditarHabitacion(int idHabitacion, int estadoHabitacion, int numeroHabitacion, int capacidadMaxima, int idTipoHabitacion)
         {
@@ -410,7 +381,7 @@ namespace Data.Data
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada @idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -419,8 +390,17 @@ namespace Data.Data
                 // Manejar cualquier excepción que pueda ocurrir
                 return false; // Operación fallida
             }
+
         }//EditarHabitacion
 
+        public async Task<Temporada> eliminarTemporada(int id)
+        {
+            var parameter = new List<SqlParameter>();
+            parameter.Add(new SqlParameter("@Id", id));
+            Temporada Reporte1 = dbContext.Temporada.FromSqlRaw(@"exec eliminarTemporada Id", parameter.ToArray()).ToList().FirstOrDefault();
+            dbContext.Remove(Reporte1);
+            return Reporte1;
+        }
 
         #endregion
 
@@ -511,20 +491,20 @@ namespace Data.Data
         #endregion
 
         #region CRUDAdministrador
-        public async Task<List<Administrador>> ListarAdministradores()
+        public async Task<List<Administrador>> ListarAdministrador()
         {
             var habitaciones = await dbContext.Administrador.FromSqlInterpolated($"exec listarAdministradores").ToListAsync();
             return habitaciones;
-        }//ListarAdministradores
+        }//ListarTipoHabitaciones
 
-        public bool CrearAdministrador(Administrador administrador)
+        public bool CrearAdministrador(String usuario, String contrasena)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@usuario", administrador.Usuario),
-                new SqlParameter("@contrasena", administrador.Contrasena)
+                new SqlParameter("@usuario", usuario),
+                new SqlParameter("@contrasena", contrasena)
                 };
 
                 // Ejecutar un comando SQL personalizado
@@ -539,15 +519,15 @@ namespace Data.Data
             }
         }//CrearAdministrador
 
-        public Administrador BuscarAdministrador(String usuario)
+        public Administrador BuscarAdministrador(int idAdministrador)
         {
             var parameters = new[]
             {
-                new SqlParameter("@usuario", usuario)
+                new SqlParameter("@idAdministrador", idAdministrador)
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var administrador = dbContext.Administrador.FromSqlRaw("exec buscarAdministradorPorUsuario @usuario", parameters).AsEnumerable().FirstOrDefault();
+            var administrador = dbContext.Administrador.FromSqlRaw("exec buscarAdministradorPorID @@idAdministrador", parameters).AsEnumerable().FirstOrDefault();
 
             if (administrador == null)
             {
@@ -564,21 +544,20 @@ namespace Data.Data
             };
 
             return Administrador;
-        }//BuscarAdministrador
+        }//Temporada
 
-        public bool ModificarAdministrador(Administrador administrador)
+        public bool EditarAdministrador(String usuario, String contrasena)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@idAdministrador", administrador.IdAdministrador),
-                new SqlParameter("@usuario", administrador.Usuario),
-                new SqlParameter("@contrasena", administrador.Contrasena)
+                new SqlParameter("@usuario", usuario),
+                new SqlParameter("@contrasena", contrasena)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarAdministrador @idAdministrador, @usuario, @contrasena ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarAdministrador @usuario, @contrasena ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -587,35 +566,16 @@ namespace Data.Data
                 // Manejar cualquier excepción que pueda ocurrir
                 return false; // Operación fallida
             }
-        }//ModificarAdministrador
+        }//EditarHabitacion
 
-        public bool EliminarAdministrador(int idAdministrador)
-        {
-            try
-            {
-                var parameters = new[]
-                {
-                     new SqlParameter("@idAdministrador", idAdministrador)
-                 };
 
-                dbContext.Database.ExecuteSqlRawAsync("exec eliminarAdministrador @idAdministrador", parameters);
-
-                return true; // Operación exitosa
-            }
-            catch (Exception ex)
-            {
-                // Manejar cualquier excepción que pueda ocurrir
-                return false; // Operación fallida
-            }
-
-        }//EliminarAdministrador
         #endregion
 
         #region CRUDFacilidad
         public async Task<List<Facilidad>> ListarFacilidades()
         {
-            var facilidades = await dbContext.Facilidad.FromSqlInterpolated($"exec listarFacilidades").ToListAsync();
-            return facilidades;
+            var habitaciones = await dbContext.Facilidad.FromSqlInterpolated($"exec listarFacilidades").ToListAsync();
+            return habitaciones;
         }//ListarTipoHabitaciones
 
         public bool CrearFacilidad(String descripcionFacilidad, String imagenFacilidad)
@@ -666,19 +626,18 @@ namespace Data.Data
             return Administrador;
         }//Temporada
 
-        public bool modificarFacilidad(int idFacilidad, String descripcionFacilidad, String imagenFacilidad)
+        public bool modificarFacilidad(String descripcionFacilidad, String imagenFacilidad)
         {
             try
             {
                 var parameters = new[]
                 {
-                    new SqlParameter("@id", idFacilidad),
-                    new SqlParameter("@usuario", descripcionFacilidad),
-                    new SqlParameter("@contrasena", imagenFacilidad)
+                new SqlParameter("@usuario", descripcionFacilidad),
+                new SqlParameter("@contrasena", imagenFacilidad)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarFacilidad @id, @usuario, @contrasena ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarFacilidad @usuario, @contrasena ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -695,22 +654,22 @@ namespace Data.Data
         #region CRUDNosotros
         public async Task<List<Nosotros>> ListarNosotros()
         {
-            var nosotros = await dbContext.Nosotros.FromSqlInterpolated($"exec listarNosotros").ToListAsync();
-            return nosotros;
-        }//ListarNosotros
+            var habitaciones = await dbContext.Nosotros.FromSqlInterpolated($"exec listarNosotros").ToListAsync();
+            return habitaciones;
+        }//ListarTipoHabitaciones
 
-        public bool CrearNosotros(Nosotros nosotros)
+        public bool CrearNosotros(String descripcionNosotros, String imagenNosotros)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@descripcionNosotros", nosotros.DescripcionNosotros),
-                new SqlParameter("@imagenNosotros", nosotros.ImagenNosotros)
+                new SqlParameter("@descripcionFacilidad", descripcionNosotros),
+                new SqlParameter("@imagenFacilidad", imagenNosotros)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearNosotros @descripcionNosotros, @imagenNosotros", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec crearNosotros @descripcionFacilidad, @imagenFacilidad", parameters);
 
                 return true; // Operación exitosa
             }
@@ -719,17 +678,17 @@ namespace Data.Data
                 // Manejar cualquier excepción que pueda ocurrir
                 return false; // Operación fallida
             }
-        }//CrearNosotros
+        }//CrearFacilidad
 
         public Nosotros BuscarNosotros(int idNosotros)
         {
             var parameters = new[]
             {
-                new SqlParameter("@idNosotros", idNosotros)
+                new SqlParameter("@idAdministrador", idNosotros)
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var nosotros = dbContext.Nosotros.FromSqlRaw("exec buscarNosotros @idNosotros", parameters).AsEnumerable().FirstOrDefault();
+            var nosotros = dbContext.Nosotros.FromSqlRaw("exec buscarNosotros @idAdministrador", parameters).AsEnumerable().FirstOrDefault();
 
             if (nosotros == null)
             {
@@ -747,19 +706,18 @@ namespace Data.Data
             return Administrador;
         }//Temporada
 
-        public bool modificarNosotros(Nosotros nosotros)
+        public bool modificarNostros(String descripcionNosotros, String imagenNosotros)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@idNosotros", nosotros.IdNosotros),
-                new SqlParameter("@descripcionNosotros", nosotros.DescripcionNosotros),
-                new SqlParameter("@imagenNosotros", nosotros.ImagenNosotros)
+                new SqlParameter("@usuario", descripcionNosotros),
+                new SqlParameter("@contrasena", imagenNosotros)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarNosotros @idNosotros, @descripcionNosotros, @imagenNosotros ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarNosotros @usuario, @contrasena ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -770,51 +728,31 @@ namespace Data.Data
             }
         }//EditarHabitacion
 
-       /* public bool EliminarNosotros(int idNosotros)
-        {
-            try
-            {
-                var parameters = new[]
-                {
-                    new SqlParameter("@idNosotros", idNosotros)
-                };
-
-                dbContext.Database.ExecuteSqlRawAsync("exec eliminarNosotros @idNosotros", parameters);
-
-                return true; // Operación exitosa
-            }
-            catch (Exception ex)
-            {
-                // Manejar cualquier excepción que pueda ocurrir
-                return false; // Operación fallida
-            }
-
-        }//EliminarNosotros*/
 
         #endregion
 
         #region CRUDReservacion
         public async Task<List<Reservacion>> ListarReservas()
         {
-            var reservas = await dbContext.Reservacion.FromSqlInterpolated($"exec listarReservaciones").ToListAsync();
-            return reservas;
+            var habitaciones = await dbContext.Reservacion.FromSqlInterpolated($"exec listarReservaciones").ToListAsync();
+            return habitaciones;
         }//ListarReservaciones
 
-        public bool CrearReserva(Reservacion reservacion)
+        public bool CrearReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@fechaLlegada", reservacion.FechaLlegada),
-                new SqlParameter("@fechaSalida", reservacion.FechaSalida),
-                new SqlParameter("@estadoReservacion", reservacion.EstadoReservacion),
-                new SqlParameter("@idHabitacion", reservacion.IdHabitacion),
-                new SqlParameter ("@idCliente", reservacion.IdCliente)
+                new SqlParameter("@fechaLlegada", fechaLlegada),
+                new SqlParameter("@fechaSalida", fechaSalida),
+                new SqlParameter("@estadoReservacion", estadoReservacion),
+                new SqlParameter("id", idHabitacion),
+                new SqlParameter ("idCliente", idCliente)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearReservacion @fechaLlegada, @fechaSalida, @estadoReservacion, @idHabitacion, @idCliente", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec crearReservacion @fechaLlegada, @fechaSalida, @estadoReservacion, @id, @idCliente", parameters);
 
                 return true; // Operación exitosa
             }
@@ -856,16 +794,16 @@ namespace Data.Data
             return Administrador;
         }//Temporada
 
-        public bool modificarReserva(Reservacion reservacion)
+        public bool modificarReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@fechaLlegada", reservacion.FechaLlegada),
-                new SqlParameter("@fechaSalida", reservacion.FechaSalida),
-                new SqlParameter("@estadoReservacion", reservacion.EstadoReservacion),
-                new SqlParameter("id", reservacion.IdHabitacion),
+                new SqlParameter("@fechaLlegada", fechaLlegada),
+                new SqlParameter("@fechaSalida", fechaSalida),
+                new SqlParameter("@estadoReservacion", estadoReservacion),
+                new SqlParameter("id", idHabitacion),
                 };
 
                 // Ejecutar un comando SQL personalizado
@@ -904,84 +842,9 @@ namespace Data.Data
 
         #endregion
 
-        #region CRUDContacto
-        public async Task<List<Contacto>> ListarContactos()
-        {
-            var contactos = await dbContext.Contacto.FromSqlInterpolated($"exec listarContactos").ToListAsync();
-            return contactos;
-        }//listarContactos
 
-        public bool CrearContacto(String telefono1, String telefono2, String apartadoPostal, String email)
-        {
-            try
-            {
-                var parameters = new[]
-                {
-                new SqlParameter("@telefono1", telefono1),
-                new SqlParameter("@telefono2", telefono2),
-                new SqlParameter("@apartadoPostal", apartadoPostal),
-                new SqlParameter("@email", email)
-                };
 
-                // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearContacto @telefono1, @telefono2,@apartadoPostal, @email", parameters);
 
-                return true; // Operación exitosa
-            }
-            catch (Exception ex)
-            {
-                // Manejar cualquier excepción que pueda ocurrir
-                return false; // Operación fallida
-            }
-        }//CrearContacto
-
-        public bool modificarContacto(int idContacto, String telefono1, String telefono2, String apartadoPostal, String email)
-        {
-            try
-            {
-                var parameters = new[]
-                {
-                new SqlParameter("@idContacto", idContacto),
-                new SqlParameter("@telefono1", telefono1),
-                new SqlParameter("@telefono2", telefono2),
-                new SqlParameter("@apartadoPostal", apartadoPostal),
-                new SqlParameter("@email", email)
-                };
-
-                // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarContacto @idContacto, @telefono1, @telefono2,@apartadoPostal, @email", parameters);
-
-                return true; // Operación exitosa
-            }
-            catch (Exception ex)
-            {
-                // Manejar cualquier excepción que pueda ocurrir
-                return false; // Operación fallida
-            }
-        }//modificarContacto
-
-        public bool EliminarContacto(int idContacto)
-         {
-             try
-             {
-                 var parameters = new[]
-                 {
-                     new SqlParameter("@idContacto", idContacto)
-                 };
-
-                 dbContext.Database.ExecuteSqlRawAsync("exec eliminarContacto @idContacto", parameters);
-
-                 return true; // Operación exitosa
-             }
-             catch (Exception ex)
-             {
-                 // Manejar cualquier excepción que pueda ocurrir
-                 return false; // Operación fallida
-             }
-
-        }//EliminarContacto
-
-        #endregion
 
 
 

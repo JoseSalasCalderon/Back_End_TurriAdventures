@@ -6,6 +6,7 @@ using Business.Business;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using TurriAdventures.Entities;
 
 namespace TurriAdventures.Controllers
 {
@@ -38,17 +39,18 @@ namespace TurriAdventures.Controllers
         }
 
         // PUT: Actualiza una oferta existente
-        [HttpPut("EditarOferta")]
+        [HttpPut("EditarTemporada")]
         public bool EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             return _businessSql.EditarTemporada(idTemporada, descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }
 
-        // DELETE: Elimina una oferta existente
-        //[HttpDelete("EliminarOferta")]
-        //public bool EliminarOferta(int id)
-        //{
-        //    return _businessSql.EliminarOferta(id);
-        //}
+        [HttpPost]
+        [Route(nameof(eliminarTemporada))]
+        public async Task<IActionResult> eliminarTemporada(int id)
+        {
+            _businessSql.eliminarTemporada(id);
+            return NoContent();
+        }
     }
 }

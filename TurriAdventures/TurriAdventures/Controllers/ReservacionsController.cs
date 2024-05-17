@@ -33,16 +33,16 @@ namespace TurriAdventures.Controllers
 
         // POST: Crea una nueva oferta
         [HttpPost("CrearReserva")]
-        public bool CrearReserva(Reservacion reservacion)
+        public bool CrearReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
         {
-            return _businessSql.CrearReserva(reservacion);
+            return _businessSql.CrearReserva(fechaLlegada, fechaSalida, estadoReservacion, idHabitacion, idCliente);
         }
 
         // PUT: Actualiza una oferta existente
         [HttpPut("modificarReserva")]
-        public bool modificarReserva(Reservacion reservacion)
+        public bool modificarReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
         {
-            return _businessSql.modificarReserva(reservacion);
+            return _businessSql.modificarReserva(fechaLlegada, fechaSalida, estadoReservacion, idHabitacion, idCliente);
         }
     }
 }
