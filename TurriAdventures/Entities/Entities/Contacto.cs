@@ -14,4 +14,6 @@ public partial class Contacto
     public string? ApartadoPostal { get; set; }
 
     public string? Email { get; set; }
+
+    public virtual ICollection<Hotel> Hotel { get; set; } = new List<Hotel>();
 }
