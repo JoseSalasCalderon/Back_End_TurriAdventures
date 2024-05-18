@@ -41,6 +41,9 @@ public partial class HotelTurriAdventuresContext : DbContext
 
     public virtual DbSet<Contacto> Contacto { get; set; }
 
+    public virtual DbSet<Home> Homes { get; set; }
+
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -285,6 +288,25 @@ public partial class HotelTurriAdventuresContext : DbContext
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("email");
+        });
+
+        modelBuilder.Entity<Home>(entity =>
+        {
+            entity.HasKey(e => e.IdHome).HasName("PK__Home__77045CBF6C0DB13F");
+
+            entity.Property(e => e.IdHome)
+                .HasColumnName("idHome")
+                .ValueGeneratedOnAdd(); // Para Identity column
+
+            entity.Property(e => e.ImagenHome)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("imagenHome");
+
+            entity.Property(e => e.DescripcionHome)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("descripcionHome");
         });
 
         OnModelCreatingPartial(modelBuilder);

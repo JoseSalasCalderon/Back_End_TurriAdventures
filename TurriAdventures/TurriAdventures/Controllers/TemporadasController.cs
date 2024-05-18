@@ -15,7 +15,7 @@ namespace TurriAdventures.Controllers
     public class TemporadasController : ControllerBase
     {
         private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-        private readonly BusinessSql _businessSql = new BusinessSql();
+        private readonly TemporadaBusinessSql _businessSql = new TemporadaBusinessSql();
 
         [HttpGet("ListarTemporadas")]
         public Task<List<Temporada>> ListarTemporadas()

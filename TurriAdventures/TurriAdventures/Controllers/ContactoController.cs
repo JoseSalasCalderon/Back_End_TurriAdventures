@@ -12,7 +12,7 @@ namespace TurriAdventures.Controllers
         {
 
             private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-            private readonly ContactoBusiness _businessSql = new ContactoBusiness();
+            private readonly ContactoBusinessAccessSql _businessSql = new ContactoBusinessAccessSql();
 
             [HttpGet("ListarContactos")]
             public Task<List<Contacto>> ListarContactos()
