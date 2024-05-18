@@ -7,6 +7,8 @@ public partial class Publicidad
 {
     public int IdPublicidad { get; set; }
 
+    public string? NombrePublicidad { get; set; }
+
     public string? ImagenPublicidad { get; set; }
 
     public string? LinkPublicidad { get; set; }

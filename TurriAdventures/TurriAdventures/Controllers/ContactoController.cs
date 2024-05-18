@@ -1,4 +1,5 @@
-﻿using Business.Business;
+﻿using Business;
+using Business.Business;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using TurriAdventures.Entities;
@@ -11,7 +12,7 @@ namespace TurriAdventures.Controllers
         {
 
             private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-            private readonly BusinessSql _businessSql = new BusinessSql();
+            private readonly ContactoBusiness _businessSql = new ContactoBusiness();
 
             [HttpGet("ListarContactos")]
             public Task<List<Contacto>> ListarContactos()

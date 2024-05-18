@@ -10,7 +10,7 @@ namespace TurriAdventures.Controllers
     public class FacilidadController : ControllerBase
     {
         private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-        private readonly BusinessSql _businessSql = new BusinessSql();
+        private readonly FacilidadBusinessSql _businessSql = new FacilidadBusinessSql();
 
         [HttpGet("ListarFacilidades")]
         public Task<List<Facilidad>> ListarFacilidades()

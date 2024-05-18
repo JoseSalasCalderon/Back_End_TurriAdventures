@@ -16,7 +16,35 @@ namespace TurriAdventures.Controllers
     {
 
         private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-        private readonly BusinessSql _businessSql = new BusinessSql();
+        private readonly PublicidadBusinessSql _businessSql = new PublicidadBusinessSql();
+
+        private readonly string _imageFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+
+        public PublicidadsController(){
+            if (!Directory.Exists(_imageFolderPath))
+            {
+                Directory.CreateDirectory(_imageFolderPath);
+            }
+        }
+        [HttpPost("SubirImagen")]
+        public async Task<IActionResult> SubirImagen(IFormFile imagen)
+        {
+            if (imagen == null || imagen.Length == 0)
+            {
+                return BadRequest("No se ha proporcionado una imagen.");
+            }
+
+            var fileName = Path.GetRandomFileName() + Path.GetExtension(imagen.FileName);
+            var filePath = Path.Combine(_imageFolderPath, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await imagen.CopyToAsync(stream);
+            }
+
+            var imageUrl = $"/images/{fileName}";
+            return Ok(new { nombreImagen = fileName, urlImagen = imageUrl });
+        }
 
         [HttpGet("ListarPublicidades")]
         public Task<List<Publicidad>> ListarPublicidades()
@@ -28,6 +56,12 @@ namespace TurriAdventures.Controllers
         public async Task<Publicidad> BuscarPublicidad(int idPublicidad)
         {
             return _businessSql.BuscarPublicidad(idPublicidad);
+        }
+
+        [HttpGet("BuscarPublicidadPorNombre/{nombrePublicidad}")]
+        public async Task<Publicidad> BuscarPublicidadPorNombre(String nombrePublicidad)
+        {
+            return _businessSql.BuscarPublicidadPorNombre(nombrePublicidad);
         }
 
         [HttpPost("CrearPublicidad")]

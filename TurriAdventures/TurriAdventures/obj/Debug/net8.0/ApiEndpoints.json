@@ -495,6 +495,32 @@
   },
   {
     "ContainingType": "TurriAdventures.Controllers.PublicidadsController",
+    "Method": "BuscarPublicidadPorNombre",
+    "RelativePath": "api/Publicidads/BuscarPublicidadPorNombre/{nombrePublicidad}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombrePublicidad",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.Entities.Publicidad",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.PublicidadsController",
     "Method": "CrearPublicidad",
     "RelativePath": "api/Publicidads/CrearPublicidad",
     "HttpMethod": "POST",
@@ -590,6 +616,22 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.PublicidadsController",
+    "Method": "SubirImagen",
+    "RelativePath": "api/Publicidads/SubirImagen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imagen",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "TurriAdventures.Controllers.ClientesController",

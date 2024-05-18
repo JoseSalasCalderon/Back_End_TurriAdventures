@@ -17,7 +17,7 @@ namespace TurriAdventures.Controllers
     {
 
         private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-        private readonly BusinessSql _businessSql = new BusinessSql();
+        private readonly AdministradorBusinessSql _businessSql = new AdministradorBusinessSql();
 
         [HttpGet("ListarAdministradores")]
         public Task<List<Administrador>> ListarAdministradores()

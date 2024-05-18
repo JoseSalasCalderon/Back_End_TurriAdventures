@@ -1035,3 +1035,4 @@ C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAd
 C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.pdb
 C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\TurriAdventures.genruntimeconfig.cache
 C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\ref\TurriAdventures.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\bin\Debug\net8.0\TurriAdventures.staticwebassets.runtime.json
