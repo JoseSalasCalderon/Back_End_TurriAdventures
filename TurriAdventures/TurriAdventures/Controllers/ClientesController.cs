@@ -41,7 +41,7 @@ namespace TurriAdventures.Controllers
             return _businessSql.CrearCliente(cliente);
         }
 
-        [HttpPut("EditarHabitacion")]
+        [HttpPut("EditarCliente")]
         public bool EditarCliente(String id, String nombre, String apellidos, String email)
         {
             return _businessSql.EditarCliente(id, nombre, apellidos, email);
