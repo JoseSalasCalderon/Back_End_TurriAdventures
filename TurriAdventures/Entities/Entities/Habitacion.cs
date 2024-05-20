@@ -7,7 +7,7 @@ public partial class Habitacion
 {
     public int IdHabitacion { get; set; }
 
-    public bool? EstadoHabitacion { get; set; }
+    public int? EstadoHabitacion { get; set; }
 
     public int? NumeroHabitacion { get; set; }
 

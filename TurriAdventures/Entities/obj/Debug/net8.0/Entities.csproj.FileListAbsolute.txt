@@ -42,3 +42,18 @@ C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriA
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.pdb
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
 C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\ref\Entities.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\bin\Debug\net8.0\Entities.deps.json
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\bin\Debug\net8.0\Entities.runtimeconfig.json
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\bin\Debug\net8.0\Entities.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\bin\Debug\net8.0\Entities.pdb
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.AssemblyInfoInputs.cache
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.AssemblyInfo.cs
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.sourcelink.json
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\refint\Entities.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.pdb
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\Entities.genruntimeconfig.cache
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Entities\obj\Debug\net8.0\ref\Entities.dll

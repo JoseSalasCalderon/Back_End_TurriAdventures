@@ -15,34 +15,30 @@ namespace TurriAdventures.Controllers
     public class ReservacionsController : ControllerBase
     {
         private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-        private readonly BusinessSql _businessSql = new BusinessSql();
+        private readonly ReservacionBusinessSql _businessSql = new ReservacionBusinessSql();
 
-        // GET: Lista todas las habitaciones
         [HttpGet("ListarReservas")]
         public Task<List<Reservacion>> ListarReservas()
         {
             return _businessSql.ListarReservas();
         }
 
-        // GET: Detalles de una habitacion
         [HttpGet("BuscarReservaPorIdCliente/{id}")]
         public async Task<Reservacion> BuscarReservaPorIdCliente(String id)
         {
             return _businessSql.BuscarReservaPorIdCliente(id);
         }
 
-        // POST: Crea una nueva oferta
         [HttpPost("CrearReserva")]
-        public bool CrearReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
+        public int CrearReserva(Reservacion reservacion)
         {
-            return _businessSql.CrearReserva(fechaLlegada, fechaSalida, estadoReservacion, idHabitacion, idCliente);
+            return _businessSql.CrearReserva(reservacion);
         }
 
-        // PUT: Actualiza una oferta existente
         [HttpPut("modificarReserva")]
-        public bool modificarReserva(DateTime fechaLlegada, DateTime fechaSalida, String estadoReservacion, int idHabitacion, String idCliente)
+        public bool modificarReserva(Reservacion reservacion)
         {
-            return _businessSql.modificarReserva(fechaLlegada, fechaSalida, estadoReservacion, idHabitacion, idCliente);
+            return _businessSql.modificarReserva(reservacion);
         }
     }
 }

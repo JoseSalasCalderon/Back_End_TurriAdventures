@@ -15,23 +15,20 @@ namespace TurriAdventures.Controllers
     public class TemporadasController : ControllerBase
     {
         private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-        private readonly BusinessSql _businessSql = new BusinessSql();
+        private readonly TemporadaBusinessSql _businessSql = new TemporadaBusinessSql();
 
-        // GET: Lista todas las ofertas
         [HttpGet("ListarTemporadas")]
         public Task<List<Temporada>> ListarTemporadas()
         {
             return _businessSql.ListarTemporadas();
         }
 
-        // GET: Detalles de una oferta específica
         [HttpGet("BuscarTemporada/{id}")]
         public async Task<Temporada> BuscarTemporada(int id)
         {
             return _businessSql.BuscarTemporada(id);
         }
 
-        // POST: Crea una nueva oferta
         [HttpPost("CrearTemporada")]
         public bool CrearTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {

@@ -15,7 +15,7 @@ namespace TurriAdventures.Controllers
     public class OfertasController : ControllerBase
     {
         private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-        private readonly BusinessSql _businessSql = new BusinessSql();
+        private readonly OfertaBusinessSql _businessSql = new OfertaBusinessSql();
 
         // GET: Lista todas las ofertas
         [HttpGet("ListarOfertas")]

@@ -15,5 +15,5 @@ public partial class Contacto
 
     public string? Email { get; set; }
 
-    public virtual ICollection<Hotel> Hotel { get; set; } = new List<Hotel>();
+   // public virtual ICollection<Hotel> Hotel { get; set; } = new List<Hotel>();
 }

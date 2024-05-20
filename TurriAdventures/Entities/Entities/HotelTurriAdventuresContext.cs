@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Entities.Entities;
+using TurriAdventures.Entities;
 
 namespace Entities.Entities;
 
@@ -37,9 +39,17 @@ public partial class HotelTurriAdventuresContext : DbContext
 
     public virtual DbSet<TipoHabitacion> TipoHabitacion { get; set; }
 
+    public virtual DbSet<Contacto> Contacto { get; set; }
+
+    public virtual DbSet<Home> Homes { get; set; }
+
+
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=LAPTOP-I7JHR1PM;User Id=sa;Password=dylan2604;Initial Catalog=Hotel_Turri_Adventures;TrustServerCertificate=true;");
+                // => optionsBuilder.UseSqlServer("Data Source=DESKTOP-HAJJ5O1;User Id=sa;Password=12345;Initial Catalog=Hotel_Turri_Adventures;TrustServerCertificate=true;");
+                //=> optionsBuilder.UseSqlServer("Data Source=(local);User Id=sa;Password=12345;Initial Catalog=Hotel_Turri_Adventures;TrustServerCertificate=true;");
+                    => optionsBuilder.UseSqlServer("Data Source=Maria\\SQLEXPRESS;User Id=sa;Password=12345;Initial Catalog=Hotel_Turri_Adventures;TrustServerCertificate=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -161,10 +171,10 @@ public partial class HotelTurriAdventuresContext : DbContext
             entity.HasKey(e => e.IdPublicidad).HasName("PK__Publicid__3F75C482A0EC4658");
 
             entity.Property(e => e.IdPublicidad).HasColumnName("idPublicidad");
-            entity.Property(e => e.ImagenFacilidad)
+            entity.Property(e => e.ImagenPublicidad)
                 .HasMaxLength(255)
                 .IsUnicode(false)
-                .HasColumnName("imagenFacilidad");
+                .HasColumnName("imagenPublicidad");
             entity.Property(e => e.LinkPublicidad)
                 .HasMaxLength(255)
                 .IsUnicode(false)
@@ -251,6 +261,52 @@ public partial class HotelTurriAdventuresContext : DbContext
             entity.HasOne(d => d.IdTemporadaNavigation).WithMany(p => p.TipoHabitacion)
                 .HasForeignKey(d => d.IdTemporada)
                 .HasConstraintName("FK__TipoHabit__idTem__45F365D3");
+        });
+
+        
+        modelBuilder.Entity<Contacto>(entity =>
+        {
+            entity.HasKey(e => e.IdContacto).HasName("PK__Contacto__4B1329C70D6DFD37");
+
+            entity.Property(e => e.IdContacto)
+                .HasMaxLength(8)
+                .IsUnicode(false)
+                .HasColumnName("idContacto");
+            entity.Property(e => e.Telefono1)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("telefono1");
+            entity.Property(e => e.Telefono2)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .HasColumnName("telefono2");
+            entity.Property(e => e.ApartadoPostal)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasColumnName("apartadoPostal");
+            entity.Property(e => e.Email)
+                .HasMaxLength(100)
+                .IsUnicode(false)
+                .HasColumnName("email");
+        });
+
+        modelBuilder.Entity<Home>(entity =>
+        {
+            entity.HasKey(e => e.IdHome).HasName("PK__Home__77045CBF6C0DB13F");
+
+            entity.Property(e => e.IdHome)
+                .HasColumnName("idHome")
+                .ValueGeneratedOnAdd(); // Para Identity column
+
+            entity.Property(e => e.ImagenHome)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("imagenHome");
+
+            entity.Property(e => e.DescripcionHome)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("descripcionHome");
         });
 
         OnModelCreatingPartial(modelBuilder);
