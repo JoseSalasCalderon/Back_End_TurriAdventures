@@ -6,7 +6,6 @@ using Business.Business;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TurriAdventures.Entities;
 
 namespace TurriAdventures.Controllers
 {
@@ -15,37 +14,38 @@ namespace TurriAdventures.Controllers
     public class TiposHabitacionesController : ControllerBase
     {
         private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
-        private readonly BusinessSql _businessSql = new BusinessSql();
+        private readonly TipoHabitacionBusinessSql _businessSql = new TipoHabitacionBusinessSql();
 
-        // GET: Lista todas las ofertas
         [HttpGet("ListarTipoHabitaciones")]
         public Task<List<TipoHabitacion>> ListarTipoHabitaciones()
         {
             return _businessSql.ListarTipoHabitaciones();
         }
 
-        // GET: Detalles de una oferta específica
         [HttpGet("BuscarTipoHabitacion/{id}")]
         public async Task<TipoHabitacion> BuscarTipoHabitacion(int id)
         {
             return _businessSql.BuscarTipoHabitacion(id);
         }
 
-        // POST: Crea una nueva oferta
+        [HttpGet("BuscarTipoHabitacionPorHabitacion/{id}")]
+        public async Task<TipoHabitacion> BuscarTipoHabitacionPorHabitacion(int id)
+        {
+            return _businessSql.BuscarTipoHabitacionPorHabitacion(id);
+        }
+
         [HttpPost("CrearTipoHabitacion")]
         public bool CrearTipoHabitacion(String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
         {
             return _businessSql.CrearTipoHabitacion(nombreTipoHabitacion, precio, descripcionTipoHabitacion, imagenTipoHabitacion, idOferta, idTemporada);
         }
 
-        // PUT: Actualiza una oferta existente
         [HttpPut("EditarTipoHabitacion")]
         public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
         {
             return _businessSql.EditarTipoHabitacion(idHabitacion, nombreTipoHabitacion, precio, descripcionTipoHabitacion, imagenTipoHabitacion, idOferta, idTemporada);
         }
 
-        // DELETE: Elimina una oferta existente
         //[HttpDelete("EliminarOferta")]
         //public bool EliminarOferta(int id)
         //{
