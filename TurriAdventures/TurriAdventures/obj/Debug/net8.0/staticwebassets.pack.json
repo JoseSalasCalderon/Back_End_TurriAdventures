@@ -1,20 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\dmfkntkc.add.jpg",
-      "PackagePath": "staticwebassets\\images\\dmfkntkc.add.jpg"
-    },
-    {
-      "Id": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\dovnf3pa.4ib.jpeg",
-      "PackagePath": "staticwebassets\\images\\dovnf3pa.4ib.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\gqmezich.lbm.jpeg",
-      "PackagePath": "staticwebassets\\images\\gqmezich.lbm.jpeg"
-    },
-    {
-      "Id": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\o5e3phf1.2lp.jpeg",
-      "PackagePath": "staticwebassets\\images\\o5e3phf1.2lp.jpeg"
+      "Id": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\gyi3hg45.ttb.jpg",
+      "PackagePath": "staticwebassets\\images\\gyi3hg45.ttb.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TurriAdventures.Microsoft.AspNetCore.StaticWebAssets.props",
