@@ -1,0 +1,79 @@
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.deps.json
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.runtimeconfig.json
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Data.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Entities.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Data.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Entities.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.sourcelink.json
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\refint\Business.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.genruntimeconfig.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\ref\Business.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\bin\Debug\net8.0\Business.deps.json
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\bin\Debug\net8.0\Business.runtimeconfig.json
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\bin\Debug\net8.0\Business.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\bin\Debug\net8.0\Business.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\bin\Debug\net8.0\Data.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\bin\Debug\net8.0\Entities.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\bin\Debug\net8.0\Data.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\bin\Debug\net8.0\Entities.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\refint\Business.dll
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.pdb
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\Business.genruntimeconfig.cache
+E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\respaldos-backend\r1\TurriAdventures\Business\obj\Debug\net8.0\ref\Business.dll
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.deps.json
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.runtimeconfig.json
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.dll
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.pdb
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Data.dll
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Entities.dll
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Data.pdb
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Entities.pdb
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.sourcelink.json
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.dll
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\refint\Business.dll
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.pdb
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.genruntimeconfig.cache
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\ref\Business.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.sourcelink.json
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\refint\Business.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.pdb
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.deps.json
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.runtimeconfig.json
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Business.pdb
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Data.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Entities.dll
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Data.pdb
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\bin\Debug\net8.0\Entities.pdb
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\Business.genruntimeconfig.cache
+C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\Business\obj\Debug\net8.0\ref\Business.dll
