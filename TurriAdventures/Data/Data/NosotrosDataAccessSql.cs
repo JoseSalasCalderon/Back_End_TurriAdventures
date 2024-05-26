@@ -1,7 +1,7 @@
 ﻿using Entities.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-
+using TurriAdventures.Entities;
 
 namespace Data.Data
 {
@@ -10,13 +10,13 @@ namespace Data.Data
         HotelTurriAdventuresContext dbContext = new HotelTurriAdventuresContext();
 
         #region CRUDNosotros
-        public async Task<List<Nosotro>> ListarNosotros()
+        public async Task<List<Nosotros>> ListarNosotros()
         {
             var nosotros = await dbContext.Nosotros.FromSqlInterpolated($"exec listarNosotros").ToListAsync();
             return nosotros;
         }//ListarNosotros
 
-        public bool CrearNosotros(Nosotro nosotros)
+        public bool CrearNosotros(Nosotros nosotros)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace Data.Data
             }
         }//CrearNosotros
 
-        public Nosotro BuscarNosotros(int idNosotros)
+        public Nosotros BuscarNosotros(int idNosotros)
         {
             var parameters = new[]
             {
@@ -55,7 +55,7 @@ namespace Data.Data
             }
 
             // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
-            var Administrador = new Nosotro
+            var Administrador = new Nosotros
             {
                 DescripcionNosotros = nosotros.DescripcionNosotros,
                 ImagenNosotros = nosotros.ImagenNosotros
@@ -64,7 +64,7 @@ namespace Data.Data
             return Administrador;
         }//Temporada
 
-        public bool modificarNosotros(Nosotro nosotros)
+        public bool modificarNosotros(Nosotros nosotros)
         {
             try
             {

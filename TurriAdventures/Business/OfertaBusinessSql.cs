@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using TurriAdventures.Entities;
 
 namespace Business.Business
 {
@@ -21,7 +21,7 @@ namespace Business.Business
         }
 
         #region CRUDOferta
-        public Task<List<Ofertum>> ListarOfertas()
+        public Task<List<Oferta>> ListarOfertas()
         {
             return _dataAccessSql.ListarOfertas();
         }
@@ -31,7 +31,7 @@ namespace Business.Business
             return _dataAccessSql.CrearOferta(descripcionOferta, fechaInicioOferta, fechaFinalOferta, precioOferta);
         }
 
-        public Ofertum BuscarOferta(int idOferta)
+        public Oferta BuscarOferta(int idOferta)
         {
             return _dataAccessSql.BuscarOferta(idOferta);
         }

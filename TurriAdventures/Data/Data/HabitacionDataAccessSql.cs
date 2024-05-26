@@ -1,7 +1,7 @@
 ﻿using Entities.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-
+using TurriAdventures.Entities;
 
 namespace Data.Data
 {
@@ -13,7 +13,7 @@ namespace Data.Data
         #region CRUDHabitacion
         public async Task<List<Habitacion>> ListarHabitaciones()
         {
-            var habitaciones = await dbContext.Habitacions.FromSqlInterpolated($"exec listarHabitacion").ToListAsync();
+            var habitaciones = await dbContext.Habitacion.FromSqlInterpolated($"exec listarHabitacion").ToListAsync();
             return habitaciones;
         }//ListarHabitaciones
 
@@ -49,7 +49,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var habitacionObtenida = dbContext.Habitacions.FromSqlRaw("exec buscarHabitacionPorID @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
+            var habitacionObtenida = dbContext.Habitacion.FromSqlRaw("exec buscarHabitacionPorID @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
 
             if (habitacionObtenida == null)
             {
@@ -78,7 +78,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var habitacionObtenida = dbContext.Habitacions.FromSqlRaw("exec buscarHabitacionPorReserva @IdReserva", parameters).AsEnumerable().FirstOrDefault();
+            var habitacionObtenida = dbContext.Habitacion.FromSqlRaw("exec buscarHabitacionPorReserva @IdReserva", parameters).AsEnumerable().FirstOrDefault();
 
             if (habitacionObtenida == null)
             {
@@ -109,7 +109,7 @@ namespace Data.Data
     };
 
             // Ejecutar el procedimiento almacenado y obtener la lista de habitaciones
-            var habitacionesObtenidas = dbContext.Habitacions
+            var habitacionesObtenidas = dbContext.Habitacion
                 .FromSqlRaw("exec consultarDisponibilidadHabitaciones @fechaLlegada, @fechaSalida, @tipo_habitacion_id", parameters)
                 .AsEnumerable()
                 .Select(habitacionObtenida => new Habitacion

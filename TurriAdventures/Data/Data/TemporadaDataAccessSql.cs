@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TurriAdventures.Entities;
 
 namespace Data.Data
 {
@@ -15,7 +16,7 @@ namespace Data.Data
         HotelTurriAdventuresContext dbContext = new HotelTurriAdventuresContext();
 
         #region CRUDTemporada
-        public async Task<List<Temporadum>> ListarTemporadas()
+        public async Task<List<Temporada>> ListarTemporadas()
         {
             var habitaciones = await dbContext.Temporada.FromSqlInterpolated($"exec listarTemporadas").ToListAsync();
             return habitaciones;
@@ -45,7 +46,7 @@ namespace Data.Data
             }
         }//CrearTemporada
 
-        public Temporadum BuscarTemporada(int idTemporada)
+        public Temporada BuscarTemporada(int idTemporada)
         {
             var parameters = new[]
             {
@@ -62,7 +63,7 @@ namespace Data.Data
             }
 
             // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
-            var TemporadaCreada = new Temporadum
+            var TemporadaCreada = new Temporada
             {
                 DescripcionTemporada= temporada.DescripcionTemporada,
                 FechaInicioTemporada= temporada.FechaInicioTemporada,
@@ -99,11 +100,11 @@ namespace Data.Data
 
         }//EditarHabitacion
 
-        public async Task<Temporadum> eliminarTemporada(int id)
+        public async Task<Temporada> eliminarTemporada(int id)
         {
             var parameter = new List<SqlParameter>();
             parameter.Add(new SqlParameter("@Id", id));
-            Temporadum Reporte1 = dbContext.Temporada.FromSqlRaw(@"exec eliminarTemporada Id", parameter.ToArray()).ToList().FirstOrDefault();
+            Temporada Reporte1 = dbContext.Temporada.FromSqlRaw(@"exec eliminarTemporada Id", parameter.ToArray()).ToList().FirstOrDefault();
             dbContext.Remove(Reporte1);
             return Reporte1;
         }

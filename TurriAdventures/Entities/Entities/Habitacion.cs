@@ -17,5 +17,5 @@ public partial class Habitacion
 
     public virtual TipoHabitacion? IdTipoHabitacionNavigation { get; set; }
 
-    public virtual ICollection<Reservacion> Reservacions { get; set; } = new List<Reservacion>();
+    public virtual ICollection<Reservacion> Reservacion { get; set; } = new List<Reservacion>();
 }

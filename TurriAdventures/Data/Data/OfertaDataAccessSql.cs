@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using TurriAdventures.Entities;
 
 namespace Data.Data
 {
@@ -16,7 +16,7 @@ namespace Data.Data
         HotelTurriAdventuresContext dbContext = new HotelTurriAdventuresContext();
 
         #region CRUDOferta
-        public async Task<List<Ofertum>> ListarOfertas()
+        public async Task<List<Oferta>> ListarOfertas()
         {
             var ofertas = await dbContext.Oferta.FromSqlInterpolated($"exec listarOfertas").ToListAsync();
             return ofertas;
@@ -49,7 +49,7 @@ namespace Data.Data
             }
         }//CrearOferta
 
-        public Ofertum BuscarOferta(int idOferta)
+        public Oferta BuscarOferta(int idOferta)
         {
             var parameters = new[]
             {
@@ -66,7 +66,7 @@ namespace Data.Data
             }
 
             // Crear una nueva instancia de Oferta y asignarle las propiedades conocidas
-            var ofertaCreada = new Ofertum
+            var ofertaCreada = new Oferta
             {
                 IdOferta = idOferta, // Aquí puedes asignar el id que recibiste como parámetro
                 DescripcionOferta = ofertaObtenida.DescripcionOferta,

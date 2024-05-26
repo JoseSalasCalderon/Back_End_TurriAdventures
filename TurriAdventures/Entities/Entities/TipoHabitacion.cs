@@ -19,9 +19,9 @@ public partial class TipoHabitacion
 
     public int? IdTemporada { get; set; }
 
-    public virtual ICollection<Habitacion> Habitacions { get; set; } = new List<Habitacion>();
+    public virtual ICollection<Habitacion> Habitacion { get; set; } = new List<Habitacion>();
 
-    public virtual Ofertum? IdOfertaNavigation { get; set; }
+    public virtual Oferta? IdOfertaNavigation { get; set; }
 
-    public virtual Temporadum? IdTemporadaNavigation { get; set; }
+    public virtual Temporada? IdTemporadaNavigation { get; set; }
 }

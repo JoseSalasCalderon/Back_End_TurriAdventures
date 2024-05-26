@@ -1,6 +1,5 @@
 ﻿using Data.Data;
-using Entities.Entities;
-
+using TurriAdventures.Entities;
 
 namespace Business
 {

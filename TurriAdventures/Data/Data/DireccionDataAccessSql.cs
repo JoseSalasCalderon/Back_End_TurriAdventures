@@ -17,7 +17,7 @@ namespace Data.Data
 
         public async Task<List<Direccion>> ListarDirecciones()
         {
-            var direcciones = await dbContext.Direccions.FromSqlInterpolated($"exec listarDirecciones").ToListAsync();
+            var direcciones = await dbContext.Direccion.FromSqlInterpolated($"exec listarDirecciones").ToListAsync();
             return direcciones;
         }
 
@@ -50,7 +50,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la dirección
-            var direccion = dbContext.Direccions.FromSqlRaw("exec buscarDireccion @IdDireccion", parameters).AsEnumerable().FirstOrDefault();
+            var direccion = dbContext.Direccion.FromSqlRaw("exec buscarDireccion @IdDireccion", parameters).AsEnumerable().FirstOrDefault();
 
             if (direccion == null)
             {
