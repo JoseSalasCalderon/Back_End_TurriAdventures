@@ -1,34 +1,222 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\",
+  "WorkspaceRootPath": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\business\\direccionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\direccionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\data\\data\\direcciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\direcciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\business\\clientebusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\clientebusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\turriadventures\\controllers\\direccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\direccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\turriadventures\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|c:\\users\\najer\\onedrive\\documentos\\angular\\back\\back_end_turriadventures\\turriadventures\\turriadventures\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\clientedataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\reservaciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\reservaciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\oferta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\ofertascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\ofertascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\habitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\habitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\habitaciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\habitaciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\habitacionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\habitacionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\habitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\habitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\facilidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\facilidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\hotelturriadventurescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\hotelturriadventurescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\homedataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\homedataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\administradorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\administradorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\administradordataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\administradordataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\homebusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\homebusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\temporadascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\temporadascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\turriadventures.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\turriadventures.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\contactobusinessaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\contactobusinessaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\temporadadataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\temporadadataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\temporadabusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\temporadabusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\contactodataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\contactodataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\ofertabusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\ofertabusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\clientebusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\clientebusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\facilidadbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\facilidadbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\nosotrosbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\nosotrosbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\publicidadbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\publicidadbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\reservacionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\reservacionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\tipohabitacionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\tipohabitacionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\ofertadataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\ofertadataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\clientedataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\clientedataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\entities\\entities\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\facilidaddataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\facilidaddataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\nosotrosdataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\nosotrosdataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\publicidaddataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\publicidaddataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data\\tipohabitaciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\tipohabitaciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\tiposhabitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\tiposhabitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\reservacionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\reservacionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\publicidadscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\publicidadscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\nosotroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\nosotroscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\facilidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\facilidadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\turriadventures\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\business\\administradorbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\administradorbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\publicidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\publicidad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\tipohabitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\tipohabitacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\temporada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\temporada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\reservacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\reservacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\direccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\entities\\entities\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2170CB3F-405B-4395-AB31-0D740CC2BA5B}|Entities\\Entities.csproj|solutionrelative:entities\\entities\\administrador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +226,656 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClientesController.cs",
-              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ClientesController.cs",
-              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\ClientesController.cs",
-              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ClientesController.cs",
-              "RelativeToolTip": "TurriAdventures\\Controllers\\ClientesController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAArAAAA",
+              "DocumentIndex": 5,
+              "Title": "HabitacionDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\HabitacionDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\HabitacionDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\HabitacionDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\HabitacionDataAccessSql.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAArwA0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T03:20:45.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DireccionController.cs",
-              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\DireccionController.cs",
-              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\DireccionController.cs",
-              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\DireccionController.cs",
-              "RelativeToolTip": "TurriAdventures\\Controllers\\DireccionController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAiwAwAAABYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T03:20:38.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DireccionBusinessSql.cs",
-              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Business\\DireccionBusinessSql.cs",
-              "RelativeDocumentMoniker": "Business\\DireccionBusinessSql.cs",
-              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Business\\DireccionBusinessSql.cs*",
-              "RelativeToolTip": "Business\\DireccionBusinessSql.cs*",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAswBIAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T03:17:34.905Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T02:06:34.201Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Direccion.cs",
-              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Direccion.cs",
-              "RelativeDocumentMoniker": "Entities\\Entities\\Direccion.cs",
-              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Direccion.cs",
-              "RelativeToolTip": "Entities\\Entities\\Direccion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "HabitacionBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\HabitacionBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\HabitacionBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\HabitacionBusinessSql.cs",
+              "RelativeToolTip": "Business\\HabitacionBusinessSql.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAjwBkAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T03:04:06.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T02:05:07.979Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DireccionDataAccessSql.cs",
-              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\DireccionDataAccessSql.cs",
-              "RelativeDocumentMoniker": "Data\\Data\\DireccionDataAccessSql.cs",
-              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\DireccionDataAccessSql.cs",
-              "RelativeToolTip": "Data\\Data\\DireccionDataAccessSql.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAIwFMAAAAJAAAA",
+              "DocumentIndex": 3,
+              "Title": "OfertasController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\OfertasController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\OfertasController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\OfertasController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\OfertasController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAIAwwBQAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T02:55:46.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T02:33:20.346Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ClienteBusinessSql.cs",
-              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Business\\ClienteBusinessSql.cs",
-              "RelativeDocumentMoniker": "Business\\ClienteBusinessSql.cs",
-              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Business\\ClienteBusinessSql.cs",
-              "RelativeToolTip": "Business\\ClienteBusinessSql.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAjAAAA",
+              "Title": "Oferta.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Oferta.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Oferta.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Oferta.cs",
+              "RelativeToolTip": "Entities\\Entities\\Oferta.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T02:12:21.275Z",
+              "WhenOpened": "2024-04-23T22:01:39.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReservacionDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\ReservacionDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\ReservacionDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\ReservacionDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\ReservacionDataAccessSql.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAwGkAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:25:11.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientesController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ClientesController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\ClientesController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ClientesController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\ClientesController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAuwDAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T02:22:48.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClienteDataAccessSql.cs",
-              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\ClienteDataAccessSql.cs",
-              "RelativeDocumentMoniker": "Data\\Data\\ClienteDataAccessSql.cs",
-              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\ClienteDataAccessSql.cs",
-              "RelativeToolTip": "Data\\Data\\ClienteDataAccessSql.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAkAAABSAAAA",
+              "DocumentIndex": 7,
+              "Title": "HabitacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\HabitacionesController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\HabitacionesController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\HabitacionesController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\HabitacionesController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBUAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T02:11:15.241Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-27T00:30:11.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Habitacion.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Habitacion.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Habitacion.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Habitacion.cs",
+              "RelativeToolTip": "Entities\\Entities\\Habitacion.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:01:28.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Facilidad.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Facilidad.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Facilidad.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Facilidad.cs",
+              "RelativeToolTip": "Entities\\Entities\\Facilidad.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:01:27.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Home.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Home.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Home.cs",
+              "RelativeToolTip": "Entities\\Entities\\Home.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T04:35:11.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contacto.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Contacto.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Contacto.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Contacto.cs",
+              "RelativeToolTip": "Entities\\Entities\\Contacto.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA1wBEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:49:09.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Hotel.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Hotel.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Hotel.cs",
+              "RelativeToolTip": "Entities\\Entities\\Hotel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:49:20.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HotelTurriAdventuresContext.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\HotelTurriAdventuresContext.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\HotelTurriAdventuresContext.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\HotelTurriAdventuresContext.cs",
+              "RelativeToolTip": "Entities\\Entities\\HotelTurriAdventuresContext.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAIwCsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T03:35:09.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\HomeDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\HomeDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\HomeDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\HomeDataAccessSql.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAADgvy8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T04:36:32.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdministradorsController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\AdministradorsController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\AdministradorsController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\AdministradorsController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\AdministradorsController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAIAwwBwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T05:10:23.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdministradorDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\AdministradorDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\AdministradorDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\AdministradorDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\AdministradorDataAccessSql.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAIAwwFMAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:14:12.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Program.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Program.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Program.cs",
+              "RelativeToolTip": "TurriAdventures\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T01:26:03.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\appsettings.json",
+              "RelativeDocumentMoniker": "TurriAdventures\\appsettings.json",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\appsettings.json",
+              "RelativeToolTip": "TurriAdventures\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-18T05:15:50.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwB0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T04:30:01.084Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\HomeBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\HomeBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\HomeBusinessSql.cs",
+              "RelativeToolTip": "Business\\HomeBusinessSql.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowC0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T04:52:07.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TurriAdventures",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\TurriAdventures.csproj",
+              "RelativeDocumentMoniker": "TurriAdventures\\TurriAdventures.csproj",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\TurriAdventures.csproj",
+              "RelativeToolTip": "TurriAdventures\\TurriAdventures.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-18T03:49:37.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TemporadaDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\TemporadaDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\TemporadaDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\TemporadaDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\TemporadaDataAccessSql.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T00:45:02.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TemporadaBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\TemporadaBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\TemporadaBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\TemporadaBusinessSql.cs",
+              "RelativeToolTip": "Business\\TemporadaBusinessSql.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAApwA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T01:34:30.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "TemporadasController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\TemporadasController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\TemporadasController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\TemporadasController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\TemporadasController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAIAwwBEAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:34:07.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ContactoBusinessAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\ContactoBusinessAccessSql.cs",
+              "RelativeDocumentMoniker": "Business\\ContactoBusinessAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\ContactoBusinessAccessSql.cs",
+              "RelativeToolTip": "Business\\ContactoBusinessAccessSql.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T01:58:47.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ContactoDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\ContactoDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\ContactoDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\ContactoDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\ContactoDataAccessSql.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T01:57:46.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "OfertaBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\OfertaBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\OfertaBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\OfertaBusinessSql.cs",
+              "RelativeToolTip": "Business\\OfertaBusinessSql.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T03:45:41.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FacilidadBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\FacilidadBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\FacilidadBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\FacilidadBusinessSql.cs",
+              "RelativeToolTip": "Business\\FacilidadBusinessSql.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAiwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:18:17.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "NosotrosBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\NosotrosBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\NosotrosBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\NosotrosBusinessSql.cs",
+              "RelativeToolTip": "Business\\NosotrosBusinessSql.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwBEAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:22:19.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ClienteBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\ClienteBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\ClienteBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\ClienteBusinessSql.cs",
+              "RelativeToolTip": "Business\\ClienteBusinessSql.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwBQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:12:21.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PublicidadBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\PublicidadBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\PublicidadBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\PublicidadBusinessSql.cs",
+              "RelativeToolTip": "Business\\PublicidadBusinessSql.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAqwA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:28:08.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ReservacionBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\ReservacionBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\ReservacionBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\ReservacionBusinessSql.cs",
+              "RelativeToolTip": "Business\\ReservacionBusinessSql.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:26:04.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "TipoHabitacionBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\TipoHabitacionBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\TipoHabitacionBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\TipoHabitacionBusinessSql.cs",
+              "RelativeToolTip": "Business\\TipoHabitacionBusinessSql.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAiwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:08:59.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "OfertaDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\OfertaDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\OfertaDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\OfertaDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\OfertaDataAccessSql.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwH4AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T03:43:44.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "FacilidadDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\FacilidadDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\FacilidadDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\FacilidadDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\FacilidadDataAccessSql.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAqwAcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:16:43.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ClienteDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\ClienteDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\ClienteDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\ClienteDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\ClienteDataAccessSql.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:11:15.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "NosotrosDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\NosotrosDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\NosotrosDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\NosotrosDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\NosotrosDataAccessSql.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwG8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:19:16.719Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PublicidadDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\PublicidadDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\PublicidadDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\PublicidadDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\PublicidadDataAccessSql.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:27:07.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TipoHabitacionDataAccessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\TipoHabitacionDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\TipoHabitacionDataAccessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\TipoHabitacionDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\TipoHabitacionDataAccessSql.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwIgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:07:26.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TiposHabitacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\TiposHabitacionesController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\TiposHabitacionesController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\TiposHabitacionesController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\TiposHabitacionesController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:34:09.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ReservacionsController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ReservacionsController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\ReservacionsController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ReservacionsController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\ReservacionsController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAqwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-25T19:51:22.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "PublicidadsController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\PublicidadsController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\PublicidadsController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\PublicidadsController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\PublicidadsController.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAmwBIAAABMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T00:20:30.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "NosotrosController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\NosotrosController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\NosotrosController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\NosotrosController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\NosotrosController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowBEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:32:02.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "FacilidadController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\FacilidadController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\FacilidadController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\FacilidadController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\FacilidadController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAwAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:31:36.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ContactoController.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ContactoController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\ContactoController.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\ContactoController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\ContactoController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAnwA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T21:54:24.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AdministradorBusinessSql.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\AdministradorBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\AdministradorBusinessSql.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Business\\AdministradorBusinessSql.cs",
+              "RelativeToolTip": "Business\\AdministradorBusinessSql.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADEAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T02:15:30.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Publicidad.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Publicidad.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Publicidad.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Publicidad.cs",
+              "RelativeToolTip": "Entities\\Entities\\Publicidad.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T19:42:07.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Data.csproj",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data.csproj",
+              "RelativeDocumentMoniker": "Data\\Data.csproj",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data.csproj",
+              "RelativeToolTip": "Data\\Data.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-17T04:25:53.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "TipoHabitacion.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\TipoHabitacion.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\TipoHabitacion.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\TipoHabitacion.cs",
+              "RelativeToolTip": "Entities\\Entities\\TipoHabitacion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T23:11:38.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Temporada.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Temporada.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Temporada.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Temporada.cs",
+              "RelativeToolTip": "Entities\\Entities\\Temporada.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T23:11:30.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Reservacion.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Reservacion.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Reservacion.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Reservacion.cs",
+              "RelativeToolTip": "Entities\\Entities\\Reservacion.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T23:11:01.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "Direccion.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Direccion.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Direccion.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Direccion.cs",
+              "RelativeToolTip": "Entities\\Entities\\Direccion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:01:25.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Cliente.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Cliente.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Cliente.cs",
+              "RelativeToolTip": "Entities\\Entities\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:01:20.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Administrador.cs",
+              "DocumentMoniker": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Administrador.cs",
+              "RelativeDocumentMoniker": "Entities\\Entities\\Administrador.cs",
+              "ToolTip": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\Administrador.cs",
+              "RelativeToolTip": "Entities\\Entities\\Administrador.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T22:01:17.978Z"
             }
           ]
         }

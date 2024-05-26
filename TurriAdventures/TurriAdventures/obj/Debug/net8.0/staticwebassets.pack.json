@@ -1,20 +1,16 @@
 {
   "Files": [
     {
-      "Id": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\dmfkntkc.add.jpg",
-      "PackagePath": "staticwebassets\\images\\dmfkntkc.add.jpg"
+      "Id": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\1y53x5a3.bee.jpeg",
+      "PackagePath": "staticwebassets\\images\\1y53x5a3.bee.jpeg"
     },
     {
-      "Id": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\dovnf3pa.4ib.jpeg",
-      "PackagePath": "staticwebassets\\images\\dovnf3pa.4ib.jpeg"
+      "Id": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\gyi3hg45.ttb.jpg",
+      "PackagePath": "staticwebassets\\images\\gyi3hg45.ttb.jpg"
     },
     {
-      "Id": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\gqmezich.lbm.jpeg",
-      "PackagePath": "staticwebassets\\images\\gqmezich.lbm.jpeg"
-    },
-    {
-      "Id": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\o5e3phf1.2lp.jpeg",
-      "PackagePath": "staticwebassets\\images\\o5e3phf1.2lp.jpeg"
+      "Id": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\tz3je1ip.mws.jpeg",
+      "PackagePath": "staticwebassets\\images\\tz3je1ip.mws.jpeg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TurriAdventures.Microsoft.AspNetCore.StaticWebAssets.props",
