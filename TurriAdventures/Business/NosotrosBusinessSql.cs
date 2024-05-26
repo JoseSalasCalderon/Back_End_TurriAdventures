@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TurriAdventures.Entities;
+
 
 namespace Business.Business
 {
@@ -23,22 +23,22 @@ namespace Business.Business
       
 
         #region CRUDNosotros
-        public Task<List<Nosotros>> ListarNosotros()
+        public Task<List<Nosotro>> ListarNosotros()
         {
             return _dataAccessSql.ListarNosotros();
         }//ListarListarNosotros
 
-        public bool CrearNosotros(Nosotros nosotros)
+        public bool CrearNosotros(Nosotro nosotros)
         {
             return _dataAccessSql.CrearNosotros(nosotros);
         }//CrearNosotros
 
-        public Nosotros BuscarNosotros(int idNosotros)
+        public Nosotro BuscarNosotros(int idNosotros)
         {
             return _dataAccessSql.BuscarNosotros(idNosotros);
         }//BuscarNosotros
 
-        public bool modificarNosotros(Nosotros nosotros)
+        public bool modificarNosotros(Nosotro nosotros)
         {
             return _dataAccessSql.modificarNosotros(nosotros);
         }//EditarNosotros

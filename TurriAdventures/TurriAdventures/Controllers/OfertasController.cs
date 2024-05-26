@@ -6,7 +6,7 @@ using Business.Business;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TurriAdventures.Entities;
+
 
 namespace TurriAdventures.Controllers
 {
@@ -19,14 +19,14 @@ namespace TurriAdventures.Controllers
 
         // GET: Lista todas las ofertas
         [HttpGet("ListarOfertas")]
-        public Task<List<Oferta>> ListarOfertas()
+        public Task<List<Ofertum>> ListarOfertas()
         {
             return _businessSql.ListarOfertas();
         }
 
         // GET: Detalles de una oferta específica
         [HttpGet("BuscarOferta/{id}")]
-        public async Task<Oferta> BuscarOferta(int id)
+        public async Task<Ofertum> BuscarOferta(int id)
         {
             return _businessSql.BuscarOferta(id);
         }

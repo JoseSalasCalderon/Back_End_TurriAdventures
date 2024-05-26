@@ -6,7 +6,7 @@ using Business.Business;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using TurriAdventures.Entities;
+
 
 namespace TurriAdventures.Controllers
 {
@@ -18,13 +18,13 @@ namespace TurriAdventures.Controllers
         private readonly TemporadaBusinessSql _businessSql = new TemporadaBusinessSql();
 
         [HttpGet("ListarTemporadas")]
-        public Task<List<Temporada>> ListarTemporadas()
+        public Task<List<Temporadum>> ListarTemporadas()
         {
             return _businessSql.ListarTemporadas();
         }
 
         [HttpGet("BuscarTemporada/{id}")]
-        public async Task<Temporada> BuscarTemporada(int id)
+        public async Task<Temporadum> BuscarTemporada(int id)
         {
             return _businessSql.BuscarTemporada(id);
         }

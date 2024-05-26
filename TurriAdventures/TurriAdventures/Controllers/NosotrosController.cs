@@ -15,25 +15,25 @@ namespace TurriAdventures.Controllers
         private readonly NosotrosBusinessSql _businessSql = new NosotrosBusinessSql();
 
         [HttpGet("ListarNosotros")]
-        public Task<List<Nosotros>> ListarNosotros()
+        public Task<List<Nosotro>> ListarNosotros()
         {
             return _businessSql.ListarNosotros();
         }
 
         [HttpGet("BuscarNosotros/{id}")]
-        public async Task<Nosotros> BuscarNosotros(int id)
+        public async Task<Nosotro> BuscarNosotros(int id)
         {
             return _businessSql.BuscarNosotros(id);
         }
 
         [HttpPost("CrearNosotros")]
-        public bool CrearNosotros(Nosotros nosotros)
+        public bool CrearNosotros(Nosotro nosotros)
         {
             return _businessSql.CrearNosotros(nosotros);
         }
 
         [HttpPut("EditarNosotros")]
-        public bool EditarNosotros(Nosotros nosotros)
+        public bool EditarNosotros(Nosotro nosotros)
         {
             return _businessSql.modificarNosotros(nosotros);
         }

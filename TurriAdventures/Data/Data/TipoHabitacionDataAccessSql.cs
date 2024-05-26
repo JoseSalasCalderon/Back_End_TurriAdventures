@@ -1,7 +1,7 @@
 ﻿using Entities.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using TurriAdventures.Entities;
+
 
 namespace Data.Data
 {
@@ -13,7 +13,7 @@ namespace Data.Data
         #region CRUDTipoHabitacion
         public async Task<List<TipoHabitacion>> ListarTipoHabitaciones()
         {
-            var habitaciones = await dbContext.TipoHabitacion.FromSqlInterpolated($"exec listarTiposHabitacion").ToListAsync();
+            var habitaciones = await dbContext.TipoHabitacions.FromSqlInterpolated($"exec listarTiposHabitacion").ToListAsync();
             return habitaciones;
         }//ListarTipoHabitaciones
 
@@ -51,7 +51,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var habitacionObtenida = dbContext.TipoHabitacion.FromSqlRaw("exec buscarTipoHabitacion @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
+            var habitacionObtenida = dbContext.TipoHabitacions.FromSqlRaw("exec buscarTipoHabitacion @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
 
             if (habitacionObtenida == null)
             {
@@ -82,7 +82,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var habitacionObtenida = dbContext.TipoHabitacion.FromSqlRaw("exec buscarTipoHabitacionPorIdHabitacion @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
+            var habitacionObtenida = dbContext.TipoHabitacions.FromSqlRaw("exec buscarTipoHabitacionPorIdHabitacion @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
 
             if (habitacionObtenida == null)
             {
