@@ -1,7 +1,7 @@
 ﻿using Entities.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using TurriAdventures.Entities;
+
 
 namespace Data.Data
 {
@@ -12,7 +12,7 @@ namespace Data.Data
         #region CRUDCliente
         public async Task<List<Cliente>> ListarClientes()
         {
-            var habitaciones = await dbContext.Cliente.FromSqlInterpolated($"exec listarClientes").ToListAsync();
+            var habitaciones = await dbContext.Clientes.FromSqlInterpolated($"exec listarClientes").ToListAsync();
             return habitaciones;
         }//ListarClientes
 
@@ -48,7 +48,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var cliente = dbContext.Cliente.FromSqlRaw("exec buscarCliente @IdCliente", parameters).AsEnumerable().FirstOrDefault();
+            var cliente = dbContext.Clientes.FromSqlRaw("exec buscarCliente @IdCliente", parameters).AsEnumerable().FirstOrDefault();
 
             if (cliente == null)
             {
@@ -76,7 +76,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var cliente = dbContext.Cliente.FromSqlRaw("exec buscarClientePorIdReservacion @IdReserva", parameters).AsEnumerable().FirstOrDefault();
+            var cliente = dbContext.Clientes.FromSqlRaw("exec buscarClientePorIdReservacion @IdReserva", parameters).AsEnumerable().FirstOrDefault();
 
             if (cliente == null)
             {

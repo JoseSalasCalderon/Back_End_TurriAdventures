@@ -1,7 +1,6 @@
 ﻿using Entities.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using TurriAdventures.Entities;
 
 namespace Data.Data
 {
@@ -12,7 +11,7 @@ namespace Data.Data
         #region CRUDAdministrador
         public async Task<List<Administrador>> ListarAdministradores()
         {
-            var habitaciones = await dbContext.Administrador.FromSqlInterpolated($"exec listarAdministradores").ToListAsync();
+            var habitaciones = await dbContext.Administradors.FromSqlInterpolated($"exec listarAdministradores").ToListAsync();
             return habitaciones;
         }//ListarAdministradores
 
@@ -46,7 +45,7 @@ namespace Data.Data
             };
 
             // Ejecutar el procedimiento almacenado y obtener la habitacion
-            var administrador = dbContext.Administrador.FromSqlRaw("exec buscarAdministradorPorUsuario @usuario", parameters).AsEnumerable().FirstOrDefault();
+            var administrador = dbContext.Administradors.FromSqlRaw("exec buscarAdministradorPorUsuario @usuario", parameters).AsEnumerable().FirstOrDefault();
 
             if (administrador == null)
             {

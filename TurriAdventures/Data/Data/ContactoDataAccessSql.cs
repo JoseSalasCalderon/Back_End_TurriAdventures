@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TurriAdventures.Entities;
+
 
 namespace Data.Data
 {
@@ -17,7 +17,7 @@ namespace Data.Data
         #region CRUDContacto
         public async Task<List<Contacto>> ListarContactos()
         {
-            var contactos = await dbContext.Contacto.FromSqlInterpolated($"exec listarContactos").ToListAsync();
+            var contactos = await dbContext.Contactos.FromSqlInterpolated($"exec listarContactos").ToListAsync();
             return contactos;
         }//listarContactos
 

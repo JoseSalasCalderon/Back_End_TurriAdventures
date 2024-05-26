@@ -1,7 +1,7 @@
 ﻿using Entities.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using TurriAdventures.Entities;
+
 
 namespace Data.Data
 {
@@ -12,7 +12,7 @@ namespace Data.Data
         #region CRUDPublicidad
         public async Task<List<Publicidad>> ListarPublicidades()
         {
-            var publicidades = await dbContext.Publicidad.FromSqlInterpolated($"exec listarPublicidades").ToListAsync();
+            var publicidades = await dbContext.Publicidads.FromSqlInterpolated($"exec listarPublicidades").ToListAsync();
             return publicidades;
         }//ListarPublicidades
 
@@ -46,7 +46,7 @@ namespace Data.Data
                 new SqlParameter("@idPublicidad", idPublicidad)
             };
 
-            var publicidad = dbContext.Publicidad.FromSqlRaw("exec buscarPublicidad @idPublicidad", parameters).AsEnumerable().FirstOrDefault();
+            var publicidad = dbContext.Publicidads.FromSqlRaw("exec buscarPublicidad @idPublicidad", parameters).AsEnumerable().FirstOrDefault();
 
             if (publicidad == null)
             {
@@ -73,7 +73,7 @@ namespace Data.Data
                 new SqlParameter("@nombrePublicidad", nombrePublicidad)
             };
 
-            var publicidad = dbContext.Publicidad.FromSqlRaw("exec buscarPublicidadPorNombre @nombrePublicidad", parameters).AsEnumerable().FirstOrDefault();
+            var publicidad = dbContext.Publicidads.FromSqlRaw("exec buscarPublicidadPorNombre @nombrePublicidad", parameters).AsEnumerable().FirstOrDefault();
 
             if (publicidad == null)
             {

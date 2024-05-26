@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TurriAdventures.Entities;
+
 
 namespace Business.Business
 {
@@ -22,7 +22,7 @@ namespace Business.Business
 
      
         #region CRUDTemporada
-        public Task<List<Temporada>> ListarTemporadas()
+        public Task<List<Temporadum>> ListarTemporadas()
         {
             return _dataAccessSql.ListarTemporadas();
         }
@@ -32,7 +32,7 @@ namespace Business.Business
             return _dataAccessSql.CrearTemporada(descripcionTemporada,  fechaInicioTemporada,  fechaFinalTemporada,  precioTemporada);
         }
 
-        public Temporada BuscarTemporada(int idHabitacion)
+        public Temporadum BuscarTemporada(int idHabitacion)
         {
             return _dataAccessSql.BuscarTemporada(idHabitacion);
         }
@@ -43,7 +43,7 @@ namespace Business.Business
         }
 
 
-        public  Task<Temporada> eliminarTemporada(int id)
+        public  Task<Temporadum> eliminarTemporada(int id)
         {
             return _dataAccessSql.eliminarTemporada(id);
         }

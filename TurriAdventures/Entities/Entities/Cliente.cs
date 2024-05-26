@@ -13,5 +13,5 @@ public partial class Cliente
 
     public string? Email { get; set; }
 
-    public virtual ICollection<Reservacion> Reservacion { get; set; } = new List<Reservacion>();
+    public virtual ICollection<Reservacion> Reservacions { get; set; } = new List<Reservacion>();
 }
