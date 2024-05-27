@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TurriAdventures")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2d1f25e77f4890de8add2c00621f28066bd6aec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b33b55bafa8dbe09818fd72410b3d68b2af59ed6")]
 [assembly: System.Reflection.AssemblyProductAttribute("TurriAdventures")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TurriAdventures")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
