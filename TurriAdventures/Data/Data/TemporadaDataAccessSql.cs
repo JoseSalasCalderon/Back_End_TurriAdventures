@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TurriAdventures.Entities;
 
 namespace Data.Data
 {
@@ -65,6 +64,7 @@ namespace Data.Data
             // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
             var TemporadaCreada = new Temporada
             {
+                IdTemporada = temporada.IdTemporada,
                 DescripcionTemporada= temporada.DescripcionTemporada,
                 FechaInicioTemporada= temporada.FechaInicioTemporada,
                 FechaFinalTemporada= temporada.FechaFinalTemporada,

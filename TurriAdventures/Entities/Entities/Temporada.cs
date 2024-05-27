@@ -15,5 +15,7 @@ public partial class Temporada
 
     public decimal? PrecioTemporada { get; set; }
 
+    public bool? Activo { get; set; }
+
     public virtual ICollection<TipoHabitacion> TipoHabitacion { get; set; } = new List<TipoHabitacion>();
 }

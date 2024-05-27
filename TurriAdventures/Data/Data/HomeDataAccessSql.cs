@@ -1,7 +1,6 @@
 ﻿using Entities.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using TurriAdventures.Entities;
 
 namespace Data.Data
 {
@@ -12,7 +11,7 @@ namespace Data.Data
         #region CRUDHome
         public async Task<List<Home>> ListarHomes()
         {
-            var homes = await dbContext.Homes.FromSqlInterpolated($"exec listarHomes").ToListAsync();
+            var homes = await dbContext.Home.FromSqlInterpolated($"exec listarHomes").ToListAsync();
             return homes;
         }//ListarHomes
 
@@ -45,7 +44,7 @@ namespace Data.Data
                 new SqlParameter("@idHome", idHome)
             };
 
-            var home = dbContext.Homes.FromSqlRaw("exec buscarHome @idHome", parameters).AsEnumerable().FirstOrDefault();
+            var home = dbContext.Home.FromSqlRaw("exec buscarHome @idHome", parameters).AsEnumerable().FirstOrDefault();
 
             if (home == null)
             {
