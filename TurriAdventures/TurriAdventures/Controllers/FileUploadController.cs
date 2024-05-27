@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting.Internal;
+using Microsoft.Extensions.Hosting;
 
 namespace TurriAdventures.Controllers
 {
@@ -12,7 +12,15 @@ namespace TurriAdventures.Controllers
 
         public FileUploadController(IWebHostEnvironment hostingEnvironment)
         {
-            _destinationFolderPath = Path.Combine(hostingEnvironment.ContentRootPath, "..", "..", "..", "..", "..", "Front_End_TurriAdventures", "TurriAdventures", "src", "assets", "Habitaciones");
+            // Obtener el directorio raíz del proyecto backend
+            string backendRootPath = hostingEnvironment.ContentRootPath;
+
+            // Navegar hacia la carpeta del proyecto frontend
+            // Suponiendo que el backend y frontend están en la misma estructura de carpetas raíz
+            _destinationFolderPath = Path.Combine(backendRootPath, "..", "..", "..", "Front_End_TurriAdventures", "TurriAdventures", "src", "assets", "Habitaciones");
+
+            // Normalizar la ruta para eliminar cualquier "../" redundante
+            _destinationFolderPath = Path.GetFullPath(_destinationFolderPath);
         }
 
         [HttpPost("upload")]
@@ -25,10 +33,10 @@ namespace TurriAdventures.Controllers
                     return BadRequest("No se ha enviado ningún archivo o el archivo está vacío.");
                 }
 
-                // Combinar la ruta de destino con el nombre de archivo original
+                // Combina la ruta de destino con el nombre de archivo original
                 var filePath = Path.Combine(_destinationFolderPath, file.FileName);
 
-                // Copiar el archivo al destino
+                // Copia el archivo al destino
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await file.CopyToAsync(stream);
