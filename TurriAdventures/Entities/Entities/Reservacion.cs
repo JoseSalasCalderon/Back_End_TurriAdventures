@@ -17,6 +17,8 @@ public partial class Reservacion
 
     public string? IdCliente { get; set; }
 
+    public bool? Activo { get; set; }
+
     public virtual Cliente? IdClienteNavigation { get; set; }
 
     public virtual Habitacion? IdHabitacionNavigation { get; set; }

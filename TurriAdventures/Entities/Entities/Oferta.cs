@@ -15,5 +15,7 @@ public partial class Oferta
 
     public decimal? PrecioOferta { get; set; }
 
+    public bool? Activo { get; set; }
+
     public virtual ICollection<TipoHabitacion> TipoHabitacion { get; set; } = new List<TipoHabitacion>();
 }

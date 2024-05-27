@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Entities.Entities;
 using Business.Business;
-using TurriAdventures.Entities;
 
 namespace TurriAdventures.Controllers
 {

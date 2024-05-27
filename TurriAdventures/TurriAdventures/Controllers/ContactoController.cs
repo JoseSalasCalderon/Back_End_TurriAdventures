@@ -2,7 +2,6 @@
 using Business.Business;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
-using TurriAdventures.Entities;
 
 namespace TurriAdventures.Controllers
 {

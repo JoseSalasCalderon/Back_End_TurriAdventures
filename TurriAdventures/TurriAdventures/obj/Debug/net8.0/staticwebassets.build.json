@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mArM7G+h6dblMo0KuABwmAf/TAntk0L5G/XsW9ItxLo=",
+  "Hash": "I7F4cQ2Y/OgiAn2sV9dm0yzMmR6OPmggWNG3yXQLpd0=",
   "Source": "TurriAdventures",
   "BasePath": "_content/TurriAdventures",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TurriAdventures\\wwwroot",
       "Source": "TurriAdventures",
-      "ContentRoot": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
+      "ContentRoot": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
       "BasePath": "_content/TurriAdventures",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\1y53x5a3.bee.jpeg",
+      "Identity": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\1y53x5a3.bee.jpeg",
       "SourceId": "TurriAdventures",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
+      "ContentRoot": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
       "BasePath": "_content/TurriAdventures",
       "RelativePath": "images/1y53x5a3.bee.jpeg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1y53x5a3.bee.jpeg"
     },
     {
-      "Identity": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\gyi3hg45.ttb.jpg",
+      "Identity": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\gyi3hg45.ttb.jpg",
       "SourceId": "TurriAdventures",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
+      "ContentRoot": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
       "BasePath": "_content/TurriAdventures",
       "RelativePath": "images/gyi3hg45.ttb.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gyi3hg45.ttb.jpg"
     },
     {
-      "Identity": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\tz3je1ip.mws.jpeg",
+      "Identity": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\tz3je1ip.mws.jpeg",
       "SourceId": "TurriAdventures",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
+      "ContentRoot": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
       "BasePath": "_content/TurriAdventures",
       "RelativePath": "images/tz3je1ip.mws.jpeg",
       "AssetKind": "All",
