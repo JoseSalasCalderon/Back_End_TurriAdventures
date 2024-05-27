@@ -104,19 +104,19 @@ namespace Data.Data
             return tipoHabitacionCreada;
         }//BuscarHabitacion
 
-        public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
+        public bool EditarTipoHabitacion(TipoHabitacion tipoHabitacion)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@idHabitacion", idHabitacion),
-                new SqlParameter("@nombreTipoHabitacion", nombreTipoHabitacion),
-                new SqlParameter("@precio", precio),
-                new SqlParameter("@descripcionTipoHabitacion", descripcionTipoHabitacion),
-                new SqlParameter("@imagenTipoHabitacion", imagenTipoHabitacion),
-                new SqlParameter("@idOferta", idOferta),
-                new SqlParameter("@idTemporada", idTemporada)
+                new SqlParameter("@idHabitacion", tipoHabitacion.IdTipoHabitacion),
+                new SqlParameter("@nombreTipoHabitacion", tipoHabitacion.NombreTipoHabitacion),
+                new SqlParameter("@precio", tipoHabitacion.Precio),
+                new SqlParameter("@descripcionTipoHabitacion", tipoHabitacion.DescripcionTipoHabitacion),
+                new SqlParameter("@imagenTipoHabitacion", tipoHabitacion.ImagenTipoHabitacion),
+                new SqlParameter("@idOferta", tipoHabitacion.IdOferta),
+                new SqlParameter("@idTemporada", tipoHabitacion.IdTemporada)
                 };
 
                 // Ejecutar un comando SQL personalizado

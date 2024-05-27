@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\data\\data\\tipohabitaciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0318372D-CC03-4D2F-8AB7-4A5BD631E560}|Data\\Data.csproj|solutionrelative:data\\data\\tipohabitaciondataaccesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\business\\tipohabitacionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88CF2A2B-23C2-45BE-8C97-BC6B1169B984}|Business\\Business.csproj|solutionrelative:business\\tipohabitacionbusinesssql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\turriadventures\\controllers\\tiposhabitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\tiposhabitacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|e:\\documentos\\iciclo2024\\ingenieria\\proyecto\\desarrollo\\back_end_turriadventures\\turriadventures\\turriadventures\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{29328951-9AC1-4F61-AD12-F60752647904}|TurriAdventures\\TurriAdventures.csproj|solutionrelative:turriadventures\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -54,7 +66,46 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TipoHabitacionBusinessSql.cs",
+              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Business\\TipoHabitacionBusinessSql.cs",
+              "RelativeDocumentMoniker": "Business\\TipoHabitacionBusinessSql.cs",
+              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Business\\TipoHabitacionBusinessSql.cs",
+              "RelativeToolTip": "Business\\TipoHabitacionBusinessSql.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwCwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T16:30:19.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TipoHabitacionDataAccessSql.cs",
+              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\TipoHabitacionDataAccessSql.cs",
+              "RelativeDocumentMoniker": "Data\\Data\\TipoHabitacionDataAccessSql.cs",
+              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\TipoHabitacionDataAccessSql.cs",
+              "RelativeToolTip": "Data\\Data\\TipoHabitacionDataAccessSql.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAmwHYAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T16:29:50.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TiposHabitacionesController.cs",
+              "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\TiposHabitacionesController.cs",
+              "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\TiposHabitacionesController.cs",
+              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\TiposHabitacionesController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\TiposHabitacionesController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowC0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T16:25:48.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Program.cs",
               "RelativeDocumentMoniker": "TurriAdventures\\Program.cs",
@@ -62,25 +113,24 @@
               "RelativeToolTip": "TurriAdventures\\Program.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAAAAB0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T03:17:34.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T03:17:34.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FileUploadController.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\FileUploadController.cs",
               "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\FileUploadController.cs",
-              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\FileUploadController.cs*",
-              "RelativeToolTip": "TurriAdventures\\Controllers\\FileUploadController.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAAAAAA",
+              "ToolTip": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\FileUploadController.cs",
+              "RelativeToolTip": "TurriAdventures\\Controllers\\FileUploadController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-27T03:17:08.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "HotelTurriAdventuresContext.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Entities\\Entities\\HotelTurriAdventuresContext.cs",
               "RelativeDocumentMoniker": "Entities\\Entities\\HotelTurriAdventuresContext.cs",
@@ -88,12 +138,11 @@
               "RelativeToolTip": "Entities\\Entities\\HotelTurriAdventuresContext.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAcwC4AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T21:38:44.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T21:38:44.722Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "HabitacionDataAccessSql.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\HabitacionDataAccessSql.cs",
               "RelativeDocumentMoniker": "Data\\Data\\HabitacionDataAccessSql.cs",
@@ -105,7 +154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "OfertasController.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\OfertasController.cs",
               "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\OfertasController.cs",
@@ -117,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "OfertaBusinessSql.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Business\\OfertaBusinessSql.cs",
               "RelativeDocumentMoniker": "Business\\OfertaBusinessSql.cs",
@@ -129,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "OfertaDataAccessSql.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\OfertaDataAccessSql.cs",
               "RelativeDocumentMoniker": "Data\\Data\\OfertaDataAccessSql.cs",
@@ -141,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "TemporadasController.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\Controllers\\TemporadasController.cs",
               "RelativeDocumentMoniker": "TurriAdventures\\Controllers\\TemporadasController.cs",
@@ -153,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "TemporadaBusinessSql.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Business\\TemporadaBusinessSql.cs",
               "RelativeDocumentMoniker": "Business\\TemporadaBusinessSql.cs",
@@ -165,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "TemporadaDataAccessSql.cs",
               "DocumentMoniker": "E:\\Documentos\\ICiclo2024\\Ingenieria\\Proyecto\\Desarrollo\\Back_End_TurriAdventures\\TurriAdventures\\Data\\Data\\TemporadaDataAccessSql.cs",
               "RelativeDocumentMoniker": "Data\\Data\\TemporadaDataAccessSql.cs",

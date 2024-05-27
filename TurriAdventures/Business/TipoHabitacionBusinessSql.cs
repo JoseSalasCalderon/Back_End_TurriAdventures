@@ -40,9 +40,9 @@ namespace Business.Business
             return _dataAccessSql.BuscarTipoHabitacionPorHabitacion(idHabitacion);
         }
 
-            public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
+            public bool EditarTipoHabitacion(TipoHabitacion tipoHabitacion)
         {
-            return _dataAccessSql.EditarTipoHabitacion(idHabitacion, nombreTipoHabitacion, precio, descripcionTipoHabitacion, imagenTipoHabitacion, idOferta, idTemporada);
+            return _dataAccessSql.EditarTipoHabitacion(tipoHabitacion);
         }
 
         #endregion
