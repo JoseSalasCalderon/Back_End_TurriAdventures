@@ -1037,3 +1037,4 @@ C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAd
 C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\obj\Debug\net8.0\ref\TurriAdventures.dll
 C:\Users\najer\OneDrive\Documentos\Angular\Back\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\bin\Debug\net8.0\TurriAdventures.staticwebassets.runtime.json
 E:\Documentos\ICiclo2024\Ingenieria\Proyecto\Desarrollo\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\bin\Debug\net8.0\TurriAdventures.staticwebassets.runtime.json
+C:\Users\steve\OneDrive\Escritorio\Cosas de la U\Back_End_TurriAdventures\TurriAdventures\TurriAdventures\bin\Debug\net8.0\TurriAdventures.staticwebassets.runtime.json
