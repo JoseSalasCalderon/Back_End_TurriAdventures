@@ -87,11 +87,12 @@ namespace Data.Data
                 new SqlParameter("@descripcionTemporada", descripcionTemporada),
                 new SqlParameter("@fechaInicioTemporada", fechaInicioTemporada),
                 new SqlParameter("@fechaFinalTemporada", fechaFinalTemporada),
-                new SqlParameter("@precioTemporada", precioTemporada)
+                new SqlParameter("@precioTemporada", precioTemporada),
+                new SqlParameter("@activo", 1)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada @idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada @idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada, @activo ", parameters);
 
                 return true; // Operación exitosa
             }
