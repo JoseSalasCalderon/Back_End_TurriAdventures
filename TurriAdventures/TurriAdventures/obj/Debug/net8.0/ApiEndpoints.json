@@ -246,7 +246,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TurriAdventures.Entities.Contacto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Entities.Entities.Contacto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -473,6 +473,22 @@
     ]
   },
   {
+    "ContainingType": "TurriAdventures.Controllers.FileUploadController",
+    "Method": "Upload",
+    "RelativePath": "api/FileUpload/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TurriAdventures.Controllers.HomeController",
     "Method": "BuscarHome",
     "RelativePath": "api/Home/BuscarHome/{idHome}",
@@ -488,7 +504,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "TurriAdventures.Entities.Home",
+        "Type": "Entities.Entities.Home",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -508,7 +524,7 @@
     "Parameters": [
       {
         "Name": "home",
-        "Type": "TurriAdventures.Entities.Home",
+        "Type": "Entities.Entities.Home",
         "IsRequired": true
       }
     ],
@@ -534,7 +550,7 @@
     "Parameters": [
       {
         "Name": "home",
-        "Type": "TurriAdventures.Entities.Home",
+        "Type": "Entities.Entities.Home",
         "IsRequired": true
       }
     ],
@@ -586,7 +602,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TurriAdventures.Entities.Home, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Entities.Entities.Home, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1728,39 +1744,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "idHabitacion",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "nombreTipoHabitacion",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "precio",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "descripcionTipoHabitacion",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "imagenTipoHabitacion",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "idOferta",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "idTemporada",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "tipoHabitacion",
+        "Type": "Entities.Entities.TipoHabitacion",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
