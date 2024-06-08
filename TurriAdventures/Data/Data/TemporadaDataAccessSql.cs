@@ -21,29 +21,32 @@ namespace Data.Data
             return habitaciones;
         }//ListarTipoHabitaciones
 
-        public bool CrearTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public async Task<bool> CrearTemporada(string descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@descripcionTemporada", descripcionTemporada),
-                new SqlParameter("@fechaInicioTemporada", fechaInicioTemporada),
-                new SqlParameter("@fechaFinalTemporada", fechaFinalTemporada),
-                new SqlParameter("@precioTemporada", precioTemporada)
-                };
+            new SqlParameter("@descripcionTemporada", descripcionTemporada),
+            new SqlParameter("@fechaInicioTemporada", fechaInicioTemporada),
+            new SqlParameter("@fechaFinalTemporada", fechaFinalTemporada),
+            new SqlParameter("@precioTemporada", precioTemporada),
+            new SqlParameter("@activo", 1)
+        };
 
-                // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearTemporada @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
+                // Asegúrate de usar await para ejecutar el comando de forma asíncrona
+                await dbContext.Database.ExecuteSqlRawAsync("exec crearTemporada @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada, @activo", parameters);
 
                 return true; // Operación exitosa
             }
             catch (Exception ex)
             {
-                // Manejar cualquier excepción que pueda ocurrir
+                // Loggear el error para obtener más detalles
+                Console.WriteLine(ex.Message);
                 return false; // Operación fallida
             }
-        }//CrearTemporada
+        }
+
 
         public Temporada BuscarTemporada(int idTemporada)
         {
@@ -74,7 +77,7 @@ namespace Data.Data
             return TemporadaCreada;
         }//Temporada
 
-        public bool EditarTemporada(int idTemporada,String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public async Task<bool>  EditarTemporada(int idTemporada,String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             try
             {

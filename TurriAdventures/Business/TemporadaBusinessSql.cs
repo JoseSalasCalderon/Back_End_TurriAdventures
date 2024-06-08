@@ -26,9 +26,9 @@ namespace Business.Business
             return _dataAccessSql.ListarTemporadas();
         }
 
-        public bool CrearTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public Task<bool> CrearTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
-            return _dataAccessSql.CrearTemporada(descripcionTemporada,  fechaInicioTemporada,  fechaFinalTemporada,  precioTemporada);
+            return _dataAccessSql.CrearTemporada(descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }
 
         public Temporada BuscarTemporada(int idHabitacion)
@@ -36,7 +36,7 @@ namespace Business.Business
             return _dataAccessSql.BuscarTemporada(idHabitacion);
         }
 
-        public bool EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public Task<bool> EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             return _dataAccessSql.EditarTemporada(idTemporada, descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }
