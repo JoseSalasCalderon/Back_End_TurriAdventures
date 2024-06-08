@@ -41,9 +41,9 @@ namespace TurriAdventures.Controllers
         }
 
         [HttpPut("EditarTipoHabitacion")]
-        public bool EditarTipoHabitacion(int idHabitacion, String nombreTipoHabitacion, decimal precio, String descripcionTipoHabitacion, String imagenTipoHabitacion, int idOferta, int idTemporada)
+        public bool EditarTipoHabitacion(TipoHabitacion tipoHabitacion)
         {
-            return _businessSql.EditarTipoHabitacion(idHabitacion, nombreTipoHabitacion, precio, descripcionTipoHabitacion, imagenTipoHabitacion, idOferta, idTemporada);
+            return _businessSql.EditarTipoHabitacion(tipoHabitacion);
         }
 
         //[HttpDelete("EliminarOferta")]

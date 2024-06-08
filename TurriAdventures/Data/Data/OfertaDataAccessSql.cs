@@ -24,7 +24,7 @@ namespace Data.Data
 
 
 
-        public bool CrearOferta(string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
+        public async Task<bool> CrearOferta(string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
         {
             try
             {
@@ -77,7 +77,7 @@ namespace Data.Data
             return ofertaCreada;
         }//BuscarOferta
 
-        public bool EditarOferta(int idOferta, string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
+        public async Task<bool> EditarOferta(int idOferta, string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
         {
             try
             {
