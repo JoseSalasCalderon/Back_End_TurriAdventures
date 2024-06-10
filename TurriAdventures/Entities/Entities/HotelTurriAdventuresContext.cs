@@ -165,7 +165,7 @@ public partial class HotelTurriAdventuresContext : DbContext
             entity.HasKey(e => e.IdNosotros).HasName("PK__Nosotros__703F9C8D18A7B3E1");
 
             entity.Property(e => e.IdNosotros).HasColumnName("idNosotros");
-            entity.Property(e => e.DescripcionNosotros).HasColumnName("descripcionNosotros");
+            entity.Property(e => e.DescripcionNosotros).HasColumnName("descripcion");
             entity.Property(e => e.ImagenNosotros)
                 .IsUnicode(false)
                 .HasColumnName("imagenNosotros");

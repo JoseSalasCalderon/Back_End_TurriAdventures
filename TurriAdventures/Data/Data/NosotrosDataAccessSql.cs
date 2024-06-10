@@ -86,7 +86,7 @@ namespace Data.Data
             }
         }//EditarHabitacion
 
-       /* public bool EliminarNosotros(int idNosotros)
+        public bool EliminarNosotros(int idNosotros)
         {
             try
             {
@@ -105,7 +105,7 @@ namespace Data.Data
                 return false; // Operación fallida
             }
 
-        }//EliminarNosotros*/
+        }//EliminarNosotros
 
         #endregion
 

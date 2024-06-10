@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,14 +30,14 @@ namespace TurriAdventures.Controllers
         }
 
         [HttpPost("CrearTemporada")]
-        public bool CrearTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public Task<bool> CrearTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             return _businessSql.CrearTemporada(descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }
 
         // PUT: Actualiza una oferta existente
         [HttpPut("EditarTemporada")]
-        public bool EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public Task<bool> EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             return _businessSql.EditarTemporada(idTemporada, descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }

@@ -32,14 +32,14 @@ namespace TurriAdventures.Controllers
 
         // POST: Crea una nueva oferta
         [HttpPost("CrearOferta")]
-        public bool CrearOferta(string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
+        public Task<bool> CrearOferta(string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
         {
             return _businessSql.CrearOferta(descripcionOferta, fechaInicioOferta, fechaFinalOferta, precioOferta);
         }
 
         // PUT: Actualiza una oferta existente
         [HttpPut("EditarOferta")]
-        public bool EditarOferta(int idOferta, string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
+        public Task<bool> EditarOferta(int idOferta, string descripcionOferta, DateTime fechaInicioOferta, DateTime fechaFinalOferta, decimal precioOferta)
         {
             return _businessSql.EditarOferta(idOferta, descripcionOferta, fechaInicioOferta, fechaFinalOferta, precioOferta);
         }

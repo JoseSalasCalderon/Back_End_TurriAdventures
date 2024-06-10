@@ -19,16 +19,16 @@ namespace Business.Business
             _dataAccessSql = new TemporadaDataAccessSql();
         }
 
-     
+
         #region CRUDTemporada
         public Task<List<Temporada>> ListarTemporadas()
         {
             return _dataAccessSql.ListarTemporadas();
         }
 
-        public bool CrearTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public Task<bool> CrearTemporada(String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
-            return _dataAccessSql.CrearTemporada(descripcionTemporada,  fechaInicioTemporada,  fechaFinalTemporada,  precioTemporada);
+            return _dataAccessSql.CrearTemporada(descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }
 
         public Temporada BuscarTemporada(int idHabitacion)
@@ -36,13 +36,13 @@ namespace Business.Business
             return _dataAccessSql.BuscarTemporada(idHabitacion);
         }
 
-        public bool EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public Task<bool> EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             return _dataAccessSql.EditarTemporada(idTemporada, descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }
 
 
-        public  Task<Temporada> eliminarTemporada(int id)
+        public Task<Temporada> eliminarTemporada(int id)
         {
             return _dataAccessSql.eliminarTemporada(id);
         }
