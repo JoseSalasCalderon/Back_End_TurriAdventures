@@ -28,7 +28,13 @@ namespace TurriAdventures.Controllers
             return _businessSql.BuscarReservaPorIdCliente(id);
         }
 
-        [HttpPost("CrearReserva")]
+        [HttpGet("BuscarReservaPorId/{idReserva}")]
+        public Reservacion BuscarReservaPorId(int idReserva)
+        { 
+            return _businessSql.BuscarReservaPorId(idReserva);
+        }
+
+            [HttpPost("CrearReserva")]
         public int CrearReserva(Reservacion reservacion)
         {
             return _businessSql.CrearReserva(reservacion);

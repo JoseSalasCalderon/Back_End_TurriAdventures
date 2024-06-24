@@ -35,7 +35,12 @@ namespace Business.Business
             return _dataAccessSql.BuscarReservaPorIdCliente(idCliente);
         }
 
-        public bool modificarReserva(Reservacion reservacion)
+        public Reservacion BuscarReservaPorId(int idReserva)
+        { 
+            return _dataAccessSql.BuscarReservaPorId(idReserva);
+        }
+
+            public bool modificarReserva(Reservacion reservacion)
         {
             return _dataAccessSql.modificarReserva(reservacion);
         }
