@@ -31,9 +31,9 @@ namespace TurriAdventures.Controllers
         }
 
         [HttpPut("EditarDireccion")]
-        public bool EditarDireccion(int idDireccion, string informacionDireccion)
+        public Task<bool> EditarDireccion(Direccion direccion)
         {
-            return _businessSql.EditarDireccion(idDireccion, informacionDireccion);
+            return _businessSql.EditarDireccion(direccion.IdDireccion, direccion.InformacionDireccion);
         }
     }
 }
