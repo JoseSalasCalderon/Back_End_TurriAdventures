@@ -40,6 +40,11 @@ namespace Business.Business
             return _dataAccessSql.modificarReserva(reservacion);
         }
 
-        #endregion
+        public bool EliminarReserva(int idReserva)
+        {
+            return _dataAccessSql.EliminarReserva(idReserva);
+        }
+
+            #endregion
     }
 }
