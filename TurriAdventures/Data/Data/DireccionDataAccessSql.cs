@@ -61,27 +61,30 @@ namespace Data.Data
             return direccion;
         }
 
-        public bool EditarDireccion(int idDireccion, string informacionDireccion)
+        public async Task<bool> EditarDireccion(int idDireccion, string informacionDireccion)
         {
             try
             {
                 var parameters = new[]
                 {
-                    new SqlParameter("@IdDireccion", idDireccion),
-                    new SqlParameter("@InformacionDireccion", informacionDireccion)
-                };
+            new SqlParameter("@IdDireccion", idDireccion),
+            new SqlParameter("@InformacionDireccion", informacionDireccion)
+        };
 
-                // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarDireccion @IdDireccion, @InformacionDireccion", parameters);
+                // Ejecutar el comando SQL de manera asincrónica y esperar el resultado
+                var result = await dbContext.Database.ExecuteSqlRawAsync("exec modificarDireccion @IdDireccion, @InformacionDireccion", parameters);
 
-                return true; // Operación exitosa
+                // Verificar si se afectaron filas en la base de datos
+                return result > 0; // Retorna true si se afectaron filas en la base de datos
             }
             catch (Exception ex)
             {
-                // Manejar cualquier excepción que pueda ocurrir
+                // Manejar la excepción de manera adecuada (registrarla, lanzarla nuevamente, etc.)
+                Console.WriteLine($"Error al editar la dirección: {ex.Message}");
                 return false; // Operación fallida
             }
         }
+
 
         //public bool EliminarDireccion(int idDireccion)
         //{
