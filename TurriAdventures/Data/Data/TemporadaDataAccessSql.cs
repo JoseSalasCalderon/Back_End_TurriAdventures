@@ -68,16 +68,16 @@ namespace Data.Data
             var TemporadaCreada = new Temporada
             {
                 IdTemporada = temporada.IdTemporada,
-                DescripcionTemporada= temporada.DescripcionTemporada,
-                FechaInicioTemporada= temporada.FechaInicioTemporada,
-                FechaFinalTemporada= temporada.FechaFinalTemporada,
-                PrecioTemporada= temporada.PrecioTemporada
+                DescripcionTemporada = temporada.DescripcionTemporada,
+                FechaInicioTemporada = temporada.FechaInicioTemporada,
+                FechaFinalTemporada = temporada.FechaFinalTemporada,
+                PrecioTemporada = temporada.PrecioTemporada
             };
 
             return TemporadaCreada;
         }//Temporada
 
-        public async Task<bool>  EditarTemporada(int idTemporada,String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public async Task<bool> EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             try
             {
@@ -87,11 +87,12 @@ namespace Data.Data
                 new SqlParameter("@descripcionTemporada", descripcionTemporada),
                 new SqlParameter("@fechaInicioTemporada", fechaInicioTemporada),
                 new SqlParameter("@fechaFinalTemporada", fechaFinalTemporada),
-                new SqlParameter("@precioTemporada", precioTemporada)
+                new SqlParameter("@precioTemporada", precioTemporada),
+                new SqlParameter("@activo", 1)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada @idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada ", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarTemporada @idTemporada, @descripcionTemporada, @fechaInicioTemporada, @fechaFinalTemporada, @precioTemporada, @activo ", parameters);
 
                 return true; // Operación exitosa
             }
@@ -113,14 +114,6 @@ namespace Data.Data
         }
 
         #endregion
-
-       
-
-
-
-
-
-
 
     }
 }

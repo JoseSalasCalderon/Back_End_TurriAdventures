@@ -44,17 +44,17 @@ namespace Data.Data
             }
         }//CrearContacto
 
-        public bool modificarContacto(int idContacto, String telefono1, String telefono2, String apartadoPostal, String email)
+        public bool modificarContacto(Contacto contacto)
         {
             try
             {
                 var parameters = new[]
                 {
-                new SqlParameter("@idContacto", idContacto),
-                new SqlParameter("@telefono1", telefono1),
-                new SqlParameter("@telefono2", telefono2),
-                new SqlParameter("@apartadoPostal", apartadoPostal),
-                new SqlParameter("@email", email)
+                new SqlParameter("@idContacto", contacto.IdContacto),
+                new SqlParameter("@telefono1", contacto.Telefono1),
+                new SqlParameter("@telefono2", contacto.Telefono2),
+                new SqlParameter("@apartadoPostal", contacto.ApartadoPostal),
+                new SqlParameter("@email", contacto.Email)
                 };
 
                 // Ejecutar un comando SQL personalizado

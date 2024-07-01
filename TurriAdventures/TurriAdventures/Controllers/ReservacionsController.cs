@@ -14,7 +14,6 @@ namespace TurriAdventures.Controllers
     [Route("[controller]")]
     public class ReservacionsController : ControllerBase
     {
-        private readonly HotelTurriAdventuresContext _context = new HotelTurriAdventuresContext();
         private readonly ReservacionBusinessSql _businessSql = new ReservacionBusinessSql();
 
         [HttpGet("ListarReservas")]
@@ -29,7 +28,13 @@ namespace TurriAdventures.Controllers
             return _businessSql.BuscarReservaPorIdCliente(id);
         }
 
-        [HttpPost("CrearReserva")]
+        [HttpGet("BuscarReservaPorId/{idReserva}")]
+        public Reservacion BuscarReservaPorId(int idReserva)
+        { 
+            return _businessSql.BuscarReservaPorId(idReserva);
+        }
+
+            [HttpPost("CrearReserva")]
         public int CrearReserva(Reservacion reservacion)
         {
             return _businessSql.CrearReserva(reservacion);
@@ -39,6 +44,12 @@ namespace TurriAdventures.Controllers
         public bool modificarReserva(Reservacion reservacion)
         {
             return _businessSql.modificarReserva(reservacion);
+        }
+
+        [HttpDelete("EliminarReserva")]
+        public bool EliminarReserva(int idReserva)
+        {
+            return _businessSql.EliminarReserva(idReserva);
         }
     }
 }

@@ -38,10 +38,10 @@ namespace TurriAdventures.Controllers
             return _businessSql.modificarNosotros(nosotros);
         }
 
-        //[HttpDelete("EliminarNosotros")]
-        //public bool EliminarNosotros(int id)
-        //{
-        //    return _businessSql.EliminarNosotros(id);
-        //}
+        [HttpDelete("EliminarNosotros/{id}")]
+        public bool EliminarNosotros(int id)
+        {
+            return _businessSql.EliminarNosotros(id);
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace Business
             return _dataAccessSql.BuscarDireccion(idDireccion);
         }
 
-        public bool EditarDireccion(int idDireccion, string informacionDireccion)
+        public Task<bool> EditarDireccion(int idDireccion, string informacionDireccion)
         {
             return _dataAccessSql.EditarDireccion(idDireccion, informacionDireccion);
         }

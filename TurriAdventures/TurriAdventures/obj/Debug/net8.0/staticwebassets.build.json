@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y2nnmOpCQcFNGSEVmf1kNHR6v2e/eH7PgsPFi0TEhsQ=",
+  "Hash": "4FQY0mYNbHNzhf25i3P+4C5hnuYxpxLBeT4wY7fLWI0=",
   "Source": "TurriAdventures",
   "BasePath": "_content/TurriAdventures",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TurriAdventures\\wwwroot",
       "Source": "TurriAdventures",
-      "ContentRoot": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
       "BasePath": "_content/TurriAdventures",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\assets\\Habitaciones\\hotel.png",
+      "Identity": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\assets\\Habitaciones\\hotel.png",
       "SourceId": "TurriAdventures",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
       "BasePath": "_content/TurriAdventures",
       "RelativePath": "assets/Habitaciones/hotel.png",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\Habitaciones\\hotel.png"
     },
     {
-      "Identity": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\assets\\Habitaciones\\Screenshot 2024-05-02 211741.png",
+      "Identity": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\assets\\Habitaciones\\Screenshot 2024-05-02 211741.png",
       "SourceId": "TurriAdventures",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\najer\\OneDrive\\Documentos\\Angular\\Back\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
       "BasePath": "_content/TurriAdventures",
       "RelativePath": "assets/Habitaciones/Screenshot 2024-05-02 211741.png",
       "AssetKind": "All",
@@ -53,63 +53,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\Habitaciones\\Screenshot 2024-05-02 211741.png"
-    },
-    {
-      "Identity": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\1y53x5a3.bee.jpeg",
-      "SourceId": "TurriAdventures",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
-      "BasePath": "_content/TurriAdventures",
-      "RelativePath": "images/1y53x5a3.bee.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\1y53x5a3.bee.jpeg"
-    },
-    {
-      "Identity": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\gyi3hg45.ttb.jpg",
-      "SourceId": "TurriAdventures",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
-      "BasePath": "_content/TurriAdventures",
-      "RelativePath": "images/gyi3hg45.ttb.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\gyi3hg45.ttb.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\images\\tz3je1ip.mws.jpeg",
-      "SourceId": "TurriAdventures",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\steve\\OneDrive\\Escritorio\\Cosas de la U\\Back_End_TurriAdventures\\TurriAdventures\\TurriAdventures\\wwwroot\\",
-      "BasePath": "_content/TurriAdventures",
-      "RelativePath": "images/tz3je1ip.mws.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\tz3je1ip.mws.jpeg"
     }
   ]
 }

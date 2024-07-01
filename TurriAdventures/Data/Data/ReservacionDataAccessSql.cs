@@ -78,6 +78,37 @@ namespace Data.Data
             return reservacion;
         }//Temporada
 
+        public Reservacion BuscarReservaPorId(int idReserva)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@idReserva", idReserva)
+            };
+
+            // Ejecutar el procedimiento almacenado y obtener la habitacion
+            var reserva = dbContext.Reservacion.FromSqlRaw("exec buscarReservacionIdReservacion @idReserva", parameters).AsEnumerable().FirstOrDefault();
+
+            if (reserva == null)
+            {
+                // Manejar el caso donde no se encontró ninguna habitacion
+                return null;
+            }
+
+            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
+            var reservacion = new Reservacion
+            {
+                IdHabitacion = reserva.IdHabitacion,
+                EstadoReservacion = reserva.EstadoReservacion,
+                FechaLlegada = reserva.FechaLlegada,
+                FechaSalida = reserva.FechaSalida,
+                IdCliente = reserva.IdCliente,
+                IdReservacion = reserva.IdReservacion
+
+            };
+
+            return reservacion;
+        }//Temporada
+
         public bool modificarReserva(Reservacion reservacion)
         {
             try

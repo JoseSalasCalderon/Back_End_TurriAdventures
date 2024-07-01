@@ -24,20 +24,27 @@ namespace Business.Business
             return _dataAccessSql.ListarFacilidades();
         }//ListarTipoHabitaciones
 
-        public bool CrearFacilidad(String descripcionFacilidad, String imagenFacilidad)
+        public bool CrearFacilidad(Facilidad facilidad)
         {
-            return _dataAccessSql.CrearFacilidad(descripcionFacilidad, imagenFacilidad);
+            return _dataAccessSql.CrearFacilidad(facilidad);
         }//CrearFacilidad
 
         public Facilidad BuscarFacilidad(int idFacilidad)
         {
             return _dataAccessSql.BuscarFacilidad(idFacilidad);
-        }//Facilidad
+        }//BuscarFacilidad
 
-        public bool modificarFacilidad(int idFacilidad, String descripcionFacilidad, String imagenFacilidad)
+        public bool modificarFacilidad(Facilidad facilidad)
         {
-            return _dataAccessSql.modificarFacilidad(idFacilidad, descripcionFacilidad, imagenFacilidad);
-        }//EditarHabitacion
+            return _dataAccessSql.modificarFacilidad(facilidad);
+        }//modificarFacilidad
+
+        public bool EliminarFacilidad(int idFacilidad)
+        {
+            return _dataAccessSql.EliminarFacilidad(idFacilidad);
+        }//EliminarFacilidad
+
         #endregion
+
     }
 }
