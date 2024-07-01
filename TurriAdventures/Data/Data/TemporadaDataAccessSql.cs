@@ -68,16 +68,16 @@ namespace Data.Data
             var TemporadaCreada = new Temporada
             {
                 IdTemporada = temporada.IdTemporada,
-                DescripcionTemporada= temporada.DescripcionTemporada,
-                FechaInicioTemporada= temporada.FechaInicioTemporada,
-                FechaFinalTemporada= temporada.FechaFinalTemporada,
-                PrecioTemporada= temporada.PrecioTemporada
+                DescripcionTemporada = temporada.DescripcionTemporada,
+                FechaInicioTemporada = temporada.FechaInicioTemporada,
+                FechaFinalTemporada = temporada.FechaFinalTemporada,
+                PrecioTemporada = temporada.PrecioTemporada
             };
 
             return TemporadaCreada;
         }//Temporada
 
-        public async Task<bool>  EditarTemporada(int idTemporada,String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
+        public async Task<bool> EditarTemporada(int idTemporada, String descripcionTemporada, DateTime fechaInicioTemporada, DateTime fechaFinalTemporada, decimal precioTemporada)
         {
             try
             {
@@ -114,14 +114,6 @@ namespace Data.Data
         }
 
         #endregion
-
-       
-
-
-
-
-
-
 
     }
 }

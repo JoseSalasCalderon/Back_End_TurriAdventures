@@ -173,29 +173,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "idContacto",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "telefono1",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "telefono2",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "apartadoPostal",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "contacto",
+        "Type": "Entities.Entities.Contacto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -246,7 +226,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TurriAdventures.Entities.Contacto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Entities.Entities.Contacto, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -317,14 +297,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "idDireccion",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "informacionDireccion",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "direccion",
+        "Type": "Entities.Entities.Direccion",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -394,14 +369,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "descripcionFacilidad",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "imagenFacilidad",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "facilidad",
+        "Type": "Entities.Entities.Facilidad",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -425,19 +395,35 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "idFacilidad",
+        "Name": "facilidad",
+        "Type": "Entities.Entities.Facilidad",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.FacilidadController",
+    "Method": "EliminarFacilidad",
+    "RelativePath": "api/Facilidad/EliminarFacilidad/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "descripcionFacilidad",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "imagenFacilidad",
-        "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [
@@ -473,6 +459,22 @@
     ]
   },
   {
+    "ContainingType": "TurriAdventures.Controllers.FileUploadController",
+    "Method": "Upload",
+    "RelativePath": "api/FileUpload/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TurriAdventures.Controllers.HomeController",
     "Method": "BuscarHome",
     "RelativePath": "api/Home/BuscarHome/{idHome}",
@@ -488,7 +490,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "TurriAdventures.Entities.Home",
+        "Type": "Entities.Entities.Home",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -508,7 +510,7 @@
     "Parameters": [
       {
         "Name": "home",
-        "Type": "TurriAdventures.Entities.Home",
+        "Type": "Entities.Entities.Home",
         "IsRequired": true
       }
     ],
@@ -534,7 +536,7 @@
     "Parameters": [
       {
         "Name": "home",
-        "Type": "TurriAdventures.Entities.Home",
+        "Type": "Entities.Entities.Home",
         "IsRequired": true
       }
     ],
@@ -586,7 +588,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[TurriAdventures.Entities.Home, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[Entities.Entities.Home, Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -675,6 +677,32 @@
       {
         "Name": "nosotros",
         "Type": "Entities.Entities.Nosotros",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.NosotrosController",
+    "Method": "EliminarNosotros",
+    "RelativePath": "api/Nosotros/EliminarNosotros/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -1371,6 +1399,32 @@
   },
   {
     "ContainingType": "TurriAdventures.Controllers.ReservacionsController",
+    "Method": "BuscarReservaPorId",
+    "RelativePath": "Reservacions/BuscarReservaPorId/{idReserva}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idReserva",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Entities.Entities.Reservacion",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.ReservacionsController",
     "Method": "BuscarReservaPorIdCliente",
     "RelativePath": "Reservacions/BuscarReservaPorIdCliente/{id}",
     "HttpMethod": "GET",
@@ -1412,6 +1466,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "TurriAdventures.Controllers.ReservacionsController",
+    "Method": "EliminarReserva",
+    "RelativePath": "Reservacions/EliminarReserva",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idReserva",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1728,39 +1808,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "idHabitacion",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "nombreTipoHabitacion",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "precio",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "descripcionTipoHabitacion",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "imagenTipoHabitacion",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "idOferta",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "idTemporada",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "tipoHabitacion",
+        "Type": "Entities.Entities.TipoHabitacion",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": [

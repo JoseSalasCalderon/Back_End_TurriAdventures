@@ -27,6 +27,7 @@ namespace Business.Business
             return _dataAccessSql.ListarNosotros();
         }//ListarListarNosotros
 
+
         public bool CrearNosotros(Nosotros nosotros)
         {
             return _dataAccessSql.CrearNosotros(nosotros);
@@ -41,7 +42,13 @@ namespace Business.Business
         {
             return _dataAccessSql.modificarNosotros(nosotros);
         }//EditarNosotros
+
+        public bool EliminarNosotros(int id)
+        {
+            return _dataAccessSql.EliminarNosotros(id);
+        }//EliminarNosotros
+
         #endregion
 
-       }
+    }
 }

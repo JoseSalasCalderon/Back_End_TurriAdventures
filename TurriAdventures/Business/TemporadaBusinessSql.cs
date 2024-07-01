@@ -19,7 +19,7 @@ namespace Business.Business
             _dataAccessSql = new TemporadaDataAccessSql();
         }
 
-     
+
         #region CRUDTemporada
         public Task<List<Temporada>> ListarTemporadas()
         {
@@ -42,7 +42,7 @@ namespace Business.Business
         }
 
 
-        public  Task<Temporada> eliminarTemporada(int id)
+        public Task<Temporada> eliminarTemporada(int id)
         {
             return _dataAccessSql.eliminarTemporada(id);
         }

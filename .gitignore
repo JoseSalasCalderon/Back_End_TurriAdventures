@@ -1,1 +1,10 @@
 .vs/
+*.json
+*.json
+*.v2
+*.cache
+TurriAdventures/TurriAdventures/obj/Debug/net8.0/TurriAdventures.GeneratedMSBuildEditorConfig.editorconfig
+*.editorconfig
+*.json
+*.props
+*.cs

@@ -25,21 +25,21 @@ namespace TurriAdventures.Controllers
         }
 
         [HttpPost("CrearFacilidad")]
-        public bool CrearFacilidad(String descripcionFacilidad, String imagenFacilidad)
+        public bool CrearFacilidad(Facilidad facilidad)
         {
-            return _businessSql.CrearFacilidad(descripcionFacilidad, imagenFacilidad);
+            return _businessSql.CrearFacilidad(facilidad);
         }
 
         [HttpPut("EditarFacilidad")]
-        public bool EditarFacilidad(int idFacilidad, String descripcionFacilidad, String imagenFacilidad)
+        public bool EditarFacilidad(Facilidad facilidad)
         {
-            return _businessSql.modificarFacilidad(idFacilidad, descripcionFacilidad, imagenFacilidad);
+            return _businessSql.modificarFacilidad(facilidad);
         }
 
-        //[HttpDelete("EliminarFacilidad")]
-        //public bool EliminarFacilidad(int id)
-        //{
-        //    return _businessSql.EliminarFacilidad(id);
-        //}
+        [HttpDelete("EliminarFacilidad/{id}")]
+        public bool EliminarFacilidad(int id)
+        {
+            return _businessSql.EliminarFacilidad(id);
+        }
     }
 }

@@ -26,9 +26,9 @@ namespace TurriAdventures.Controllers
             }
 
             [HttpPut("EditarContacto")]
-            public bool EditarContacto(int idContacto, String telefono1, String telefono2, String apartadoPostal, String email)
+            public bool EditarContacto(Contacto contacto)
             {
-                return _businessSql.modificarContacto(idContacto, telefono1, telefono2, apartadoPostal, email);
+                return _businessSql.modificarContacto(contacto);
             }
 
             [HttpDelete("EliminarContacto")]
