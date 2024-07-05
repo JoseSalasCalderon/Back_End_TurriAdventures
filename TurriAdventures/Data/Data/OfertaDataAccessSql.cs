@@ -33,11 +33,12 @@ namespace Data.Data
                 new SqlParameter("@DescripcionOferta", descripcionOferta),
                 new SqlParameter("@FechaInicioOferta", fechaInicioOferta),
                 new SqlParameter("@FechaFinalOferta", fechaFinalOferta),
-                new SqlParameter("@PrecioOferta", precioOferta)
+                new SqlParameter("@PrecioOferta", precioOferta),
+                new SqlParameter("@activo", 1)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec crearOferta @DescripcionOferta, @FechaInicioOferta, @FechaFinalOferta, @PrecioOferta", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec crearOferta @DescripcionOferta, @FechaInicioOferta, @FechaFinalOferta, @PrecioOferta, @activo", parameters);
 
                 return true; // Operación exitosa
             }
@@ -87,11 +88,12 @@ namespace Data.Data
                 new SqlParameter("@DescripcionOferta", descripcionOferta),
                 new SqlParameter("@FechaInicioOferta", fechaInicioOferta),
                 new SqlParameter("@FechaFinalOferta", fechaFinalOferta),
-                new SqlParameter("@PrecioOferta", precioOferta)
+                new SqlParameter("@PrecioOferta", precioOferta),
+                new SqlParameter("@activo", 1)
                 };
 
                 // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarOferta @IdOferta, @DescripcionOferta, @FechaInicioOferta, @FechaFinalOferta, @PrecioOferta", parameters);
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarOferta @IdOferta, @DescripcionOferta, @FechaInicioOferta, @FechaFinalOferta, @PrecioOferta, @activo", parameters);
 
                 return true; // Operación exitosa
             }
