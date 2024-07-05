@@ -108,7 +108,7 @@ namespace Data.Data
         {
             var parameter = new List<SqlParameter>();
             parameter.Add(new SqlParameter("@Id", id));
-            Temporada Reporte1 = dbContext.Temporada.FromSqlRaw(@"exec eliminarTemporada Id", parameter.ToArray()).ToList().FirstOrDefault();
+            Temporada Reporte1 = dbContext.Temporada.FromSqlRaw(@"exec eliminarTemporada @Id", parameter.ToArray()).ToList().FirstOrDefault();
             dbContext.Remove(Reporte1);
             return Reporte1;
         }
