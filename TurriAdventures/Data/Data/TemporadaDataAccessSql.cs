@@ -47,7 +47,6 @@ namespace Data.Data
             }
         }
 
-
         public Temporada BuscarTemporada(int idTemporada)
         {
             var parameters = new[]
@@ -104,14 +103,16 @@ namespace Data.Data
 
         }//EditarHabitacion
 
-        public async Task<Temporada> eliminarTemporada(int id)
+        public async Task<Temporada> eliminarTemporada(int idTemporada)
         {
             var parameter = new List<SqlParameter>();
-            parameter.Add(new SqlParameter("@Id", id));
+            parameter.Add(new SqlParameter("@Id", idTemporada));
             Temporada Reporte1 = dbContext.Temporada.FromSqlRaw(@"exec eliminarTemporada @Id", parameter.ToArray()).ToList().FirstOrDefault();
             dbContext.Remove(Reporte1);
             return Reporte1;
         }
+
+
 
         #endregion
 

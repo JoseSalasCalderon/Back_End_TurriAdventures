@@ -73,6 +73,37 @@ namespace Data.Data
             return tipoHabitacionCreada;
         }//BuscarHabitacion
 
+        public TipoHabitacion BuscarTipoHabitacionDescuento(int idTipoHabitacion)
+        {
+            var parameters = new[]
+            {
+                new SqlParameter("@IdHabitacion", idTipoHabitacion)
+            };
+
+            // Ejecutar el procedimiento almacenado y obtener la habitacion
+            var habitacionObtenida = dbContext.TipoHabitacion.FromSqlRaw("exec buscarTipoHabitacionDescuento @IdHabitacion", parameters).AsEnumerable().FirstOrDefault();
+
+            if (habitacionObtenida == null)
+            {
+                // Manejar el caso donde no se encontró ninguna habitacion
+                return null;
+            }
+
+            // Crear una nueva instancia de habitacion y asignarle las propiedades conocidas
+            var tipoHabitacionCreada = new TipoHabitacion
+            {
+                IdTipoHabitacion = habitacionObtenida.IdTipoHabitacion, // Aquí puedes asignar el id que recibiste como parámetro
+                NombreTipoHabitacion = habitacionObtenida.NombreTipoHabitacion,
+                Precio = habitacionObtenida.Precio,
+                DescripcionTipoHabitacion = habitacionObtenida.DescripcionTipoHabitacion,
+                ImagenTipoHabitacion = habitacionObtenida.ImagenTipoHabitacion,
+                IdOferta = habitacionObtenida.IdOferta,
+                IdTemporada = habitacionObtenida.IdTemporada
+            };
+
+            return tipoHabitacionCreada;
+        }//BuscarHabitacion
+
         public TipoHabitacion BuscarTipoHabitacionPorHabitacion(int idHabitacion)
         {
             var parameters = new[]
@@ -119,8 +150,8 @@ namespace Data.Data
                 new SqlParameter("@idTemporada", tipoHabitacion.IdTemporada)
                 };
 
-                // Ejecutar un comando SQL personalizado
-                dbContext.Database.ExecuteSqlRawAsync("exec modificarTipoHabitacion @idHabitacion, @nombreTipoHabitacion, @precio, @descripcionTipoHabitacion, @imagenTipoHabitacion,@idOferta,@idOferta ", parameters);
+                // Ejecutar un comando SQL personalizadoidOferta
+                dbContext.Database.ExecuteSqlRawAsync("exec modificarTipoHabitacion @idHabitacion, @nombreTipoHabitacion, @precio, @descripcionTipoHabitacion, @imagenTipoHabitacion,@idOferta,@idTemporada ", parameters);
 
                 return true; // Operación exitosa
             }

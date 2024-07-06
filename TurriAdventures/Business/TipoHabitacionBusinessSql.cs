@@ -35,6 +35,11 @@ namespace Business.Business
             return _dataAccessSql.BuscarTipoHabitacion(idHabitacion);
         }
 
+        public TipoHabitacion BuscarTipoHabitacionDescuento(int idHabitacion)
+        {
+            return _dataAccessSql.BuscarTipoHabitacionDescuento(idHabitacion);
+        }
+
         public TipoHabitacion BuscarTipoHabitacionPorHabitacion(int idHabitacion)
         {
             return _dataAccessSql.BuscarTipoHabitacionPorHabitacion(idHabitacion);

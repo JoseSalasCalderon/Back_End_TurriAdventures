@@ -42,6 +42,8 @@ namespace TurriAdventures.Controllers
             return _businessSql.EditarTemporada(idTemporada, descripcionTemporada, fechaInicioTemporada, fechaFinalTemporada, precioTemporada);
         }
 
+   
+
         [HttpDelete]
         [Route(nameof(eliminarTemporada))]
         public async Task<IActionResult> eliminarTemporada(int id)
